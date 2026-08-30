@@ -21,5 +21,5 @@ public:
  */
 void VendorZone::print()
 {
-    std::cout << "Welcome to the Main Hall" << std::endl;
+    std::cout << "Welcome to the Vendor Zone Hall" << std::endl;
 }

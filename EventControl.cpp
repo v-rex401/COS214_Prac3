@@ -4,6 +4,7 @@
 /**
  * @file EventControl.cpp
  * @brief EventControl is one of the concrete subjects
+ * @class EventControl
  * @author Vashti
  */
 
@@ -36,9 +37,15 @@ EventControl::EventControl(std::string name)
  */
 void EventControl::add(EventComponent *cmp)
 {
-    componentList.push_back(cmp);
+    componentList.push_back(cmp); /**insert at back of vector */
 }
 
+/**
+ * @brief remove the component from EventControl
+ * Event Control is a composite participant
+ * EventGroups are removed with this function by
+ * searching through the list of components associated with EventControl
+ */
 void EventControl::remove(EventComponent *cmp)
 {
     for (int i = 0; i < componentList.size(); i++)

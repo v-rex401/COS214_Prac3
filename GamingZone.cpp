@@ -1,5 +1,5 @@
 /**
- * @file MainHall.cpp
+ * @file GamingZone.cpp
  * @brief One of the ConcreteSubjects which is also a ConcreteObserver
  * @author Vashti
  */

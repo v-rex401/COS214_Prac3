@@ -1,0 +1,15 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classEventComponent.html" title=" " alt="" coords="5,55,140,80"/>
+<area shape="rect" id="Node000001" href="$classEventControl.html" title=" " alt="" coords="188,5,295,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="129,48,196,28,198,33,131,53"/>
+<area shape="rect" id="Node000003" href="$classEventGroup.html" title=" " alt="" coords="192,55,291,80"/>
+<area shape="poly" id="edge2_Node000000_Node000003" title=" " alt="" coords="154,65,192,65,192,70,154,70"/>
+<area shape="rect" id="Node000005" href="$classEventUnit.html" title=" " alt="" coords="198,104,285,129"/>
+<area shape="poly" id="edge3_Node000000_Node000005" title=" " alt="" coords="131,81,199,102,197,107,129,87"/>
+<area shape="rect" id="Node000004" href="$classEventObserver.html" title=" " alt="" coords="13,104,132,129"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="129,97,196,78,198,83,131,103"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="146,114,198,114,198,119,146,119"/>
+<area shape="rect" id="Node000002" href="$classEventSubject.html" title="The abstract subject participant in the Observer pattern." alt="" coords="19,5,126,31"/>
+<area shape="poly" id="edge6_Node000002_Node000001" title=" " alt="" coords="140,15,188,15,188,21,140,21"/>
+<area shape="poly" id="edge7_Node000002_Node000003" title=" " alt="" coords="131,32,198,52,196,57,129,37"/>
+</map>

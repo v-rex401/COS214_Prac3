@@ -5,7 +5,7 @@ class EventComponent
 {
 
 public:
-	EventComponent();
+	EventComponent() {}
 	virtual void add(EventComponent *cmp) = 0;
 
 	virtual void remove(EventComponent *cmp) = 0;

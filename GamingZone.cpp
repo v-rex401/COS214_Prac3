@@ -1,23 +1,14 @@
-/**
- * @file GamingZone.cpp
- * @brief One of the ConcreteSubjects which is also a ConcreteObserver
- * @author Vashti
- */
+
 
 #include "GamingZone.h"
 #include <iostream>
 
-/**
- * @brief  Constructor
- */
 GamingZone::GamingZone(std::string name, int t_capacity) : EventGroup(name, t_capacity)
 {
 }
 void GamingZone::print()
 {
-    /**
-     * @brief Implementation of the Composite Print
-     */
+
     EventNotice noti = EventGroup::getNotice();
     enum NoticeType type = noti.getType();
     std::string message = noti.getMsg();
@@ -47,14 +38,4 @@ void GamingZone::print()
         std::cout << "Please stay inside or move to Main Hall" << std::endl;
         break;
     }
-
-    // /**
-    //  * @brief Call all leaves and/or composites in Gaming Hall
-    //  */
-
-    // std::vector<EventComponent *> list = getComponents();
-    // for (int i = 0; i < list.size(); i++)
-    // {
-    //     list[i]->print();
-    // }
 }

@@ -2,8 +2,12 @@
 #define EVENTNOTICE_H
 
 #include <string>
-
-enum class NoticeType {
+/**
+ * @brief enum NoticeType for the different notices
+ * @author Jordan
+ */
+enum class NoticeType
+{
 	BEGIN,
 	END,
 	DELAYED,
@@ -13,18 +17,34 @@ enum class NoticeType {
 	WEATHER_ALERT
 };
 
-
-class EventNotice {
+class EventNotice
+{
 
 private:
 	NoticeType type;
 	std::string message;
 
 public:
+	/**
+	 * @brief default constructor
+	 */
 	EventNotice();
 
+	/**
+	 * @brief parameterised constructor
+	 */
 	EventNotice(NoticeType type, std::string msg);
+
+	/**
+	 * @brief get for the enum
+	 * @return NoticeType
+	 */
 	NoticeType getType();
+
+	/**
+	 * @brief get for the string message
+	 * @return string message
+	 */
 	std::string getMsg();
 };
 

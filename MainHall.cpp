@@ -1,24 +1,15 @@
-/**
- * @file MainHall.cpp
- * @brief One of the ConcreteSubjects which is also a ConcreteObserver
- * @author Vashti
- */
+
 
 #include "MainHall.h"
 #include "EventNotice.h"
 #include <iostream>
 
-/**
- * @brief  DefaultConstructor
- */
 MainHall::MainHall(std::string name, int t_capacity) : EventGroup(name, t_capacity)
 {
 }
 void MainHall::print()
 {
-    /**
-     * @brief Implementation of the Composite Print
-     */
+
     EventNotice noti = EventGroup::getNotice();
     enum NoticeType type = noti.getType();
     std::string message = noti.getMsg();
@@ -36,7 +27,7 @@ void MainHall::print()
         std::cout << "Main Hall opening is delayed, please wait outside" << std::endl;
         break;
     case NoticeType::CAPACITY_ALERT:
-        
+
         std::cout << "Main Hall is too full - proceed to another hall" << std::endl;
         break;
     case NoticeType::EVACUATE:
@@ -49,5 +40,4 @@ void MainHall::print()
         std::cout << "Please stay inside the Main Hall" << std::endl;
         break;
     }
-
 }

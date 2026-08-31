@@ -1,23 +1,14 @@
-/**
- * @file VendorZone.cpp
- * @brief One of the ConcreteSubjects which is also a ConcreteObserver
- * @author Vashti
- */
+
 
 #include "VendorZone.h"
 #include <iostream>
 
-/**
- * @brief  Constructor
- */
-VendorZone::VendorZone(std::string name, int t_capacity) : EventGroup(name,t_capacity)
+VendorZone::VendorZone(std::string name, int t_capacity) : EventGroup(name, t_capacity)
 {
 }
 void VendorZone::print()
 {
-    /**
-     * @brief Implementation of the Composite Print
-     */
+
     EventNotice noti = EventGroup::getNotice();
     enum NoticeType type = noti.getType();
     std::string message = noti.getMsg();
@@ -47,5 +38,4 @@ void VendorZone::print()
         std::cout << "Please stay inside the Vendor Zone" << std::endl;
         break;
     }
-
 }

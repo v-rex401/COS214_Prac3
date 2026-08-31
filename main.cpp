@@ -39,18 +39,18 @@ int main()
     mainHall->attach(cosplayStage);
     cosplayStage->setParent(mainHall);
     mainHall->add(cosplayStage);
-    
+
     mainHall->attach(mainMedics);
     mainMedics->setParent(mainHall);
     mainHall->add(mainMedics);
-    
+
     mainHall->attach(john);
     john->setParent(mainHall);
     mainHall->add(john);
 
     /**Build GamingZone */
     GamingZone *gameZone = new GamingZone("Gamer Den", 1000);
-    
+
     /**Observer Pattern & Composite Pattern */
     gameZone->attach(ps4);
     ps4->setParent(gameZone);
@@ -58,7 +58,7 @@ int main()
 
     /**Build the Vendor Zone */
     VendorZone *vendorArea = new VendorZone("Food Area", 1000);
-    
+
     vendorArea->attach(vendorMedics);
     vendorMedics->setParent(vendorArea);
     vendorArea->add(vendorMedics);
@@ -73,19 +73,19 @@ int main()
 
     /**ConcreteSubject */
     EventControl *manager = new EventControl("Comic Con", 5000);
-    
-    manager->add(mainHall); 
+
+    // manager->add(mainHall);
     manager->attach(mainHall);
     mainHall->setParent(manager);
-    manager->add(mainHall); 
-    
+    manager->add(mainHall);
+
     manager->attach(gameZone);
     gameZone->setParent(manager);
 
     manager->detach(gameZone);
     manager->remove(gameZone);
-    
-    manager->add(vendorArea);
+
+    // manager->add(vendorArea);
     manager->attach(vendorArea);
     vendorArea->setParent(manager);
     manager->add(vendorArea);
@@ -93,7 +93,7 @@ int main()
     EventNotice fullNotice(NoticeType::CAPACITY_ALERT, "Comic Con is reaching maximum capacity.");
     manager->alert(fullNotice);
 
-    std::cout << "=========================\nadding gamezon\n" ;
+    std::cout << "=========================\nadding gamezon\n";
     manager->attach(gameZone);
     manager->add(gameZone);
 
@@ -106,20 +106,21 @@ int main()
 
     /** @todo Signature event scenario */
     /** @todo Signature event scenario */
-    std::cout << "\n=== [SD4: SIGNATURE EVENT SCENARIO - FIRE EVACUATION] ===\n" << std::endl;
+    std::cout << "\n=== [SD4: SIGNATURE EVENT SCENARIO - FIRE EVACUATION] ===\n"
+              << std::endl;
 
     // 1. The Incident Begins (Cascades to all zones)
     EventNotice fireNotice(NoticeType::FIRE, "Fire detected at the Burger Stand!");
     manager->alert(fireNotice);
 
     // 2. The Dynamic Structural Change (Observer leaving mid-execution)
-    std::cout << "\n[EVENT CONTROL] Fire is spreading! Permanently detaching Vendor Zone from the event grid...\n" << std::endl;
+    std::cout << "\n[EVENT CONTROL] Fire is spreading! Permanently detaching Vendor Zone from the event grid...\n"
+              << std::endl;
 
     manager->detach(vendorArea);
     manager->remove(vendorArea);
 
-
-    vendorArea->setParent(nullptr);//forget parent
+    vendorArea->setParent(nullptr); // forget parent
 
     // 3. The Escalation (Cascades only to remaining zones)
     EventNotice evacNotice(NoticeType::EVACUATE, "Vendor Zone compromised! Evacuate remaining zones immediately!");
@@ -128,9 +129,9 @@ int main()
     // 4. The Shutdown (Final lockdown)
     EventNotice endNotice(NoticeType::END, "Venue cleared. Initiating final lockdown.");
     manager->alert(endNotice);
-    
+
     delete manager;
-    delete vendorArea;//cause it was removed for SD4
+    delete vendorArea; // cause it was removed for SD4
 
     return 0;
 }

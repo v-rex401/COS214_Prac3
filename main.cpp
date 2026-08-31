@@ -60,13 +60,23 @@ int main()
     ps4->setParent(gameZone);
 
     /**Build the Vendor Zone */
-
-    /**Observer Pattern */
     VendorZone *vendorArea = new VendorZone("Food Area");
+    
+    vendorArea->add(vendorMedics);
+    vendorArea->add(tacos);
+    vendorArea->add(burgers);
+
+    vendorArea->attach(vendorMedics);
+    vendorMedics->setParent(vendorArea);
+    vendorArea->attach(tacos);
+    tacos->setParent(vendorArea);
+    vendorArea->attach(burgers);
+    burgers->setParent(vendorArea);
 
     /**ConcreteSubject */
     EventControl *manager = new EventControl("Comic Con");
     
+    manager->add(mainHall); 
     manager->attach(mainHall);
     mainHall->setParent(manager);
     
@@ -76,6 +86,7 @@ int main()
     manager->remove(gameZone);
     manager->detach(gameZone);
     
+    manager->add(vendorArea);
     manager->attach(vendorArea);
     vendorArea->setParent(manager);
 
@@ -94,5 +105,8 @@ int main()
     /** @todo Conditional event response and Composite behaviour */
 
     /** @todo Signature event scenario */
+    
+    delete manager;
+
     return 0;
 }

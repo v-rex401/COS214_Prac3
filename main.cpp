@@ -52,6 +52,8 @@ int main()
     /**ConcreteSubject */
     EventControl *manager = new EventControl("Comic Con");
 
+    manager->print();
+
     /** @todo Cascading event notification */
 
     /** @todo Conditional event response and Composite behaviour */

@@ -67,7 +67,7 @@ public:
      /**
       * @brief Default virtual destructor to ensure safe polymorphic cleanup.
       */
-     virtual ~EventUnit() override = default;
+     virtual ~EventUnit() override;
 
      /**
       * @brief Pure virtual method to print the unit's specific status or action.

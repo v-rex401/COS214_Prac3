@@ -72,7 +72,10 @@ void EventGroup::remove(EventComponent *cmp)
  */
 EventGroup::~EventGroup()
 {
-    delete parent;
+    if (parent != nullptr) {
+        parent->detach(this);
+    }
+    
     for (int i = 0; i < componentList.size(); i++)
     {
         if (componentList[i] != nullptr)

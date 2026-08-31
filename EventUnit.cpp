@@ -36,3 +36,9 @@ EventNotice EventUnit::getCurrentNotice() {
     return this->currentNotice;
 }
 
+EventUnit::~EventUnit() {
+    if (this->parent != nullptr) {
+        this->parent->detach(this);
+    }
+}
+

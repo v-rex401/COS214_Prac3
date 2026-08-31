@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">EventFlow<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">EventFlow<span id="projectnumber">&#160;1.3</span>
    </div>
   </td>
  </tr>
@@ -81,6 +81,12 @@ Inheritance diagram for EventGroup:</div>
 <div class="center"><img src="classEventGroup__inherit__graph.png" border="0" usemap="#aEventGroup_inherit__map" alt="Inheritance graph"/></div>
 <map name="aEventGroup_inherit__map" id="aEventGroup_inherit__map">
 <area shape="rect" title=" " alt="" coords="169,79,267,104"/>
+<area shape="rect" href="classGamingZone.html" title="Forward Declaration." alt="" coords="47,152,154,177"/>
+<area shape="poly" title=" " alt="" coords="189,113,121,154,118,149,186,109"/>
+<area shape="rect" href="classMainHall.html" title="Forward Declaration used instead of header file." alt="" coords="178,152,258,177"/>
+<area shape="poly" title=" " alt="" coords="221,118,221,152,215,152,215,118"/>
+<area shape="rect" href="classVendorZone.html" title="Forward Declaration." alt="" coords="283,152,383,177"/>
+<area shape="poly" title=" " alt="" coords="249,109,315,150,313,154,246,113"/>
 <area shape="rect" href="classEventComponent.html" title=" " alt="" coords="5,5,140,31"/>
 <area shape="poly" title=" " alt="" coords="109,34,195,76,193,81,107,39"/>
 <area shape="rect" href="classEventSubject.html" title="The abstract subject participant in the Observer pattern." alt="" coords="165,5,271,31"/>
@@ -108,23 +114,34 @@ Collaboration diagram for EventGroup:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3116d08596ad468f67dca69c8ec5c4f9" id="r_a3116d08596ad468f67dca69c8ec5c4f9"><td class="memItemLeft" align="right" valign="top"><a id="a3116d08596ad468f67dca69c8ec5c4f9" name="a3116d08596ad468f67dca69c8ec5c4f9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EventGroup</b> (std::string name)</td></tr>
+<tr class="memdesc:a3116d08596ad468f67dca69c8ec5c4f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized Constructor. <br /></td></tr>
 <tr class="separator:a3116d08596ad468f67dca69c8ec5c4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad90a502ab1da6b90d91679db6d543d95" id="r_ad90a502ab1da6b90d91679db6d543d95"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventGroup.html#ad90a502ab1da6b90d91679db6d543d95">update</a> () override</td></tr>
-<tr class="separator:ad90a502ab1da6b90d91679db6d543d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5197374bf89a38d23e11f4b7b36141e" id="r_af5197374bf89a38d23e11f4b7b36141e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classEventNotice.html">EventNotice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventGroup.html#af5197374bf89a38d23e11f4b7b36141e">getNotice</a> () override</td></tr>
-<tr class="memdesc:af5197374bf89a38d23e11f4b7b36141e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current active event notice.  <br /></td></tr>
-<tr class="separator:af5197374bf89a38d23e11f4b7b36141e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab390b23059244115bcdadef19205b546" id="r_ab390b23059244115bcdadef19205b546"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventGroup.html#ab390b23059244115bcdadef19205b546">update</a> () override</td></tr>
+<tr class="memdesc:ab390b23059244115bcdadef19205b546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull update from the subject This behaviour applies to ConcreteObserver.  <br /></td></tr>
+<tr class="separator:ab390b23059244115bcdadef19205b546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2855896b86e91d2bee2aa991adb475" id="r_a5a2855896b86e91d2bee2aa991adb475"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classEventNotice.html">EventNotice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventGroup.html#a5a2855896b86e91d2bee2aa991adb475">getNotice</a> () override</td></tr>
+<tr class="memdesc:a5a2855896b86e91d2bee2aa991adb475"><td class="mdescLeft">&#160;</td><td class="mdescRight">This behaviour applied to ConcreteSubject.  <br /></td></tr>
+<tr class="separator:a5a2855896b86e91d2bee2aa991adb475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80a7aaa5a8582ec5e6d88ca1a6c21d6f" id="r_a80a7aaa5a8582ec5e6d88ca1a6c21d6f"><td class="memItemLeft" align="right" valign="top"><a id="a80a7aaa5a8582ec5e6d88ca1a6c21d6f" name="a80a7aaa5a8582ec5e6d88ca1a6c21d6f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a class="el" href="classEventSubject.html">EventSubject</a> *par)</td></tr>
+<tr class="memdesc:a80a7aaa5a8582ec5e6d88ca1a6c21d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This behaviour applied to ConcreteSubject. <br /></td></tr>
 <tr class="separator:a80a7aaa5a8582ec5e6d88ca1a6c21d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c0ae088f7c8d7f72c7d6e74f0d44bd0" id="r_a4c0ae088f7c8d7f72c7d6e74f0d44bd0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventGroup.html#a4c0ae088f7c8d7f72c7d6e74f0d44bd0">add</a> (<a class="el" href="classEventComponent.html">EventComponent</a> *cmp) override</td></tr>
-<tr class="separator:a4c0ae088f7c8d7f72c7d6e74f0d44bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6ef2a996aa512af98a5d1ead1389849" id="r_ae6ef2a996aa512af98a5d1ead1389849"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventGroup.html#ae6ef2a996aa512af98a5d1ead1389849">remove</a> (<a class="el" href="classEventComponent.html">EventComponent</a> *cmp) override</td></tr>
-<tr class="separator:ae6ef2a996aa512af98a5d1ead1389849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a0f1e6e451c72f19a8fca207a53cd1" id="r_ab4a0f1e6e451c72f19a8fca207a53cd1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventGroup.html#ab4a0f1e6e451c72f19a8fca207a53cd1">add</a> (<a class="el" href="classEventComponent.html">EventComponent</a> *cmp) override</td></tr>
+<tr class="memdesc:ab4a0f1e6e451c72f19a8fca207a53cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This behaviour applied to Composite Design Pattern.  <br /></td></tr>
+<tr class="separator:ab4a0f1e6e451c72f19a8fca207a53cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f2302c783dd8ff0fc7e01d611fc840d" id="r_a0f2302c783dd8ff0fc7e01d611fc840d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventGroup.html#a0f2302c783dd8ff0fc7e01d611fc840d">remove</a> (<a class="el" href="classEventComponent.html">EventComponent</a> *cmp) override</td></tr>
+<tr class="memdesc:a0f2302c783dd8ff0fc7e01d611fc840d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This behaviour applied to Composite Design Pattern.  <br /></td></tr>
+<tr class="separator:a0f2302c783dd8ff0fc7e01d611fc840d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ced71b330f350837e4dda2f461b94d" id="r_a31ced71b330f350837e4dda2f461b94d"><td class="memItemLeft" align="right" valign="top"><a id="a31ced71b330f350837e4dda2f461b94d" name="a31ced71b330f350837e4dda2f461b94d"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventGroup</b> () override</td></tr>
+<tr class="memdesc:a31ced71b330f350837e4dda2f461b94d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classEventGroup.html">EventGroup</a> is responsible for its parent pointer and also the componentList it keeps. <br /></td></tr>
+<tr class="separator:a31ced71b330f350837e4dda2f461b94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4c0ae088f7c8d7f72c7d6e74f0d44bd0" name="a4c0ae088f7c8d7f72c7d6e74f0d44bd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c0ae088f7c8d7f72c7d6e74f0d44bd0">&#9670;&#160;</a></span>add()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Vashti </dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab4a0f1e6e451c72f19a8fca207a53cd1" name="ab4a0f1e6e451c72f19a8fca207a53cd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a0f1e6e451c72f19a8fca207a53cd1">&#9670;&#160;</a></span>add()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,7 +150,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void EventGroup::add </td>
+          <td class="memname">void EventGroup::add </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classEventComponent.html">EventComponent</a> *&#160;</td>
           <td class="paramname"><em>cmp</em></td><td>)</td>
@@ -147,12 +164,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
 </table>
 </div><div class="memdoc">
 
+<p>This behaviour applied to Composite Design Pattern. </p>
+
 <p>Implements <a class="el" href="classEventComponent.html">EventComponent</a>.</p>
 
 </div>
 </div>
-<a id="af5197374bf89a38d23e11f4b7b36141e" name="af5197374bf89a38d23e11f4b7b36141e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5197374bf89a38d23e11f4b7b36141e">&#9670;&#160;</a></span>getNotice()</h2>
+<a id="a5a2855896b86e91d2bee2aa991adb475" name="a5a2855896b86e91d2bee2aa991adb475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2855896b86e91d2bee2aa991adb475">&#9670;&#160;</a></span>getNotice()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,7 +180,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classEventNotice.html">EventNotice</a> EventGroup::getNotice </td>
+          <td class="memname"><a class="el" href="classEventNotice.html">EventNotice</a> EventGroup::getNotice </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -174,15 +193,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
 </table>
 </div><div class="memdoc">
 
-<p>Retrieves the current active event notice. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classEventNotice.html">EventNotice</a> The current state or alert data </dd></dl>
+<p>This behaviour applied to ConcreteSubject. </p>
+<dl class="section return"><dt>Returns</dt><dd>currentNotice </dd></dl>
 
 <p>Implements <a class="el" href="classEventSubject.html#ad0871e4d90f39eeb286c35fdba67ea3a">EventSubject</a>.</p>
 
 </div>
 </div>
-<a id="ae6ef2a996aa512af98a5d1ead1389849" name="ae6ef2a996aa512af98a5d1ead1389849"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6ef2a996aa512af98a5d1ead1389849">&#9670;&#160;</a></span>remove()</h2>
+<a id="a0f2302c783dd8ff0fc7e01d611fc840d" name="a0f2302c783dd8ff0fc7e01d611fc840d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f2302c783dd8ff0fc7e01d611fc840d">&#9670;&#160;</a></span>remove()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +210,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void EventGroup::remove </td>
+          <td class="memname">void EventGroup::remove </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classEventComponent.html">EventComponent</a> *&#160;</td>
           <td class="paramname"><em>cmp</em></td><td>)</td>
@@ -205,12 +224,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
 </table>
 </div><div class="memdoc">
 
+<p>This behaviour applied to Composite Design Pattern. </p>
+<p>Shift all the elements to fill the gap <br  />
+</p>
+
 <p>Implements <a class="el" href="classEventComponent.html">EventComponent</a>.</p>
 
 </div>
 </div>
-<a id="ad90a502ab1da6b90d91679db6d543d95" name="ad90a502ab1da6b90d91679db6d543d95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad90a502ab1da6b90d91679db6d543d95">&#9670;&#160;</a></span>update()</h2>
+<a id="ab390b23059244115bcdadef19205b546" name="ab390b23059244115bcdadef19205b546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab390b23059244115bcdadef19205b546">&#9670;&#160;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,7 +242,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void EventGroup::update </td>
+          <td class="memname">void EventGroup::update </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -232,12 +255,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
 </table>
 </div><div class="memdoc">
 
+<p>Pull update from the subject This behaviour applies to ConcreteObserver. </p>
+
 <p>Implements <a class="el" href="classEventObserver.html">EventObserver</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="EventGroup_8h_source.html">EventGroup.h</a></li>
+<li><a class="el" href="EventGroup_8cpp.html">EventGroup.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

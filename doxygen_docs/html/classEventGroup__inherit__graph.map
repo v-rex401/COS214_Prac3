@@ -1,5 +1,11 @@
 <map id="EventGroup" name="EventGroup">
 <area shape="rect" id="Node000001" title=" " alt="" coords="169,79,267,104"/>
+<area shape="rect" id="Node000005" href="$classGamingZone.html" title="Forward Declaration." alt="" coords="47,152,154,177"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="189,113,121,154,118,149,186,109"/>
+<area shape="rect" id="Node000006" href="$classMainHall.html" title="Forward Declaration used instead of header file." alt="" coords="178,152,258,177"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="221,118,221,152,215,152,215,118"/>
+<area shape="rect" id="Node000007" href="$classVendorZone.html" title="Forward Declaration." alt="" coords="283,152,383,177"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="249,109,315,150,313,154,246,113"/>
 <area shape="rect" id="Node000002" href="$classEventComponent.html" title=" " alt="" coords="5,5,140,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,34,195,76,193,81,107,39"/>
 <area shape="rect" id="Node000003" href="$classEventSubject.html" title="The abstract subject participant in the Observer pattern." alt="" coords="165,5,271,31"/>

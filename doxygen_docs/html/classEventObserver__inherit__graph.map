@@ -1,7 +1,13 @@
 <map id="EventObserver" name="EventObserver">
-<area shape="rect" id="Node000001" title=" " alt="" coords="54,5,173,31"/>
-<area shape="rect" id="Node000002" href="$classEventGroup.html" title=" " alt="" coords="5,79,104,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,43,66,80,62,77,93,40"/>
-<area shape="rect" id="Node000003" href="$classEventUnit.html" title=" " alt="" coords="129,79,215,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,40,165,77,160,80,130,43"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="175,5,294,31"/>
+<area shape="rect" id="Node000002" href="$classEventGroup.html" title=" " alt="" coords="127,79,225,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,43,188,80,183,77,214,40"/>
+<area shape="rect" id="Node000006" href="$classEventUnit.html" title=" " alt="" coords="250,79,337,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="255,40,286,77,282,80,251,43"/>
+<area shape="rect" id="Node000003" href="$classGamingZone.html" title="Forward Declaration." alt="" coords="5,152,112,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="147,113,79,154,76,149,144,109"/>
+<area shape="rect" id="Node000004" href="$classMainHall.html" title="Forward Declaration used instead of header file." alt="" coords="136,152,216,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="179,118,179,152,173,152,173,118"/>
+<area shape="rect" id="Node000005" href="$classVendorZone.html" title="Forward Declaration." alt="" coords="241,152,341,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="207,109,273,150,271,154,204,113"/>
 </map>

@@ -7,12 +7,13 @@
 #include "EventSubject.h"
 #include "EventObserver.h"
 
-class EventGroup : public EventComponent, EventSubject, EventObserver {
+class EventGroup : public EventComponent, EventSubject, EventObserver
+{
 
 private:
 	EventNotice currentNotice;
-	std::vector<EventComponent*> componentList;
-	EventSubject* parent;
+	std::vector<EventComponent *> componentList;
+	EventSubject *parent;
 	std::string name;
 
 public:
@@ -22,13 +23,15 @@ public:
 
 	virtual EventNotice getNotice() override;
 
-	void setParent(EventSubject* par);
+	void setParent(EventSubject *par);
 
-	virtual void add(EventComponent* cmp) override;
+	virtual void add(EventComponent *cmp) override;
 
-	virtual void remove(EventComponent* cmp) override;
+	virtual void remove(EventComponent *cmp) override;
 
 	virtual ~EventGroup() override;
+
+	std::vector<EventComponent *> getComponents();
 
 private:
 	EventGroup();

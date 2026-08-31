@@ -1,6 +1,7 @@
 #include "EventControl.h"
 #include "EventNotice.h"
 #include "EventSubject.h"
+#include <iostream>
 /**
  * @file EventControl.cpp
  * @brief EventControl is one of the concrete subjects
@@ -21,6 +22,7 @@ EventNotice EventControl::getNotice()
  */
 EventControl::EventControl()
 {
+    this->name = "Event Controller";
 }
 /**
  * @brief parameterized Constructor
@@ -78,6 +80,23 @@ EventControl::~EventControl()
         if (componentList[i] != nullptr)
         {
             delete componentList[i];
+        }
+    }
+}
+
+/**
+ * @brief
+ */
+
+void EventControl::print()
+{
+    std::cout << "Comic Con is On" << std::endl;
+
+    for (int i = 0; i < componentList.size(); i++)
+    {
+        if (componentList[i] == nullptr)
+        {
+            componentList[i]->print();
         }
     }
 }

@@ -4,12 +4,18 @@
 <area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="129,48,196,28,198,33,131,53"/>
 <area shape="rect" id="Node000003" href="$classEventGroup.html" title=" " alt="" coords="192,55,291,80"/>
 <area shape="poly" id="edge2_Node000000_Node000003" title=" " alt="" coords="154,65,192,65,192,70,154,70"/>
-<area shape="rect" id="Node000005" href="$classEventUnit.html" title=" " alt="" coords="198,104,285,129"/>
-<area shape="poly" id="edge3_Node000000_Node000005" title=" " alt="" coords="131,81,199,102,197,107,129,87"/>
-<area shape="rect" id="Node000004" href="$classEventObserver.html" title=" " alt="" coords="13,104,132,129"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="129,97,196,78,198,83,131,103"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="146,114,198,114,198,119,146,119"/>
+<area shape="rect" id="Node000008" href="$classEventUnit.html" title=" " alt="" coords="198,104,285,129"/>
+<area shape="poly" id="edge6_Node000000_Node000008" title=" " alt="" coords="131,81,199,102,197,107,129,87"/>
+<area shape="rect" id="Node000004" href="$classGamingZone.html" title="Forward Declaration." alt="" coords="343,5,449,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="294,48,354,28,356,33,296,53"/>
+<area shape="rect" id="Node000005" href="$classMainHall.html" title="Forward Declaration used instead of header file." alt="" coords="356,55,436,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="304,65,356,65,356,70,304,70"/>
+<area shape="rect" id="Node000006" href="$classVendorZone.html" title="Forward Declaration." alt="" coords="346,104,446,129"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="296,82,356,101,354,106,294,87"/>
+<area shape="rect" id="Node000007" href="$classEventObserver.html" title=" " alt="" coords="13,104,132,129"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="129,97,196,78,198,83,131,103"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="146,114,198,114,198,119,146,119"/>
 <area shape="rect" id="Node000002" href="$classEventSubject.html" title="The abstract subject participant in the Observer pattern." alt="" coords="19,5,126,31"/>
-<area shape="poly" id="edge6_Node000002_Node000001" title=" " alt="" coords="140,15,188,15,188,21,140,21"/>
-<area shape="poly" id="edge7_Node000002_Node000003" title=" " alt="" coords="131,32,198,52,196,57,129,37"/>
+<area shape="poly" id="edge9_Node000002_Node000001" title=" " alt="" coords="140,15,188,15,188,21,140,21"/>
+<area shape="poly" id="edge10_Node000002_Node000003" title=" " alt="" coords="131,32,198,52,196,57,129,37"/>
 </map>

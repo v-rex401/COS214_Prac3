@@ -56,7 +56,7 @@ void MainHall::print()
     std::vector<EventComponent *> list = getComponents();
     for (int i = 0; i < list.size(); i++)
     {
-        if (list[i] == nullptr)
+        if (list[i] != nullptr)
         {
             list[i]->print();
         }

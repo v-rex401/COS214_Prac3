@@ -1,5 +1,5 @@
 #include "EventGroup.h"
-
+#include "iostream"
 /**
  * @file EventGroup.cpp
  * @brief Concrete Subject and Concrete Observer Implementation

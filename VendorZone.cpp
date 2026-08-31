@@ -13,43 +13,48 @@
 class VendorZone : public EventGroup
 {
 public:
+    VendorZone(std::string name);
     void print();
 };
 
 /**
- * @brief  Implementation
+ * @brief  Constructor
  */
+
+VendorZone::VendorZone(std::string name) : EventGroup(name)
+{
+}
 void VendorZone::print()
 {
     /**
      * @brief Implementation of the Composite Print
      */
     EventNotice noti = EventGroup::getNotice();
-    enum NoticeType type = noti.getType(); /** @todo Implement getType in EventNotice Class */
-    std::string message = noti.getMsg();   /** @todo Implement getMsg in EventNotice Class */
+    enum NoticeType type = noti.getType();
+    std::string message = noti.getMsg();
 
     std::cout << message << std::endl;
     switch (type)
     {
-    case 0:
+    case NoticeType::BEGIN:
         std::cout << "Vendor Zone Is open now" << std::endl;
         break;
-    case 1:
+    case NoticeType::END:
         std::cout << "Vendor Zone is closed now" << std::endl;
         break;
-    case 2:
+    case NoticeType::DELAYED:
         std::cout << "Vendor Zone opening is delayed, please wait at the gate" << std::endl;
         break;
-    case 3:
+    case NoticeType::CAPACITY_ALERT:
         std::cout << "Vendor Zone is too full - proceed to another zone" << std::endl;
         break;
-    case 4:
+    case NoticeType::EVACUATE:
         std::cout << "Please Evacuate Vendor Zone" << std::endl;
         break;
-    case 5:
+    case NoticeType::FIRE:
         std::cout << "Fire - please move to evacuation point" << std::endl;
         break;
-    case 6:
+    case NoticeType::WEATHER_ALERT:
         std::cout << "Please stay inside the Vendor Zone" << std::endl;
         break;
     }

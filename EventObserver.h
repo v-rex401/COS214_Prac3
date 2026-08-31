@@ -1,14 +1,14 @@
 #ifndef EVENTOBSERVER_H
 #define EVENTOBSERVER_H
 
-class EventObserver {
-
+class EventObserver
+{
 
 public:
-	EventObserver();
+	EventObserver() {}
 
 	virtual void update() = 0;
-	virtual ~EventObserver() = default;
+	virtual ~EventObserver() {}
 };
 
 #endif

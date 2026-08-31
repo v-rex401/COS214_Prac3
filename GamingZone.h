@@ -7,7 +7,7 @@
 class GamingZone : public EventGroup
 {
 public:
-    GamingZone(std::string name);
+    GamingZone(std::string name, int t_capacity);
     void print();
 };
 

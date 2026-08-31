@@ -14,11 +14,13 @@ private:
 	EventNotice currentNotice;
 	std::vector<EventComponent *> componentList;
 	std::string name;
+	int total_cap;
+	int current_cap;
 
 public:
 	virtual EventNotice getNotice() override;
 
-	EventControl(std::string name);
+	EventControl(std::string name, int total_cap);
 
 	EventControl();
 
@@ -31,6 +33,8 @@ public:
 	virtual ~EventControl() override;
 
 	void print() override;
+
+	int getCapacity() override;
 };
 
 #endif

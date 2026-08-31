@@ -11,7 +11,7 @@
 /**
  * @brief  DefaultConstructor
  */
-MainHall::MainHall(std::string name) : EventGroup(name)
+MainHall::MainHall(std::string name, int t_capacity) : EventGroup(name, t_capacity)
 {
 }
 void MainHall::print()
@@ -36,6 +36,7 @@ void MainHall::print()
         std::cout << "Main Hall opening is delayed, please wait outside" << std::endl;
         break;
     case NoticeType::CAPACITY_ALERT:
+        
         std::cout << "Main Hall is too full - proceed to another hall" << std::endl;
         break;
     case NoticeType::EVACUATE:
@@ -49,16 +50,4 @@ void MainHall::print()
         break;
     }
 
-    // /**
-    //  * @brief Call all leaves and/or composites in Main Hall
-    //  */
-
-    // std::vector<EventComponent *> list = getComponents();
-    // for (int i = 0; i < list.size(); i++)
-    // {
-    //     if (list[i] != nullptr)
-    //     {
-    //         list[i]->print();
-    //     }
-    // }
 }

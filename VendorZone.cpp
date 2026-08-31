@@ -10,7 +10,7 @@
 /**
  * @brief  Constructor
  */
-VendorZone::VendorZone(std::string name) : EventGroup(name)
+VendorZone::VendorZone(std::string name, int t_capacity) : EventGroup(name,t_capacity)
 {
 }
 void VendorZone::print()
@@ -48,13 +48,4 @@ void VendorZone::print()
         break;
     }
 
-    // /**
-    //  * @brief Call all leaves and/or composites in Vendor Zone
-    //  */
-
-    // std::vector<EventComponent *> list = getComponents();
-    // for (int i = 0; i < list.size(); i++)
-    // {
-    //     list[i]->print();
-    // }
 }

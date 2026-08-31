@@ -10,7 +10,7 @@
 /**
  * @brief  Constructor
  */
-GamingZone::GamingZone(std::string name) : EventGroup(name)
+GamingZone::GamingZone(std::string name, int t_capacity) : EventGroup(name, t_capacity)
 {
 }
 void GamingZone::print()

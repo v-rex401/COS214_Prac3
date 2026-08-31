@@ -7,7 +7,7 @@
 class VendorZone : public EventGroup
 {
 public:
-    VendorZone(std::string name);
+    VendorZone(std::string name, int t_capacity);
     void print();
 };
 

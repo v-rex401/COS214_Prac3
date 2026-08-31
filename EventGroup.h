@@ -15,9 +15,10 @@ private:
 	std::vector<EventComponent *> componentList;
 	EventSubject *parent;
 	std::string name;
-
+	int total_cap;
+	int current_cap;
 public:
-	EventGroup(std::string name);
+	EventGroup(std::string name, int total_cap);
 
 	virtual void update() override;
 
@@ -32,6 +33,8 @@ public:
 	virtual ~EventGroup() override;
 
 	std::vector<EventComponent *> getComponents();
+
+    int getCapacity();
 
 private:
 	EventGroup();

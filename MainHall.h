@@ -7,7 +7,7 @@
 class MainHall : public EventGroup
 {
 public:
-    MainHall(std::string name);
+    MainHall(std::string name, int t_capacity);
     void print();
 };
 

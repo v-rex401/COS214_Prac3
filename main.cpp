@@ -20,79 +20,111 @@
 
 int main()
 {
-    /** @todo Build and register event */
-
-    /**Leaves */
-    SecurityGuard *john = new SecurityGuard("John Doe");
-    MedicTeam *mainMedics = new MedicTeam("Main Hall Medics");
-    MedicTeam *vendorMedics = new MedicTeam("Vendor Zone Medics");
-    CosplayStage *cosplayStage = new CosplayStage("Cosplay in Main Hall");
-    Vendor *tacos = new Vendor("Taco Stand");
-    Vendor *burgers = new Vendor("Burger Stand");
-    DemoStation *ps4 = new DemoStation("PS4 Consoles");
-
-    /** Building the Main Hall  */
-    MainHall *mainHall = new MainHall("Main Hall");
-
-    /**Build Main Hall  */
-    /**Composite Pattern */
-    mainHall->add(cosplayStage);
-    mainHall->add(mainMedics);
-    mainHall->add(john);
-
-    /**Observer Pattern */
-    mainHall->attach(cosplayStage);
-    cosplayStage->setParent(mainHall);
+    // =========================================================
+    // SETUP: INITIALIZING EVENT COMPONENTS
+    // =========================================================
     
-    mainHall->attach(mainMedics);
-    mainMedics->setParent(mainHall);
+    /** Leaves */
+    SecurityGuard *john = new SecurityGuard("John Doe", 5);
+    MedicTeam *mainMedics = new MedicTeam("Main Hall Medics", 20);
+    MedicTeam *vendorMedics = new MedicTeam("Vendor Zone Medics", 20);
+    CosplayStage *cosplayStage = new CosplayStage("Cosplay in Main Hall", 100);
+    Vendor *tacos = new Vendor("Taco Stand", 15);
+    Vendor *burgers = new Vendor("Burger Stand", 15);
+    DemoStation *ps4 = new DemoStation("PS4 Consoles", 30);
+
+    /** Composites - Capacities adjusted to allow initial setup */
+    MainHall *mainHall = new MainHall("Main Hall", 200); 
+    GamingZone *gameZone = new GamingZone("Gamer Den", 50); 
+    VendorZone *vendorArea = new VendorZone("Food Area", 60); 
+    EventControl *manager = new EventControl("Comic Con", 500); 
+
+    // =========================================================
+    // SETUP: BUILDING THE COMPOSITE & OBSERVER TREES
+    // =========================================================
+
+    /** Build Main Hall */
+    mainHall->add(cosplayStage); mainHall->attach(cosplayStage); cosplayStage->setParent(mainHall);
+    mainHall->add(mainMedics);   mainHall->attach(mainMedics);   mainMedics->setParent(mainHall);
+    mainHall->add(john);         mainHall->attach(john);         john->setParent(mainHall);
+
+    /** Build Gaming Zone */
+    gameZone->add(ps4);          gameZone->attach(ps4);          ps4->setParent(gameZone);
+
+    /** Build Vendor Zone */
+    vendorArea->add(tacos);        vendorArea->attach(tacos);        tacos->setParent(vendorArea);
+    vendorArea->add(burgers);      vendorArea->attach(burgers);      burgers->setParent(vendorArea);
+    vendorArea->add(vendorMedics); vendorArea->attach(vendorMedics); vendorMedics->setParent(vendorArea);
+
+    /** Build Event Control (Root) */
+    manager->add(mainHall);   manager->attach(mainHall);   mainHall->setParent(manager);
+    manager->add(gameZone);   manager->attach(gameZone);   gameZone->setParent(manager);
+    manager->add(vendorArea); manager->attach(vendorArea); vendorArea->setParent(manager);
+
+    // =========================================================
+    // PHASE 1: EVENT OPENS
+    // =========================================================
+    std::cout << "\n========== PHASE 1: EVENT OPENS ==========\n";
+    EventNotice openNotice(NoticeType::BEGIN, "Comic Con 2026 is officially open!");
+    manager->alert(openNotice);
+
+    // =========================================================
+    // PHASE 2: THE FIRE EMERGENCY
+    // =========================================================
+    std::cout << "\n========== PHASE 2: FIRE EMERGENCY ==========\n";
+    EventNotice fireNotice(NoticeType::FIRE, "EMERGENCY: Fire detected near the Burger Stand!");
+    manager->alert(fireNotice);
+
+    // =========================================================
+    // PHASE 3: RUNTIME REORGANIZATION (Task 4.2)
+    // =========================================================
+    std::cout << "\n========== PHASE 3: RUNTIME REORGANIZATION ==========\n";
+    std::cout << "--> Transferring John Doe (Security) to Vendor Area to assist with the fire...\n";
     
-    mainHall->attach(john);
-    john->setParent(mainHall);
-
-    /**Build GamingZone */
-    GamingZone *gameZone = new GamingZone("Gamer Den");
-    /** Composite Pattern */
-    gameZone->add(ps4);
-
-    /**Observer Pattern */
-    gameZone->attach(ps4);
-    ps4->setParent(gameZone);
-
-    /**Build the Vendor Zone */
-
-    /**Observer Pattern */
-    VendorZone *vendorArea = new VendorZone("Food Area");
-
-    /**ConcreteSubject */
-    EventControl *manager = new EventControl("Comic Con");
+    // Detach and remove from Main Hall
+    mainHall->remove(john);
+    mainHall->detach(john);
     
-    manager->attach(mainHall);
-    mainHall->setParent(manager);
+    // Add and attach to Vendor Zone
+    vendorArea->add(john);
+    vendorArea->attach(john);
+    john->setParent(vendorArea);
+    std::cout << "--> Transfer complete.\n";
+
+    // =========================================================
+    // PHASE 4: CAPACITY OVERFLOW (Task 4.3)
+    // =========================================================
+    std::cout << "\n========== PHASE 4: CAPACITY OVERFLOW ==========\n";
+    std::cout << "--> Due to the fire, attendees are fleeing to the Gaming Zone.\n";
+    std::cout << "--> Attempting to relocate the Cosplay Stage (Capacity: 100) to the Gamer Den (Max: 50)...\n";
     
-    manager->attach(gameZone);
-    gameZone->setParent(manager);
-
-    manager->remove(gameZone);
-    manager->detach(gameZone);
+    mainHall->remove(cosplayStage);
+    mainHall->detach(cosplayStage);
     
-    manager->attach(vendorArea);
-    vendorArea->setParent(manager);
+    // ADD THIS LINE to prevent the dangling pointer:
+    cosplayStage->setParent(nullptr); 
 
-    EventNotice fullNotice(NoticeType::CAPACITY_ALERT, "Comic Con is reaching maximum capacity.");
-    manager->alert(fullNotice);
+    // This will trigger your "Violates capacity check" output!
+    gameZone->add(cosplayStage);
+    
+    
+    mainHall->remove(cosplayStage);
+    mainHall->detach(cosplayStage);
 
-    std::cout << "=========================\nadding gamezon\n" ;
-    manager->add(gameZone);
-    manager->attach(gameZone);
+    // This will trigger your "Violates capacity check" output!
+    gameZone->add(cosplayStage); 
+    
+    // Since it failed, we must send out a global capacity alert to control the crowd
+    std::cout << "\n--> Dispatching Event-Wide Capacity Alert...\n";
+    EventNotice capacityNotice(NoticeType::CAPACITY_ALERT, "CRITICAL: Comic Con zones are overflowing!");
+    manager->alert(capacityNotice);
 
-    EventNotice fullNotice2(NoticeType::WEATHER_ALERT, "Lots of rain.");
-    manager->alert(fullNotice2);
+    std::cout << "\n========== END OF SIMULATION ==========\n";
 
-    /** @todo Cascading event notification */
+    delete manager; 
 
-    /** @todo Conditional event response and Composite behaviour */
+    // CLEANUP: Destroy the orphaned Cosplay Stage that couldn't fit in the Gaming Zone
+    delete cosplayStage;
 
-    /** @todo Signature event scenario */
     return 0;
 }

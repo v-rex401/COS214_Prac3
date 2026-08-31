@@ -11,9 +11,11 @@
 /**
  * @brief Parameterized Constructor
  */
-EventGroup::EventGroup(std::string name)
+EventGroup::EventGroup(std::string name, int total_cap)
 {
     this->name = name;
+    this->total_cap = total_cap;
+    this->current_cap = 0;
 }
 
 /**
@@ -49,7 +51,22 @@ void EventGroup::setParent(EventSubject *par)
  */
 void EventGroup::add(EventComponent *cmp)
 {
-    componentList.push_back(cmp);
+    if (current_cap + cmp->getCapacity() >= total_cap)
+    {
+        std::cout << "Violates capacity check\n";
+        currentNotice = EventNotice(NoticeType::CAPACITY_ALERT, "Comic Con is reaching maximum capacity.");
+        EventObserver* obs = dynamic_cast<EventObserver*>(cmp);
+        if (obs != nullptr) {
+            this->detach(obs); 
+        }
+    }
+    else
+    {
+        current_cap += cmp->getCapacity();
+        componentList.push_back(cmp);
+    }
+    
+    
 }
 
 /**
@@ -93,4 +110,9 @@ EventGroup::~EventGroup()
 std::vector<EventComponent *> EventGroup::getComponents()
 {
     return componentList;
+}
+
+int EventGroup::getCapacity()
+{
+    return current_cap;
 }

@@ -3,9 +3,6 @@
 #include "EventSubject.h"
 #include <iostream>
 
-static int capacity = 0;
-static const int max_capacity = 10000;
-
 /**
  * @file EventControl.cpp
  * @brief EventControl is one of the concrete subjects
@@ -32,9 +29,11 @@ EventControl::EventControl()
  * @brief parameterized Constructor
  * @param name is the eventControl centres title
  */
-EventControl::EventControl(std::string name)
+EventControl::EventControl(std::string name, int total_cap)
 {
     this->name = name;
+    this->total_cap = total_cap;
+    this->current_cap = 0;
 }
 
 /**
@@ -43,7 +42,20 @@ EventControl::EventControl(std::string name)
  */
 void EventControl::add(EventComponent *cmp)
 {
-    componentList.push_back(cmp); /**insert at back of vector */
+    if (current_cap + cmp->getCapacity() >= total_cap)
+    {
+        std::cout << "Violates capacity check\n";
+        currentNotice = EventNotice(NoticeType::CAPACITY_ALERT, "Comic Con is reaching maximum capacity.");
+        EventObserver* obs = dynamic_cast<EventObserver*>(cmp);
+        if (obs != nullptr) {
+            this->detach(obs); 
+        }
+    }
+    else
+    {
+        current_cap += cmp->getCapacity();
+        componentList.push_back(cmp); /**insert at back of vector */
+    }
 }
 
 /**
@@ -103,4 +115,9 @@ void EventControl::print()
             componentList[i]->print();
         }
     }
+}
+
+int EventControl::getCapacity()
+{
+    return current_cap;
 }

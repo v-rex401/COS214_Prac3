@@ -11,7 +11,6 @@ void EventSubject::attach(EventObserver* x){
         }
 
     }
-    
 
     if(!duplicate){
         observerList.push_back(x);

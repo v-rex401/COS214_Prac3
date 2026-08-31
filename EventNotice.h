@@ -24,6 +24,8 @@ public:
 	EventNotice();
 
 	EventNotice(NoticeType type, std::string msg);
+	NoticeType getType();
+	std::string getMsg();
 };
 
 #endif

@@ -71,20 +71,36 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classEventUnit-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">EventUnit Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>An abstract base class for leaf participants in the Composite pattern.  
+ <a href="classEventUnit.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="EventUnit_8h_source.html">EventUnit.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for EventUnit:</div>
 <div class="dyncontent">
 <div class="center"><img src="classEventUnit__inherit__graph.png" border="0" usemap="#aEventUnit_inherit__map" alt="Inheritance graph"/></div>
 <map name="aEventUnit_inherit__map" id="aEventUnit_inherit__map">
-<area shape="rect" title=" " alt="" coords="104,79,191,104"/>
-<area shape="rect" href="classEventComponent.html" title=" " alt="" coords="5,5,140,31"/>
-<area shape="poly" title=" " alt="" coords="96,38,137,77,133,80,93,42"/>
-<area shape="rect" href="classEventObserver.html" title=" " alt="" coords="164,5,283,31"/>
-<area shape="poly" title=" " alt="" coords="203,42,162,80,158,76,199,38"/>
+<area shape="rect" title="An abstract base class for leaf participants in the Composite pattern." alt="" coords="276,79,363,104"/>
+<area shape="rect" href="classCosplayStage.html" title="A concrete leaf component representing a cosplay stage or competition area." alt="" coords="5,152,116,177"/>
+<area shape="poly" title=" " alt="" coords="265,110,103,154,102,149,264,105"/>
+<area shape="rect" href="classDemoStation.html" title="A concrete leaf component representing a gaming or tech demo station." alt="" coords="141,152,247,177"/>
+<area shape="poly" title=" " alt="" coords="289,113,216,154,213,149,286,108"/>
+<area shape="rect" href="classMedicTeam.html" title="A concrete leaf component representing a medical response team." alt="" coords="271,152,367,177"/>
+<area shape="poly" title=" " alt="" coords="322,118,322,152,317,152,317,118"/>
+<area shape="rect" href="classSecurityGuard.html" title="A concrete leaf component representing a security guard unit." alt="" coords="391,152,506,177"/>
+<area shape="poly" title=" " alt="" coords="354,108,429,149,426,154,351,113"/>
+<area shape="rect" href="classVendor.html" title="A concrete leaf component representing a merchandise or food vendor." alt="" coords="530,152,597,177"/>
+<area shape="poly" title=" " alt="" coords="372,105,530,151,529,156,371,110"/>
+<area shape="rect" href="classEventComponent.html" title=" " alt="" coords="177,5,312,31"/>
+<area shape="poly" title=" " alt="" coords="268,38,309,77,305,80,265,42"/>
+<area shape="rect" href="classEventObserver.html" title="Observer participant of the GoF design pattern Observer." alt="" coords="336,5,455,31"/>
+<area shape="poly" title=" " alt="" coords="375,42,334,80,330,76,371,38"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -92,32 +108,110 @@ Collaboration diagram for EventUnit:</div>
 <div class="dyncontent">
 <div class="center"><img src="classEventUnit__coll__graph.png" border="0" usemap="#aEventUnit_coll__map" alt="Collaboration graph"/></div>
 <map name="aEventUnit_coll__map" id="aEventUnit_coll__map">
-<area shape="rect" title=" " alt="" coords="104,79,191,104"/>
+<area shape="rect" title="An abstract base class for leaf participants in the Composite pattern." alt="" coords="104,79,191,104"/>
 <area shape="rect" href="classEventComponent.html" title=" " alt="" coords="5,5,140,31"/>
 <area shape="poly" title=" " alt="" coords="96,38,137,77,133,80,93,42"/>
-<area shape="rect" href="classEventObserver.html" title=" " alt="" coords="164,5,283,31"/>
+<area shape="rect" href="classEventObserver.html" title="Observer participant of the GoF design pattern Observer." alt="" coords="164,5,283,31"/>
 <area shape="poly" title=" " alt="" coords="203,42,162,80,158,76,199,38"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a438bc79d8fa11ba61640cf349b4eb561" id="r_a438bc79d8fa11ba61640cf349b4eb561"><td class="memItemLeft" align="right" valign="top"><a id="a438bc79d8fa11ba61640cf349b4eb561" name="a438bc79d8fa11ba61640cf349b4eb561"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>EventUnit</b> (std::string name)</td></tr>
-<tr class="separator:a438bc79d8fa11ba61640cf349b4eb561"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e5dba6964e056aae3fe798565f403f3" id="r_a5e5dba6964e056aae3fe798565f403f3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventUnit.html#a5e5dba6964e056aae3fe798565f403f3">update</a> () override</td></tr>
-<tr class="separator:a5e5dba6964e056aae3fe798565f403f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88d2d9c91285b2dce6acc8b560f29a5c" id="r_a88d2d9c91285b2dce6acc8b560f29a5c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventUnit.html#a88d2d9c91285b2dce6acc8b560f29a5c">add</a> (<a class="el" href="classEventComponent.html">EventComponent</a> *cmp) override</td></tr>
-<tr class="separator:a88d2d9c91285b2dce6acc8b560f29a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fbb3bd7377fd2baadf2d34f777dcead" id="r_a3fbb3bd7377fd2baadf2d34f777dcead"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventUnit.html#a3fbb3bd7377fd2baadf2d34f777dcead">remove</a> (<a class="el" href="classEventComponent.html">EventComponent</a> *cmp) override</td></tr>
-<tr class="separator:a3fbb3bd7377fd2baadf2d34f777dcead"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97308ad4f0ed205547d4a84d7ecc8460" id="r_a97308ad4f0ed205547d4a84d7ecc8460"><td class="memItemLeft" align="right" valign="top"><a id="a97308ad4f0ed205547d4a84d7ecc8460" name="a97308ad4f0ed205547d4a84d7ecc8460"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a class="el" href="classEventSubject.html">EventSubject</a> *par)</td></tr>
+<tr class="memitem:ad146bb4d502546964f97d66e47769d67" id="r_ad146bb4d502546964f97d66e47769d67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventUnit.html#ad146bb4d502546964f97d66e47769d67">EventUnit</a> (std::string name, int <a class="el" href="classEventUnit.html#ab580fd919b4ba8f220e6e10df49d9916">capacity</a>)</td></tr>
+<tr class="memdesc:ad146bb4d502546964f97d66e47769d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized constructor for <a class="el" href="classEventUnit.html" title="An abstract base class for leaf participants in the Composite pattern.">EventUnit</a>.  <br /></td></tr>
+<tr class="separator:ad146bb4d502546964f97d66e47769d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d027da64b3b447eac48f342853bfbc" id="r_a42d027da64b3b447eac48f342853bfbc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventUnit.html#a42d027da64b3b447eac48f342853bfbc">update</a> () override</td></tr>
+<tr class="memdesc:a42d027da64b3b447eac48f342853bfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responds to a notification from the parent subject.  <br /></td></tr>
+<tr class="separator:a42d027da64b3b447eac48f342853bfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3df127ea5af52e03a8825635b919fe3" id="r_aa3df127ea5af52e03a8825635b919fe3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventUnit.html#aa3df127ea5af52e03a8825635b919fe3">add</a> (<a class="el" href="classEventComponent.html">EventComponent</a> *cmp) override</td></tr>
+<tr class="separator:aa3df127ea5af52e03a8825635b919fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80dcaeff901a4e586e29d0cb1781305a" id="r_a80dcaeff901a4e586e29d0cb1781305a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventUnit.html#a80dcaeff901a4e586e29d0cb1781305a">remove</a> (<a class="el" href="classEventComponent.html">EventComponent</a> *cmp) override</td></tr>
+<tr class="separator:a80dcaeff901a4e586e29d0cb1781305a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8470f1dfd2cd4a15f87cde0659d17d" id="r_a9f8470f1dfd2cd4a15f87cde0659d17d"><td class="memItemLeft" align="right" valign="top"><a id="a9f8470f1dfd2cd4a15f87cde0659d17d" name="a9f8470f1dfd2cd4a15f87cde0659d17d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>EventUnit</b> ()</td></tr>
+<tr class="memdesc:a9f8470f1dfd2cd4a15f87cde0659d17d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classEventUnit.html" title="An abstract base class for leaf participants in the Composite pattern.">EventUnit</a>. <br /></td></tr>
+<tr class="separator:a9f8470f1dfd2cd4a15f87cde0659d17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97308ad4f0ed205547d4a84d7ecc8460" id="r_a97308ad4f0ed205547d4a84d7ecc8460"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventUnit.html#a97308ad4f0ed205547d4a84d7ecc8460">setParent</a> (<a class="el" href="classEventSubject.html">EventSubject</a> *par)</td></tr>
+<tr class="memdesc:a97308ad4f0ed205547d4a84d7ecc8460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links this unit to its hierarchical parent subject.  <br /></td></tr>
 <tr class="separator:a97308ad4f0ed205547d4a84d7ecc8460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322c60fb4d1078fa5870db2fab7aef21" id="r_a322c60fb4d1078fa5870db2fab7aef21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventUnit.html#a322c60fb4d1078fa5870db2fab7aef21">getCapacity</a> ()</td></tr>
+<tr class="memdesc:a322c60fb4d1078fa5870db2fab7aef21"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns capacity of leaf  <br /></td></tr>
+<tr class="separator:a322c60fb4d1078fa5870db2fab7aef21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed9ac90e0e65a6514dfbfa5dffc2f6bb" id="r_aed9ac90e0e65a6514dfbfa5dffc2f6bb"><td class="memItemLeft" align="right" valign="top"><a id="aed9ac90e0e65a6514dfbfa5dffc2f6bb" name="aed9ac90e0e65a6514dfbfa5dffc2f6bb"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventUnit</b> () override</td></tr>
+<tr class="memdesc:aed9ac90e0e65a6514dfbfa5dffc2f6bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default virtual destructor to ensure safe polymorphic cleanup. <br /></td></tr>
+<tr class="separator:aed9ac90e0e65a6514dfbfa5dffc2f6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840dde3aac2d2c86de1ec43e13091e19" id="r_a840dde3aac2d2c86de1ec43e13091e19"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventUnit.html#a840dde3aac2d2c86de1ec43e13091e19">getName</a> ()</td></tr>
+<tr class="memdesc:a840dde3aac2d2c86de1ec43e13091e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual method to print the unit's specific status or action.  <br /></td></tr>
+<tr class="separator:a840dde3aac2d2c86de1ec43e13091e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad776963e810bcf1303c9837933bbb820" id="r_ad776963e810bcf1303c9837933bbb820"><td class="memItemLeft" align="right" valign="top"><a id="ad776963e810bcf1303c9837933bbb820" name="ad776963e810bcf1303c9837933bbb820"></a>
+<a class="el" href="classEventNotice.html">EventNotice</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getCurrentNotice</b> ()</td></tr>
+<tr class="memdesc:ad776963e810bcf1303c9837933bbb820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the unit's current notice. <br /></td></tr>
+<tr class="separator:ad776963e810bcf1303c9837933bbb820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classEventComponent"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEventComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEventComponent.html">EventComponent</a></td></tr>
+<tr class="memitem:a5166d3de01b1e8abc3eef9d8de468b10 inherit pub_methods_classEventComponent" id="r_a5166d3de01b1e8abc3eef9d8de468b10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventComponent.html#a5166d3de01b1e8abc3eef9d8de468b10">print</a> ()=0</td></tr>
+<tr class="separator:a5166d3de01b1e8abc3eef9d8de468b10 inherit pub_methods_classEventComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classEventObserver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEventObserver')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEventObserver.html">EventObserver</a></td></tr>
+<tr class="memitem:a428ca7e5cee4a7ec8f88a0b7c4fcce73 inherit pub_methods_classEventObserver" id="r_a428ca7e5cee4a7ec8f88a0b7c4fcce73"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>EventObserver</b> ()</td></tr>
+<tr class="memdesc:a428ca7e5cee4a7ec8f88a0b7c4fcce73 inherit pub_methods_classEventObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor. <br /></td></tr>
+<tr class="separator:a428ca7e5cee4a7ec8f88a0b7c4fcce73 inherit pub_methods_classEventObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144d6fc834ce107e975ee692f94823e8 inherit pub_methods_classEventObserver" id="r_a144d6fc834ce107e975ee692f94823e8"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventObserver</b> ()</td></tr>
+<tr class="memdesc:a144d6fc834ce107e975ee692f94823e8 inherit pub_methods_classEventObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:a144d6fc834ce107e975ee692f94823e8 inherit pub_methods_classEventObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ab580fd919b4ba8f220e6e10df49d9916" id="r_ab580fd919b4ba8f220e6e10df49d9916"><td class="memItemLeft" align="right" valign="top"><a id="ab580fd919b4ba8f220e6e10df49d9916" name="ab580fd919b4ba8f220e6e10df49d9916"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>capacity</b></td></tr>
+<tr class="memdesc:ab580fd919b4ba8f220e6e10df49d9916"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capacity of the individual leaves. <br /></td></tr>
+<tr class="separator:ab580fd919b4ba8f220e6e10df49d9916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An abstract base class for leaf participants in the Composite pattern. </p>
+<p>This class acts as an observer that executes an update command when it receives a notification from the <a class="el" href="classEventSubject.html" title="The abstract subject participant in the Observer pattern.">EventSubject</a> it is attached to. Because it contains a pure virtual print method, it cannot be instantiated directly. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad146bb4d502546964f97d66e47769d67" name="ad146bb4d502546964f97d66e47769d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad146bb4d502546964f97d66e47769d67">&#9670;&#160;</a></span>EventUnit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventUnit::EventUnit </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>capacity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parameterized constructor for <a class="el" href="classEventUnit.html" title="An abstract base class for leaf participants in the Composite pattern.">EventUnit</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The string identifier for this specific unit. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a88d2d9c91285b2dce6acc8b560f29a5c" name="a88d2d9c91285b2dce6acc8b560f29a5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88d2d9c91285b2dce6acc8b560f29a5c">&#9670;&#160;</a></span>add()</h2>
+<a id="aa3df127ea5af52e03a8825635b919fe3" name="aa3df127ea5af52e03a8825635b919fe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3df127ea5af52e03a8825635b919fe3">&#9670;&#160;</a></span>add()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,7 +220,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void EventUnit::add </td>
+          <td class="memname">void EventUnit::add </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classEventComponent.html">EventComponent</a> *&#160;</td>
           <td class="paramname"><em>cmp</em></td><td>)</td>
@@ -144,8 +238,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
 
 </div>
 </div>
-<a id="a3fbb3bd7377fd2baadf2d34f777dcead" name="a3fbb3bd7377fd2baadf2d34f777dcead"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fbb3bd7377fd2baadf2d34f777dcead">&#9670;&#160;</a></span>remove()</h2>
+<a id="a322c60fb4d1078fa5870db2fab7aef21" name="a322c60fb4d1078fa5870db2fab7aef21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a322c60fb4d1078fa5870db2fab7aef21">&#9670;&#160;</a></span>getCapacity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,7 +248,57 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void EventUnit::remove </td>
+          <td class="memname">int EventUnit::getCapacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns capacity of leaf </p>
+
+<p>Implements <a class="el" href="classEventComponent.html">EventComponent</a>.</p>
+
+</div>
+</div>
+<a id="a840dde3aac2d2c86de1ec43e13091e19" name="a840dde3aac2d2c86de1ec43e13091e19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840dde3aac2d2c86de1ec43e13091e19">&#9670;&#160;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string EventUnit::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pure virtual method to print the unit's specific status or action. </p>
+<p>Forces all concrete leaf subclasses to define their own specific output behavior.</p>
+<p>Getter for the unit's name </p>
+
+</div>
+</div>
+<a id="a80dcaeff901a4e586e29d0cb1781305a" name="a80dcaeff901a4e586e29d0cb1781305a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80dcaeff901a4e586e29d0cb1781305a">&#9670;&#160;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EventUnit::remove </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classEventComponent.html">EventComponent</a> *&#160;</td>
           <td class="paramname"><em>cmp</em></td><td>)</td>
@@ -172,8 +316,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
 
 </div>
 </div>
-<a id="a5e5dba6964e056aae3fe798565f403f3" name="a5e5dba6964e056aae3fe798565f403f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e5dba6964e056aae3fe798565f403f3">&#9670;&#160;</a></span>update()</h2>
+<a id="a97308ad4f0ed205547d4a84d7ecc8460" name="a97308ad4f0ed205547d4a84d7ecc8460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97308ad4f0ed205547d4a84d7ecc8460">&#9670;&#160;</a></span>setParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EventUnit::setParent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classEventSubject.html">EventSubject</a> *&#160;</td>
+          <td class="paramname"><em>par</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Links this unit to its hierarchical parent subject. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">par</td><td>Pointer to the <a class="el" href="classEventSubject.html" title="The abstract subject participant in the Observer pattern.">EventSubject</a> acting as the parent. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a42d027da64b3b447eac48f342853bfbc" name="a42d027da64b3b447eac48f342853bfbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42d027da64b3b447eac48f342853bfbc">&#9670;&#160;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,7 +352,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void EventUnit::update </td>
+          <td class="memname">void EventUnit::update </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -195,12 +365,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classEventObserver.html">EventObserver</a>.</p>
+<p>Responds to a notification from the parent subject. </p>
+<p>Pulls the latest <a class="el" href="classEventNotice.html">EventNotice</a> from the parent </p>
+
+<p>Implements <a class="el" href="classEventObserver.html#a75d5314d24bdeb487978d2b596b1397c">EventObserver</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="EventUnit_8h_source.html">EventUnit.h</a></li>
+<li><b>EventUnit.cpp</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

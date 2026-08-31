@@ -75,6 +75,8 @@ $(function() {
   <div class="headertitle"><div class="title">EventControl Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="EventControl_8h_source.html">EventControl.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for EventControl:</div>
 <div class="dyncontent">
@@ -105,9 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a334288c61e1052ac0fb34dc528f7b391" id="r_a334288c61e1052ac0fb34dc528f7b391"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classEventNotice.html">EventNotice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventControl.html#a334288c61e1052ac0fb34dc528f7b391">getNotice</a> () override</td></tr>
 <tr class="memdesc:a334288c61e1052ac0fb34dc528f7b391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current notice to be issued.  <br /></td></tr>
 <tr class="separator:a334288c61e1052ac0fb34dc528f7b391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac42d7d402b1eafbb08472d4fc9b4e200" id="r_ac42d7d402b1eafbb08472d4fc9b4e200"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventControl.html#ac42d7d402b1eafbb08472d4fc9b4e200">EventControl</a> (std::string name)</td></tr>
-<tr class="memdesc:ac42d7d402b1eafbb08472d4fc9b4e200"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameterized Constructor  <br /></td></tr>
-<tr class="separator:ac42d7d402b1eafbb08472d4fc9b4e200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00d088c6815c47988addb1c24b7a9b5" id="r_ad00d088c6815c47988addb1c24b7a9b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventControl.html#ad00d088c6815c47988addb1c24b7a9b5">EventControl</a> (std::string name, int total_cap)</td></tr>
+<tr class="memdesc:ad00d088c6815c47988addb1c24b7a9b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">parameterized Constructor  <br /></td></tr>
+<tr class="separator:ad00d088c6815c47988addb1c24b7a9b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7506622df5596f7385e23ca8e640a5c" id="r_ae7506622df5596f7385e23ca8e640a5c"><td class="memItemLeft" align="right" valign="top"><a id="ae7506622df5596f7385e23ca8e640a5c" name="ae7506622df5596f7385e23ca8e640a5c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EventControl</b> ()</td></tr>
 <tr class="memdesc:ae7506622df5596f7385e23ca8e640a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor. <br /></td></tr>
@@ -125,12 +127,36 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventControl</b> () override</td></tr>
 <tr class="memdesc:a0123af35e071d2d3174615cd7b72304e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:a0123af35e071d2d3174615cd7b72304e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8bc301edba33d729facdb5e0f6d6d60" id="r_af8bc301edba33d729facdb5e0f6d6d60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventControl.html#af8bc301edba33d729facdb5e0f6d6d60">print</a> () override</td></tr>
+<tr class="memdesc:af8bc301edba33d729facdb5e0f6d6d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print out notifications and child components prints.  <br /></td></tr>
+<tr class="separator:af8bc301edba33d729facdb5e0f6d6d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe298276ffb7993079671a58f95b191f" id="r_afe298276ffb7993079671a58f95b191f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventControl.html#afe298276ffb7993079671a58f95b191f">getCapacity</a> () override</td></tr>
+<tr class="memdesc:afe298276ffb7993079671a58f95b191f"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the capacity  <br /></td></tr>
+<tr class="separator:afe298276ffb7993079671a58f95b191f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classEventSubject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEventSubject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEventSubject.html">EventSubject</a></td></tr>
+<tr class="memitem:a441627084d41ccb7ae09b7315bbeb7cd inherit pub_methods_classEventSubject" id="r_a441627084d41ccb7ae09b7315bbeb7cd"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>EventSubject</b> ()</td></tr>
+<tr class="memdesc:a441627084d41ccb7ae09b7315bbeb7cd inherit pub_methods_classEventSubject"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor for <a class="el" href="classEventSubject.html" title="The abstract subject participant in the Observer pattern.">EventSubject</a>. <br /></td></tr>
+<tr class="separator:a441627084d41ccb7ae09b7315bbeb7cd inherit pub_methods_classEventSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add11d4f5c3a20f20e477368c6951dddc inherit pub_methods_classEventSubject" id="r_add11d4f5c3a20f20e477368c6951dddc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventSubject.html#add11d4f5c3a20f20e477368c6951dddc">attach</a> (<a class="el" href="classEventObserver.html">EventObserver</a> *x)</td></tr>
+<tr class="memdesc:add11d4f5c3a20f20e477368c6951dddc inherit pub_methods_classEventSubject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an observer to pass future event notifications to.  <br /></td></tr>
+<tr class="separator:add11d4f5c3a20f20e477368c6951dddc inherit pub_methods_classEventSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc671021f73c2036cb62d89b5fe1a325 inherit pub_methods_classEventSubject" id="r_afc671021f73c2036cb62d89b5fe1a325"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventSubject.html#afc671021f73c2036cb62d89b5fe1a325">detach</a> (<a class="el" href="classEventObserver.html">EventObserver</a> *y)</td></tr>
+<tr class="memdesc:afc671021f73c2036cb62d89b5fe1a325 inherit pub_methods_classEventSubject"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes a previously registered observer from the notification list.  <br /></td></tr>
+<tr class="separator:afc671021f73c2036cb62d89b5fe1a325 inherit pub_methods_classEventSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6395942e54e4cdb3dfcd12f7926b485 inherit pub_methods_classEventSubject" id="r_ad6395942e54e4cdb3dfcd12f7926b485"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventSubject.html#ad6395942e54e4cdb3dfcd12f7926b485">notify</a> ()</td></tr>
+<tr class="memdesc:ad6395942e54e4cdb3dfcd12f7926b485 inherit pub_methods_classEventSubject"><td class="mdescLeft">&#160;</td><td class="mdescRight">issues an update to all the registered observers.  <br /></td></tr>
+<tr class="separator:ad6395942e54e4cdb3dfcd12f7926b485 inherit pub_methods_classEventSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa399024ad6071b4ba631b35b8e77c02a inherit pub_methods_classEventSubject" id="r_aa399024ad6071b4ba631b35b8e77c02a"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventSubject</b> ()</td></tr>
+<tr class="memdesc:aa399024ad6071b4ba631b35b8e77c02a inherit pub_methods_classEventSubject"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual destructor to ensure safe polymorphic cleanup <br /></td></tr>
+<tr class="separator:aa399024ad6071b4ba631b35b8e77c02a inherit pub_methods_classEventSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Vashti </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac42d7d402b1eafbb08472d4fc9b4e200" name="ac42d7d402b1eafbb08472d4fc9b4e200"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac42d7d402b1eafbb08472d4fc9b4e200">&#9670;&#160;</a></span>EventControl()</h2>
+<a id="ad00d088c6815c47988addb1c24b7a9b5" name="ad00d088c6815c47988addb1c24b7a9b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad00d088c6815c47988addb1c24b7a9b5">&#9670;&#160;</a></span>EventControl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,8 +165,18 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventControl</b> 
           <td class="memname">EventControl::EventControl </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>total_cap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -217,6 +253,36 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventControl</b> 
 
 </div>
 </div>
+<a id="afe298276ffb7993079671a58f95b191f" name="afe298276ffb7993079671a58f95b191f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe298276ffb7993079671a58f95b191f">&#9670;&#160;</a></span>getCapacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int EventControl::getCapacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>return the capacity </p>
+<dl class="section return"><dt>Returns</dt><dd>capacity </dd></dl>
+
+<p>Implements <a class="el" href="classEventComponent.html">EventComponent</a>.</p>
+
+</div>
+</div>
 <a id="a334288c61e1052ac0fb34dc528f7b391" name="a334288c61e1052ac0fb34dc528f7b391"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a334288c61e1052ac0fb34dc528f7b391">&#9670;&#160;</a></span>getNotice()</h2>
 
@@ -244,6 +310,35 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventControl</b> 
 <dl class="section return"><dt>Returns</dt><dd>currentNotice </dd></dl>
 
 <p>Implements <a class="el" href="classEventSubject.html#ad0871e4d90f39eeb286c35fdba67ea3a">EventSubject</a>.</p>
+
+</div>
+</div>
+<a id="af8bc301edba33d729facdb5e0f6d6d60" name="af8bc301edba33d729facdb5e0f6d6d60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8bc301edba33d729facdb5e0f6d6d60">&#9670;&#160;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EventControl::print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Print out notifications and child components prints. </p>
+
+<p>Implements <a class="el" href="classEventComponent.html">EventComponent</a>.</p>
 
 </div>
 </div>

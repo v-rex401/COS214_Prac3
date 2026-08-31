@@ -75,23 +75,25 @@ $(function() {
   <div class="headertitle"><div class="title">EventGroup Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="EventGroup_8h_source.html">EventGroup.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for EventGroup:</div>
 <div class="dyncontent">
 <div class="center"><img src="classEventGroup__inherit__graph.png" border="0" usemap="#aEventGroup_inherit__map" alt="Inheritance graph"/></div>
 <map name="aEventGroup_inherit__map" id="aEventGroup_inherit__map">
 <area shape="rect" title=" " alt="" coords="169,79,267,104"/>
-<area shape="rect" href="classGamingZone.html" title="Forward Declaration." alt="" coords="47,152,154,177"/>
+<area shape="rect" href="classGamingZone.html" title=" " alt="" coords="47,152,154,177"/>
 <area shape="poly" title=" " alt="" coords="189,113,121,154,118,149,186,109"/>
-<area shape="rect" href="classMainHall.html" title="Forward Declaration used instead of header file." alt="" coords="178,152,258,177"/>
+<area shape="rect" href="classMainHall.html" title=" " alt="" coords="178,152,258,177"/>
 <area shape="poly" title=" " alt="" coords="221,118,221,152,215,152,215,118"/>
-<area shape="rect" href="classVendorZone.html" title="Forward Declaration." alt="" coords="283,152,383,177"/>
+<area shape="rect" href="classVendorZone.html" title=" " alt="" coords="283,152,383,177"/>
 <area shape="poly" title=" " alt="" coords="249,109,315,150,313,154,246,113"/>
 <area shape="rect" href="classEventComponent.html" title=" " alt="" coords="5,5,140,31"/>
 <area shape="poly" title=" " alt="" coords="109,34,195,76,193,81,107,39"/>
 <area shape="rect" href="classEventSubject.html" title="The abstract subject participant in the Observer pattern." alt="" coords="165,5,271,31"/>
 <area shape="poly" title=" " alt="" coords="221,44,221,79,215,79,215,44"/>
-<area shape="rect" href="classEventObserver.html" title=" " alt="" coords="296,5,415,31"/>
+<area shape="rect" href="classEventObserver.html" title="Observer participant of the GoF design pattern Observer." alt="" coords="296,5,415,31"/>
 <area shape="poly" title=" " alt="" coords="323,39,242,81,239,76,320,34"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -105,17 +107,17 @@ Collaboration diagram for EventGroup:</div>
 <area shape="poly" title=" " alt="" coords="109,34,195,76,193,81,107,39"/>
 <area shape="rect" href="classEventSubject.html" title="The abstract subject participant in the Observer pattern." alt="" coords="165,5,271,31"/>
 <area shape="poly" title=" " alt="" coords="221,44,221,79,215,79,215,44"/>
-<area shape="rect" href="classEventObserver.html" title=" " alt="" coords="296,5,415,31"/>
+<area shape="rect" href="classEventObserver.html" title="Observer participant of the GoF design pattern Observer." alt="" coords="296,5,415,31"/>
 <area shape="poly" title=" " alt="" coords="323,39,242,81,239,76,320,34"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3116d08596ad468f67dca69c8ec5c4f9" id="r_a3116d08596ad468f67dca69c8ec5c4f9"><td class="memItemLeft" align="right" valign="top"><a id="a3116d08596ad468f67dca69c8ec5c4f9" name="a3116d08596ad468f67dca69c8ec5c4f9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>EventGroup</b> (std::string name)</td></tr>
-<tr class="memdesc:a3116d08596ad468f67dca69c8ec5c4f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized Constructor. <br /></td></tr>
-<tr class="separator:a3116d08596ad468f67dca69c8ec5c4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c84c841eab46c323cefdcd9f5ecbf7d" id="r_a2c84c841eab46c323cefdcd9f5ecbf7d"><td class="memItemLeft" align="right" valign="top"><a id="a2c84c841eab46c323cefdcd9f5ecbf7d" name="a2c84c841eab46c323cefdcd9f5ecbf7d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>EventGroup</b> (std::string name, int total_cap)</td></tr>
+<tr class="memdesc:a2c84c841eab46c323cefdcd9f5ecbf7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized Constructor. <br /></td></tr>
+<tr class="separator:a2c84c841eab46c323cefdcd9f5ecbf7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab390b23059244115bcdadef19205b546" id="r_ab390b23059244115bcdadef19205b546"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventGroup.html#ab390b23059244115bcdadef19205b546">update</a> () override</td></tr>
 <tr class="memdesc:ab390b23059244115bcdadef19205b546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pull update from the subject This behaviour applies to ConcreteObserver.  <br /></td></tr>
 <tr class="separator:ab390b23059244115bcdadef19205b546"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,6 +138,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setParent</b> (<a cla
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventGroup</b> () override</td></tr>
 <tr class="memdesc:a31ced71b330f350837e4dda2f461b94d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classEventGroup.html">EventGroup</a> is responsible for its parent pointer and also the componentList it keeps. <br /></td></tr>
 <tr class="separator:a31ced71b330f350837e4dda2f461b94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a9f67a55e86e02649515ebc5aea4595" id="r_a3a9f67a55e86e02649515ebc5aea4595"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classEventComponent.html">EventComponent</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventGroup.html#a3a9f67a55e86e02649515ebc5aea4595">getComponents</a> ()</td></tr>
+<tr class="separator:a3a9f67a55e86e02649515ebc5aea4595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09a32f623f3caf9acc120b5dcea09c5f" id="r_a09a32f623f3caf9acc120b5dcea09c5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventGroup.html#a09a32f623f3caf9acc120b5dcea09c5f">getCapacity</a> ()</td></tr>
+<tr class="memdesc:a09a32f623f3caf9acc120b5dcea09c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the capacity of the group  <br /></td></tr>
+<tr class="separator:a09a32f623f3caf9acc120b5dcea09c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classEventComponent"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEventComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEventComponent.html">EventComponent</a></td></tr>
+<tr class="memitem:a5166d3de01b1e8abc3eef9d8de468b10 inherit pub_methods_classEventComponent" id="r_a5166d3de01b1e8abc3eef9d8de468b10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventComponent.html#a5166d3de01b1e8abc3eef9d8de468b10">print</a> ()=0</td></tr>
+<tr class="separator:a5166d3de01b1e8abc3eef9d8de468b10 inherit pub_methods_classEventComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classEventSubject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEventSubject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEventSubject.html">EventSubject</a></td></tr>
+<tr class="memitem:a441627084d41ccb7ae09b7315bbeb7cd inherit pub_methods_classEventSubject" id="r_a441627084d41ccb7ae09b7315bbeb7cd"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>EventSubject</b> ()</td></tr>
+<tr class="memdesc:a441627084d41ccb7ae09b7315bbeb7cd inherit pub_methods_classEventSubject"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor for <a class="el" href="classEventSubject.html" title="The abstract subject participant in the Observer pattern.">EventSubject</a>. <br /></td></tr>
+<tr class="separator:a441627084d41ccb7ae09b7315bbeb7cd inherit pub_methods_classEventSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add11d4f5c3a20f20e477368c6951dddc inherit pub_methods_classEventSubject" id="r_add11d4f5c3a20f20e477368c6951dddc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventSubject.html#add11d4f5c3a20f20e477368c6951dddc">attach</a> (<a class="el" href="classEventObserver.html">EventObserver</a> *x)</td></tr>
+<tr class="memdesc:add11d4f5c3a20f20e477368c6951dddc inherit pub_methods_classEventSubject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an observer to pass future event notifications to.  <br /></td></tr>
+<tr class="separator:add11d4f5c3a20f20e477368c6951dddc inherit pub_methods_classEventSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc671021f73c2036cb62d89b5fe1a325 inherit pub_methods_classEventSubject" id="r_afc671021f73c2036cb62d89b5fe1a325"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventSubject.html#afc671021f73c2036cb62d89b5fe1a325">detach</a> (<a class="el" href="classEventObserver.html">EventObserver</a> *y)</td></tr>
+<tr class="memdesc:afc671021f73c2036cb62d89b5fe1a325 inherit pub_methods_classEventSubject"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes a previously registered observer from the notification list.  <br /></td></tr>
+<tr class="separator:afc671021f73c2036cb62d89b5fe1a325 inherit pub_methods_classEventSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6395942e54e4cdb3dfcd12f7926b485 inherit pub_methods_classEventSubject" id="r_ad6395942e54e4cdb3dfcd12f7926b485"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventSubject.html#ad6395942e54e4cdb3dfcd12f7926b485">notify</a> ()</td></tr>
+<tr class="memdesc:ad6395942e54e4cdb3dfcd12f7926b485 inherit pub_methods_classEventSubject"><td class="mdescLeft">&#160;</td><td class="mdescRight">issues an update to all the registered observers.  <br /></td></tr>
+<tr class="separator:ad6395942e54e4cdb3dfcd12f7926b485 inherit pub_methods_classEventSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa399024ad6071b4ba631b35b8e77c02a inherit pub_methods_classEventSubject" id="r_aa399024ad6071b4ba631b35b8e77c02a"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventSubject</b> ()</td></tr>
+<tr class="memdesc:aa399024ad6071b4ba631b35b8e77c02a inherit pub_methods_classEventSubject"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual destructor to ensure safe polymorphic cleanup <br /></td></tr>
+<tr class="separator:aa399024ad6071b4ba631b35b8e77c02a inherit pub_methods_classEventSubject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classEventObserver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEventObserver')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEventObserver.html">EventObserver</a></td></tr>
+<tr class="memitem:a428ca7e5cee4a7ec8f88a0b7c4fcce73 inherit pub_methods_classEventObserver" id="r_a428ca7e5cee4a7ec8f88a0b7c4fcce73"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>EventObserver</b> ()</td></tr>
+<tr class="memdesc:a428ca7e5cee4a7ec8f88a0b7c4fcce73 inherit pub_methods_classEventObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor. <br /></td></tr>
+<tr class="separator:a428ca7e5cee4a7ec8f88a0b7c4fcce73 inherit pub_methods_classEventObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144d6fc834ce107e975ee692f94823e8 inherit pub_methods_classEventObserver" id="r_a144d6fc834ce107e975ee692f94823e8"><td class="memItemLeft" align="right" valign="top">
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventObserver</b> ()</td></tr>
+<tr class="memdesc:a144d6fc834ce107e975ee692f94823e8 inherit pub_methods_classEventObserver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
+<tr class="separator:a144d6fc834ce107e975ee692f94823e8 inherit pub_methods_classEventObserver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Vashti </dd></dl>
@@ -167,6 +204,54 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventGroup</b> ()
 <p>This behaviour applied to Composite Design Pattern. </p>
 
 <p>Implements <a class="el" href="classEventComponent.html">EventComponent</a>.</p>
+
+</div>
+</div>
+<a id="a09a32f623f3caf9acc120b5dcea09c5f" name="a09a32f623f3caf9acc120b5dcea09c5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09a32f623f3caf9acc120b5dcea09c5f">&#9670;&#160;</a></span>getCapacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int EventGroup::getCapacity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get the capacity of the group </p>
+<dl class="section return"><dt>Returns</dt><dd>capacity </dd></dl>
+
+<p>Implements <a class="el" href="classEventComponent.html">EventComponent</a>.</p>
+
+</div>
+</div>
+<a id="a3a9f67a55e86e02649515ebc5aea4595" name="a3a9f67a55e86e02649515ebc5aea4595"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a9f67a55e86e02649515ebc5aea4595">&#9670;&#160;</a></span>getComponents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="classEventComponent.html">EventComponent</a> * &gt; EventGroup::getComponents </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>componentList of type std::vector&lt;EventComponent*&gt; </dd></dl>
 
 </div>
 </div>
@@ -257,7 +342,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventGroup</b> ()
 
 <p>Pull update from the subject This behaviour applies to ConcreteObserver. </p>
 
-<p>Implements <a class="el" href="classEventObserver.html">EventObserver</a>.</p>
+<p>Implements <a class="el" href="classEventObserver.html#a75d5314d24bdeb487978d2b596b1397c">EventObserver</a>.</p>
 
 </div>
 </div>

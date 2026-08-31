@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['vendorzone_0',['VendorZone',['../classVendorZone.html',1,'']]],
-  ['vendorzone_2ecpp_1',['VendorZone.cpp',['../VendorZone_8cpp.html',1,'']]]
+  ['update_0',['update',['../classEventGroup.html#ab390b23059244115bcdadef19205b546',1,'EventGroup::update()'],['../classEventObserver.html#a75d5314d24bdeb487978d2b596b1397c',1,'EventObserver::update()'],['../classEventUnit.html#a42d027da64b3b447eac48f342853bfbc',1,'EventUnit::update()']]]
 ];

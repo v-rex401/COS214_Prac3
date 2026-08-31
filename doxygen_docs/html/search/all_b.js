@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setparent_0',['setParent',['../classEventGroup.html#a80a7aaa5a8582ec5e6d88ca1a6c21d6f',1,'EventGroup']]]
+  ['remove_0',['remove',['../classEventControl.html#aa812f086961f5cd6f7c9def43ef92a97',1,'EventControl::remove()'],['../classEventGroup.html#a0f2302c783dd8ff0fc7e01d611fc840d',1,'EventGroup::remove()']]]
 ];

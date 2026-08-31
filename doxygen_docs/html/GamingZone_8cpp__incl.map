@@ -1,23 +1,26 @@
 <map id="GamingZone.cpp" name="GamingZone.cpp">
-<area shape="rect" id="Node000001" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="128,5,261,31"/>
-<area shape="rect" id="Node000002" href="$EventGroup_8h_source.html" title=" " alt="" coords="79,79,190,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,33,155,70,151,66,183,29"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="215,79,295,104"/>
-<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="207,29,238,66,234,70,203,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="120,299,179,324"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,106,72,125,41,154,23,179,11,201,9,224,20,249,37,269,59,283,107,301,105,306,57,288,33,273,15,252,4,225,6,200,18,176,37,150,69,121,104,102"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="30,225,93,251"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="107,106,76,125,62,138,52,153,47,167,47,182,53,212,48,213,41,183,42,166,47,151,58,135,73,121,104,102"/>
-<area shape="rect" id="Node000005" href="$EventComponent_8h_source.html" title=" " alt="" coords="61,152,208,177"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="137,104,137,138,132,138,132,104"/>
-<area shape="rect" id="Node000006" href="$EventSubject_8h_source.html" title=" " alt="" coords="233,152,351,177"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="161,102,255,144,253,149,159,106"/>
-<area shape="rect" id="Node000007" href="$EventObserver_8h_source.html" title=" " alt="" coords="325,225,454,251"/>
-<area shape="poly" id="edge11_Node000002_Node000007" title=" " alt="" coords="190,101,296,126,340,139,364,150,375,164,383,180,390,211,385,212,378,181,371,167,361,154,338,144,295,131,189,107"/>
-<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="253,180,212,198,193,211,177,227,161,255,154,285,149,284,156,253,173,224,190,207,210,194,250,175"/>
-<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="256,180,107,226,105,220,254,175"/>
-<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="309,175,364,215,361,219,306,180"/>
-<area shape="rect" id="Node000008" href="$EventNotice_8h_source.html" title=" " alt="" coords="187,225,301,251"/>
-<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="286,179,262,216,257,213,282,176"/>
-<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="230,253,177,292,174,288,227,249"/>
+<area shape="rect" id="Node000001" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="281,5,414,31"/>
+<area shape="rect" id="Node000002" href="$GamingZone_8h_source.html" title=" " alt="" coords="227,79,346,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="340,33,307,70,303,66,335,29"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="369,79,449,104"/>
+<area shape="poly" id="edge14_Node000001_Node000010" title=" " alt="" coords="360,29,392,66,388,70,356,33"/>
+<area shape="rect" id="Node000003" href="$EventGroup_8h_source.html" title=" " alt="" coords="150,152,260,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="275,106,230,145,227,141,271,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="149,372,208,397"/>
+<area shape="poly" id="edge13_Node000002_Node000004" title=" " alt="" coords="307,102,362,140,394,166,424,195,448,227,463,260,465,293,460,310,450,326,434,338,411,349,351,365,282,376,222,383,221,378,282,371,349,360,409,344,431,334,446,322,455,308,460,293,458,261,443,229,420,199,390,170,359,144,304,106"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="150,174,119,180,87,191,57,206,31,227,19,244,15,259,12,299,9,312,11,323,37,347,69,364,103,374,135,379,135,384,102,379,67,369,33,351,7,325,3,312,6,298,9,258,14,241,27,224,54,202,85,186,118,175,149,168"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="22,299,84,324"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="150,173,121,179,91,189,65,205,43,227,37,240,36,255,44,285,39,287,31,256,32,239,39,224,61,201,89,185,119,174,149,168"/>
+<area shape="rect" id="Node000006" href="$EventComponent_8h_source.html" title=" " alt="" coords="53,225,200,251"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="194,179,151,218,147,214,191,175"/>
+<area shape="rect" id="Node000007" href="$EventSubject_8h_source.html" title=" " alt="" coords="224,225,343,251"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="219,175,263,214,259,218,216,179"/>
+<area shape="rect" id="Node000008" href="$EventObserver_8h_source.html" title=" " alt="" coords="307,299,436,324"/>
+<area shape="poly" id="edge12_Node000003_Node000008" title=" " alt="" coords="261,172,312,190,336,205,356,224,371,253,375,284,370,285,366,255,352,227,333,209,310,195,260,177"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="229,253,190,271,173,284,159,300,154,314,155,329,166,359,161,361,149,330,149,313,155,297,169,280,187,266,227,248"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="247,253,98,299,97,294,246,248"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="299,249,348,288,345,292,296,253"/>
+<area shape="rect" id="Node000009" href="$EventNotice_8h_source.html" title=" " alt="" coords="170,299,283,324"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="276,253,246,290,242,286,272,249"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="221,326,196,362,191,359,216,323"/>
 </map>

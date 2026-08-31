@@ -1,21 +1,31 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classEventComponent.html" title=" " alt="" coords="5,55,140,80"/>
-<area shape="rect" id="Node000001" href="$classEventControl.html" title=" " alt="" coords="188,5,295,31"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="129,48,196,28,198,33,131,53"/>
-<area shape="rect" id="Node000003" href="$classEventGroup.html" title=" " alt="" coords="192,55,291,80"/>
-<area shape="poly" id="edge2_Node000000_Node000003" title=" " alt="" coords="154,65,192,65,192,70,154,70"/>
-<area shape="rect" id="Node000008" href="$classEventUnit.html" title=" " alt="" coords="198,104,285,129"/>
-<area shape="poly" id="edge6_Node000000_Node000008" title=" " alt="" coords="131,81,199,102,197,107,129,87"/>
-<area shape="rect" id="Node000004" href="$classGamingZone.html" title="Forward Declaration." alt="" coords="343,5,449,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="294,48,354,28,356,33,296,53"/>
-<area shape="rect" id="Node000005" href="$classMainHall.html" title="Forward Declaration used instead of header file." alt="" coords="356,55,436,80"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="304,65,356,65,356,70,304,70"/>
-<area shape="rect" id="Node000006" href="$classVendorZone.html" title="Forward Declaration." alt="" coords="346,104,446,129"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="296,82,356,101,354,106,294,87"/>
-<area shape="rect" id="Node000007" href="$classEventObserver.html" title=" " alt="" coords="13,104,132,129"/>
-<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="129,97,196,78,198,83,131,103"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="146,114,198,114,198,119,146,119"/>
-<area shape="rect" id="Node000002" href="$classEventSubject.html" title="The abstract subject participant in the Observer pattern." alt="" coords="19,5,126,31"/>
-<area shape="poly" id="edge9_Node000002_Node000001" title=" " alt="" coords="140,15,188,15,188,21,140,21"/>
-<area shape="poly" id="edge10_Node000002_Node000003" title=" " alt="" coords="131,32,198,52,196,57,129,37"/>
+<area shape="rect" id="Node000000" href="$classEventComponent.html" title=" " alt="" coords="5,104,140,129"/>
+<area shape="rect" id="Node000001" href="$classEventControl.html" title=" " alt="" coords="188,55,295,80"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="129,97,196,78,198,83,131,103"/>
+<area shape="rect" id="Node000003" href="$classEventGroup.html" title=" " alt="" coords="192,104,291,129"/>
+<area shape="poly" id="edge2_Node000000_Node000003" title=" " alt="" coords="154,114,192,114,192,119,154,119"/>
+<area shape="rect" id="Node000008" href="$classEventUnit.html" title="An abstract base class for leaf participants in the Composite pattern." alt="" coords="198,203,285,228"/>
+<area shape="poly" id="edge6_Node000000_Node000008" title=" " alt="" coords="108,134,220,200,217,205,106,139"/>
+<area shape="rect" id="Node000004" href="$classGamingZone.html" title=" " alt="" coords="347,5,453,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="284,95,293,89,307,77,316,65,326,53,341,40,362,28,364,33,344,44,330,56,321,68,311,80,296,93,287,100"/>
+<area shape="rect" id="Node000005" href="$classMainHall.html" title=" " alt="" coords="360,55,440,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="295,97,359,77,361,82,297,102"/>
+<area shape="rect" id="Node000006" href="$classVendorZone.html" title=" " alt="" coords="350,104,450,129"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="304,114,350,114,350,119,304,119"/>
+<area shape="rect" id="Node000009" href="$classCosplayStage.html" title="A concrete leaf component representing a cosplay stage or competition area." alt="" coords="345,351,455,376"/>
+<area shape="poly" id="edge7_Node000008_Node000009" title=" " alt="" coords="259,238,295,288,318,314,344,337,363,348,360,353,341,341,314,318,291,291,255,242"/>
+<area shape="rect" id="Node000010" href="$classDemoStation.html" title="A concrete leaf component representing a gaming or tech demo station." alt="" coords="347,153,453,179"/>
+<area shape="poly" id="edge8_Node000008_Node000010" title=" " alt="" coords="295,196,357,176,359,181,297,201"/>
+<area shape="rect" id="Node000011" href="$classMedicTeam.html" title="A concrete leaf component representing a medical response team." alt="" coords="352,203,448,228"/>
+<area shape="poly" id="edge9_Node000008_Node000011" title=" " alt="" coords="298,213,351,213,351,218,298,218"/>
+<area shape="rect" id="Node000012" href="$classSecurityGuard.html" title="A concrete leaf component representing a security guard unit." alt="" coords="343,252,457,277"/>
+<area shape="poly" id="edge10_Node000008_Node000012" title=" " alt="" coords="297,230,359,249,357,254,295,235"/>
+<area shape="rect" id="Node000013" href="$classVendor.html" title="A concrete leaf component representing a merchandise or food vendor." alt="" coords="367,301,433,327"/>
+<area shape="poly" id="edge11_Node000008_Node000013" title=" " alt="" coords="270,234,344,286,368,299,366,304,341,291,267,239"/>
+<area shape="rect" id="Node000007" href="$classEventObserver.html" title="Observer participant of the GoF design pattern Observer." alt="" coords="13,177,132,203"/>
+<area shape="poly" id="edge12_Node000007_Node000003" title=" " alt="" coords="114,169,210,127,212,132,116,174"/>
+<area shape="poly" id="edge13_Node000007_Node000008" title=" " alt="" coords="146,198,198,206,198,212,145,204"/>
+<area shape="rect" id="Node000002" href="$classEventSubject.html" title="The abstract subject participant in the Observer pattern." alt="" coords="19,55,126,80"/>
+<area shape="poly" id="edge14_Node000002_Node000001" title=" " alt="" coords="140,65,188,65,188,70,140,70"/>
+<area shape="poly" id="edge15_Node000002_Node000003" title=" " alt="" coords="131,81,198,101,196,106,129,87"/>
 </map>

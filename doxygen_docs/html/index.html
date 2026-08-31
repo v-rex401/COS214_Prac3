@@ -76,27 +76,49 @@ $(function() {
 <h1><a class="anchor" id="autotoc_md1"></a>
 Team Members</h1>
 <ul>
-<li>Jordan</li>
-<li>Robert</li>
-<li>Vashti</li>
+<li>Jordan Reddy</li>
+<li>Robert Sibanda</li>
+<li>Vashti Pillay</li>
 </ul>
 <hr  />
 <h1><a class="anchor" id="autotoc_md3"></a>
 Event Concept</h1>
-<p>Comic Con is ......</p>
+<p>Comic Con is a huge pop culture and gaming festival. This huge festival consists of many different sections tailored to different types of interests. Different sections are dedicated to pop culture, vendors, food vendors, gaming, artists, medical staff, tabletop gaming. All of these areas consist of many different units and people.</p>
 <hr  />
 <h1><a class="anchor" id="autotoc_md5"></a>
 Makefile Instructions</h1>
 <ul>
 <li>Compile files: <code>make</code></li>
 <li>Run program <code>make run</code></li>
+<li>Check for memory leaks <code>make valgrind</code></li>
+<li>Clean out object files <code>make clean</code></li>
 </ul>
 <hr  />
 <h1><a class="anchor" id="autotoc_md7"></a>
 Doxygen Instructions</h1>
 <ul>
 <li>Create updated doxygen file Doxyfile run <code>doxygen Doxyfile</code></li>
-<li>Go to <code>doxygen_docs/html/index.html</code> to view documentation </li>
+<li>Go to <code>doxygen_docs/html/index.html</code> to view documentation</li>
+</ul>
+<hr  />
+<h1><a class="anchor" id="autotoc_md9"></a>
+Architecure Overview</h1>
+<p>Our EventFlow program is built in such a way that it can be applied to any given event.</p>
+<ul>
+<li><a class="el" href="classEventGroup.html">EventGroup</a> is a Composite, any amount of specific event groupings can be added, as they inherit from this class</li>
+<li>All <a class="el" href="classEventGroup.html">EventGroup</a> belong to a <a class="el" href="classEventControl.html">EventControl</a> Class</li>
+<li><a class="el" href="classEventGroup.html">EventGroup</a> can contain leaves or other composite components that have their own leaves or own composites</li>
+<li><a class="el" href="classEventNotice.html">EventNotice</a> makes use of an enum to keep the Notice Types<ul>
+<li><a class="el" href="classEventNotice.html">EventNotice</a> has a message and NoticeType which is more convenient as we can send a message and type in one object s</li>
+</ul>
+</li>
+<li>Composite and Observer share classes but those shared classes have different roles in each GoF design pattern</li>
+<li>With regards to the Observer, <a class="el" href="classEventGroup.html">EventGroup</a> acts as both a Subject and an Observer<ul>
+<li>The reason for this is it needs to act in these two different ways for a particular situation</li>
+<li>It acts as an Observer to the <a class="el" href="classEventControl.html">EventControl</a> class</li>
+<li>It acts as a Subject to the <a class="el" href="classEventUnit.html" title="An abstract base class for leaf participants in the Composite pattern.">EventUnit</a> classes </li>
+</ul>
+</li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['eventcontrol_0',['eventcontrol',['../classEventControl.html#ad00d088c6815c47988addb1c24b7a9b5',1,'EventControl::EventControl(std::string name, int total_cap)'],['../classEventControl.html#ae7506622df5596f7385e23ca8e640a5c',1,'EventControl::EventControl()']]],
-  ['eventgroup_1',['EventGroup',['../classEventGroup.html#a2c84c841eab46c323cefdcd9f5ecbf7d',1,'EventGroup']]],
-  ['eventnotice_2',['eventnotice',['../classEventNotice.html#ae8b50bcca261d7464984270699acb869',1,'EventNotice::EventNotice()'],['../classEventNotice.html#a3eb4ea25d7d86f5dede7606ffe2fdd06',1,'EventNotice::EventNotice(NoticeType type, std::string msg)']]],
-  ['eventobserver_3',['EventObserver',['../classEventObserver.html#a428ca7e5cee4a7ec8f88a0b7c4fcce73',1,'EventObserver']]],
-  ['eventsubject_4',['EventSubject',['../classEventSubject.html#a441627084d41ccb7ae09b7315bbeb7cd',1,'EventSubject']]],
-  ['eventunit_5',['eventunit',['../classEventUnit.html#ad146bb4d502546964f97d66e47769d67',1,'EventUnit::EventUnit(std::string name, int capacity)'],['../classEventUnit.html#a9f8470f1dfd2cd4a15f87cde0659d17d',1,'EventUnit::EventUnit()']]]
+  ['eventcomponent_0',['EventComponent',['../classEventComponent.html#aac68ab2c73ea6c329042b67d07060256',1,'EventComponent']]],
+  ['eventcontrol_1',['eventcontrol',['../classEventControl.html#ad00d088c6815c47988addb1c24b7a9b5',1,'EventControl::EventControl(std::string name, int total_cap)'],['../classEventControl.html#ae7506622df5596f7385e23ca8e640a5c',1,'EventControl::EventControl()']]],
+  ['eventgroup_2',['EventGroup',['../classEventGroup.html#a2c84c841eab46c323cefdcd9f5ecbf7d',1,'EventGroup']]],
+  ['eventnotice_3',['eventnotice',['../classEventNotice.html#ae8b50bcca261d7464984270699acb869',1,'EventNotice::EventNotice()'],['../classEventNotice.html#a3eb4ea25d7d86f5dede7606ffe2fdd06',1,'EventNotice::EventNotice(NoticeType type, std::string msg)']]],
+  ['eventobserver_4',['EventObserver',['../classEventObserver.html#a428ca7e5cee4a7ec8f88a0b7c4fcce73',1,'EventObserver']]],
+  ['eventsubject_5',['EventSubject',['../classEventSubject.html#a441627084d41ccb7ae09b7315bbeb7cd',1,'EventSubject']]],
+  ['eventunit_6',['eventunit',['../classEventUnit.html#ad146bb4d502546964f97d66e47769d67',1,'EventUnit::EventUnit(std::string name, int capacity)'],['../classEventUnit.html#a9f8470f1dfd2cd4a15f87cde0659d17d',1,'EventUnit::EventUnit()']]]
 ];

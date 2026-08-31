@@ -6,6 +6,7 @@
 
 /**
  * @brief A concrete leaf component representing a cosplay stage or competition area.
+ * @file CosplayStage.h
  * @author Robert
  * This class inherits from EventUnit and implements specific
  * print behaviors for various event notifications, focusing on

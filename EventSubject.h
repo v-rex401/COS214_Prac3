@@ -12,6 +12,7 @@
  * This class defines the interface for managing event notifications.
  * It keeps a list of the interested observers but it does not strictly
  * own the memory of the observers registered to it.
+ * @file EventSubject.h
  */
 
 class EventSubject

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['event_20concept_0',['Event Concept',['../index.html#autotoc_md3',1,'']]],
-  ['eventcomponent_1',['EventComponent',['../classEventComponent.html',1,'']]],
+  ['eventcomponent_1',['eventcomponent',['../classEventComponent.html',1,'EventComponent'],['../classEventComponent.html#aac68ab2c73ea6c329042b67d07060256',1,'EventComponent::EventComponent()']]],
   ['eventcontrol_2',['eventcontrol',['../classEventControl.html#ae7506622df5596f7385e23ca8e640a5c',1,'EventControl::EventControl()'],['../classEventControl.html#ad00d088c6815c47988addb1c24b7a9b5',1,'EventControl::EventControl(std::string name, int total_cap)'],['../classEventControl.html',1,'EventControl']]],
   ['eventgroup_3',['eventgroup',['../classEventGroup.html',1,'EventGroup'],['../classEventGroup.html#a2c84c841eab46c323cefdcd9f5ecbf7d',1,'EventGroup::EventGroup()']]],
   ['eventnotice_4',['eventnotice',['../classEventNotice.html',1,'EventNotice'],['../classEventNotice.html#ae8b50bcca261d7464984270699acb869',1,'EventNotice::EventNotice()'],['../classEventNotice.html#a3eb4ea25d7d86f5dede7606ffe2fdd06',1,'EventNotice::EventNotice(NoticeType type, std::string msg)']]],

@@ -5,6 +5,7 @@
 #include <string>
 
 /**
+ * @file MainHall.h
  * @brief One of the ConcreteSubjects which is also a ConcreteObserver
  * @author Vashti
  */

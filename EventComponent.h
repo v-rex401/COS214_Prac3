@@ -3,6 +3,7 @@
 
 /**
  * @brief Component participant in the GoF design pattern Composite
+ * @file EventComponent.h
  * @author Jordan
  */
 class EventComponent

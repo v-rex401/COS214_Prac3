@@ -4,6 +4,7 @@
 #include <string>
 /**
  * @brief EventNotice contains the message and notice type
+ * @file EventNotice.h
  * @class EventNotice
  * @author Jordan
  */

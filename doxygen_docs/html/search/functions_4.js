@@ -1,7 +1,7 @@
 var searchData=
 [
   ['gamingzone_0',['GamingZone',['../classGamingZone.html#a8005782834ab952716a26bf8150f2322',1,'GamingZone']]],
-  ['getcapacity_1',['getcapacity',['../classEventControl.html#afe298276ffb7993079671a58f95b191f',1,'EventControl::getCapacity()'],['../classEventGroup.html#a09a32f623f3caf9acc120b5dcea09c5f',1,'EventGroup::getCapacity()'],['../classEventUnit.html#a322c60fb4d1078fa5870db2fab7aef21',1,'EventUnit::getCapacity()']]],
+  ['getcapacity_1',['getcapacity',['../classEventComponent.html#a34ec2477f21d736438e5caac06908f52',1,'EventComponent::getCapacity()'],['../classEventControl.html#afe298276ffb7993079671a58f95b191f',1,'EventControl::getCapacity()'],['../classEventGroup.html#a09a32f623f3caf9acc120b5dcea09c5f',1,'EventGroup::getCapacity()'],['../classEventUnit.html#a322c60fb4d1078fa5870db2fab7aef21',1,'EventUnit::getCapacity()']]],
   ['getcomponents_2',['getComponents',['../classEventGroup.html#a3a9f67a55e86e02649515ebc5aea4595',1,'EventGroup']]],
   ['getcurrentnotice_3',['getCurrentNotice',['../classEventUnit.html#ad776963e810bcf1303c9837933bbb820',1,'EventUnit']]],
   ['getmsg_4',['getMsg',['../classEventNotice.html#adab04c5c92228512338fda22aea1dcaf',1,'EventNotice']]],

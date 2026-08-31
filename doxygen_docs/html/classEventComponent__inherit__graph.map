@@ -1,20 +1,20 @@
 <map id="EventComponent" name="EventComponent">
-<area shape="rect" id="Node000001" title=" " alt="" coords="166,5,301,31"/>
+<area shape="rect" id="Node000001" title="Component participant in the GoF design pattern Composite." alt="" coords="166,5,301,31"/>
 <area shape="rect" id="Node000002" href="$classEventControl.html" title="EventControl is one of the concrete subjects." alt="" coords="53,79,160,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,40,129,81,126,76,200,35"/>
 <area shape="rect" id="Node000003" href="$classEventGroup.html" title="Concrete Subject and Concrete Observer Implementation." alt="" coords="184,79,283,104"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,44,236,79,231,79,231,44"/>
 <area shape="rect" id="Node000007" href="$classEventUnit.html" title="An abstract base class for leaf participants in the Composite pattern." alt="" coords="573,79,659,104"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="309,31,573,79,572,85,308,36"/>
-<area shape="rect" id="Node000004" href="$classGamingZone.html" title=" " alt="" coords="5,152,112,177"/>
+<area shape="rect" id="Node000004" href="$classGamingZone.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="5,152,112,177"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="194,112,88,154,86,149,192,107"/>
-<area shape="rect" id="Node000005" href="$classMainHall.html" title=" " alt="" coords="136,152,216,177"/>
+<area shape="rect" id="Node000005" href="$classMainHall.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="136,152,216,177"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="218,116,187,154,183,150,213,113"/>
-<area shape="rect" id="Node000006" href="$classVendorZone.html" title=" " alt="" coords="241,152,341,177"/>
+<area shape="rect" id="Node000006" href="$classVendorZone.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="241,152,341,177"/>
 <area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="253,113,283,150,279,154,249,116"/>
-<area shape="rect" id="Node000008" href="$classCosplayStage.html" title="A concrete leaf component representing a cosplay stage or competition area." alt="" coords="365,152,475,177"/>
+<area shape="rect" id="Node000008" href="$classCosplayStage.html" title=" " alt="" coords="365,152,475,177"/>
 <area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="573,111,453,154,451,149,571,106"/>
-<area shape="rect" id="Node000009" href="$classDemoStation.html" title="A concrete leaf component representing a gaming or tech demo station." alt="" coords="500,152,607,177"/>
+<area shape="rect" id="Node000009" href="$classDemoStation.html" title=" " alt="" coords="500,152,607,177"/>
 <area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="599,116,565,154,561,150,595,113"/>
 <area shape="rect" id="Node000010" href="$classMedicTeam.html" title="A concrete leaf component representing a medical response team." alt="" coords="631,152,727,177"/>
 <area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="637,113,671,150,667,154,633,116"/>

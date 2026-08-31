@@ -9,6 +9,7 @@
 
 /**
  * @brief EventControl is one of the concrete subjects
+ * @file EventControl.h
  * @author Vashti
  */
 

@@ -1,0 +1,5 @@
+<map id="CosplayStage.h" name="CosplayStage.h">
+<area shape="rect" id="Node000001" title="A concrete leaf component representing a cosplay stage or competition area." alt="" coords="5,5,128,31"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html" title=" " alt="" coords="25,79,108,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,44,69,79,64,79,64,44"/>
+</map>

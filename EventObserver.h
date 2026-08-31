@@ -3,6 +3,7 @@
 
 /**
  * @brief Observer participant of the GoF design pattern Observer
+ * @file EventObserver.h
  * @author Jordan
  */
 class EventObserver

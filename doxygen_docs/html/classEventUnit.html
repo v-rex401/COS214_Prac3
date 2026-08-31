@@ -87,9 +87,9 @@ Inheritance diagram for EventUnit:</div>
 <div class="center"><img src="classEventUnit__inherit__graph.png" border="0" usemap="#aEventUnit_inherit__map" alt="Inheritance graph"/></div>
 <map name="aEventUnit_inherit__map" id="aEventUnit_inherit__map">
 <area shape="rect" title="An abstract base class for leaf participants in the Composite pattern." alt="" coords="276,79,363,104"/>
-<area shape="rect" href="classCosplayStage.html" title="A concrete leaf component representing a cosplay stage or competition area." alt="" coords="5,152,116,177"/>
+<area shape="rect" href="classCosplayStage.html" title=" " alt="" coords="5,152,116,177"/>
 <area shape="poly" title=" " alt="" coords="265,110,103,154,102,149,264,105"/>
-<area shape="rect" href="classDemoStation.html" title="A concrete leaf component representing a gaming or tech demo station." alt="" coords="141,152,247,177"/>
+<area shape="rect" href="classDemoStation.html" title=" " alt="" coords="141,152,247,177"/>
 <area shape="poly" title=" " alt="" coords="289,113,216,154,213,149,286,108"/>
 <area shape="rect" href="classMedicTeam.html" title="A concrete leaf component representing a medical response team." alt="" coords="271,152,367,177"/>
 <area shape="poly" title=" " alt="" coords="322,118,322,152,317,152,317,118"/>
@@ -97,7 +97,7 @@ Inheritance diagram for EventUnit:</div>
 <area shape="poly" title=" " alt="" coords="354,108,429,149,426,154,351,113"/>
 <area shape="rect" href="classVendor.html" title="A concrete leaf component representing a merchandise or food vendor." alt="" coords="530,152,597,177"/>
 <area shape="poly" title=" " alt="" coords="372,105,530,151,529,156,371,110"/>
-<area shape="rect" href="classEventComponent.html" title=" " alt="" coords="177,5,312,31"/>
+<area shape="rect" href="classEventComponent.html" title="Component participant in the GoF design pattern Composite." alt="" coords="177,5,312,31"/>
 <area shape="poly" title=" " alt="" coords="268,38,309,77,305,80,265,42"/>
 <area shape="rect" href="classEventObserver.html" title="Observer participant of the GoF design pattern Observer." alt="" coords="336,5,455,31"/>
 <area shape="poly" title=" " alt="" coords="375,42,334,80,330,76,371,38"/>
@@ -109,7 +109,7 @@ Collaboration diagram for EventUnit:</div>
 <div class="center"><img src="classEventUnit__coll__graph.png" border="0" usemap="#aEventUnit_coll__map" alt="Collaboration graph"/></div>
 <map name="aEventUnit_coll__map" id="aEventUnit_coll__map">
 <area shape="rect" title="An abstract base class for leaf participants in the Composite pattern." alt="" coords="104,79,191,104"/>
-<area shape="rect" href="classEventComponent.html" title=" " alt="" coords="5,5,140,31"/>
+<area shape="rect" href="classEventComponent.html" title="Component participant in the GoF design pattern Composite." alt="" coords="5,5,140,31"/>
 <area shape="poly" title=" " alt="" coords="96,38,137,77,133,80,93,42"/>
 <area shape="rect" href="classEventObserver.html" title="Observer participant of the GoF design pattern Observer." alt="" coords="164,5,283,31"/>
 <area shape="poly" title=" " alt="" coords="203,42,162,80,158,76,199,38"/>
@@ -125,8 +125,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a42d027da64b3b447eac48f342853bfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responds to a notification from the parent subject.  <br /></td></tr>
 <tr class="separator:a42d027da64b3b447eac48f342853bfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3df127ea5af52e03a8825635b919fe3" id="r_aa3df127ea5af52e03a8825635b919fe3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventUnit.html#aa3df127ea5af52e03a8825635b919fe3">add</a> (<a class="el" href="classEventComponent.html">EventComponent</a> *cmp) override</td></tr>
+<tr class="memdesc:aa3df127ea5af52e03a8825635b919fe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">add component to the tree hierarchy as a child  <br /></td></tr>
 <tr class="separator:aa3df127ea5af52e03a8825635b919fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80dcaeff901a4e586e29d0cb1781305a" id="r_a80dcaeff901a4e586e29d0cb1781305a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventUnit.html#a80dcaeff901a4e586e29d0cb1781305a">remove</a> (<a class="el" href="classEventComponent.html">EventComponent</a> *cmp) override</td></tr>
+<tr class="memdesc:a80dcaeff901a4e586e29d0cb1781305a"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove component from the tree hierarchy  <br /></td></tr>
 <tr class="separator:a80dcaeff901a4e586e29d0cb1781305a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f8470f1dfd2cd4a15f87cde0659d17d" id="r_a9f8470f1dfd2cd4a15f87cde0659d17d"><td class="memItemLeft" align="right" valign="top"><a id="a9f8470f1dfd2cd4a15f87cde0659d17d" name="a9f8470f1dfd2cd4a15f87cde0659d17d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EventUnit</b> ()</td></tr>
@@ -150,7 +152,15 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventUnit</b> () 
 <tr class="memdesc:ad776963e810bcf1303c9837933bbb820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the unit's current notice. <br /></td></tr>
 <tr class="separator:ad776963e810bcf1303c9837933bbb820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classEventComponent"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEventComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEventComponent.html">EventComponent</a></td></tr>
+<tr class="memitem:aac68ab2c73ea6c329042b67d07060256 inherit pub_methods_classEventComponent" id="r_aac68ab2c73ea6c329042b67d07060256"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>EventComponent</b> ()</td></tr>
+<tr class="memdesc:aac68ab2c73ea6c329042b67d07060256 inherit pub_methods_classEventComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor. <br /></td></tr>
+<tr class="separator:aac68ab2c73ea6c329042b67d07060256 inherit pub_methods_classEventComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ad6a49089627f0113027449a47b0e7 inherit pub_methods_classEventComponent" id="r_a81ad6a49089627f0113027449a47b0e7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventComponent.html#a81ad6a49089627f0113027449a47b0e7">~EventComponent</a> ()=default</td></tr>
+<tr class="memdesc:a81ad6a49089627f0113027449a47b0e7 inherit pub_methods_classEventComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor is pure virtual hence the default same as the following:  <br /></td></tr>
+<tr class="separator:a81ad6a49089627f0113027449a47b0e7 inherit pub_methods_classEventComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5166d3de01b1e8abc3eef9d8de468b10 inherit pub_methods_classEventComponent" id="r_a5166d3de01b1e8abc3eef9d8de468b10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventComponent.html#a5166d3de01b1e8abc3eef9d8de468b10">print</a> ()=0</td></tr>
+<tr class="memdesc:a5166d3de01b1e8abc3eef9d8de468b10 inherit pub_methods_classEventComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">print pure virtual function  <br /></td></tr>
 <tr class="separator:a5166d3de01b1e8abc3eef9d8de468b10 inherit pub_methods_classEventComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classEventObserver"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classEventObserver')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classEventObserver.html">EventObserver</a></td></tr>
 <tr class="memitem:a428ca7e5cee4a7ec8f88a0b7c4fcce73 inherit pub_methods_classEventObserver" id="r_a428ca7e5cee4a7ec8f88a0b7c4fcce73"><td class="memItemLeft" align="right" valign="top">
@@ -234,7 +244,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>capacity</b></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classEventComponent.html">EventComponent</a>.</p>
+<p>add component to the tree hierarchy as a child </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmp</td><td>is the <a class="el" href="classEventComponent.html" title="Component participant in the GoF design pattern Composite.">EventComponent</a> to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classEventComponent.html#afa3078e25a246b5576c96baf5b6cc5e2">EventComponent</a>.</p>
 
 </div>
 </div>
@@ -263,7 +281,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>capacity</b></td></tr>
 
 <p>returns capacity of leaf </p>
 
-<p>Implements <a class="el" href="classEventComponent.html">EventComponent</a>.</p>
+<p>Implements <a class="el" href="classEventComponent.html#a34ec2477f21d736438e5caac06908f52">EventComponent</a>.</p>
 
 </div>
 </div>
@@ -312,7 +330,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>capacity</b></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classEventComponent.html">EventComponent</a>.</p>
+<p>remove component from the tree hierarchy </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmp</td><td>is the component to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classEventComponent.html#abdf006f6001d43d13a41b2d47583ebe0">EventComponent</a>.</p>
 
 </div>
 </div>
@@ -366,7 +392,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>capacity</b></td></tr>
 </div><div class="memdoc">
 
 <p>Responds to a notification from the parent subject. </p>
-<p>Pulls the latest <a class="el" href="classEventNotice.html" title="enum NoticeType for the different notices">EventNotice</a> from the parent </p>
+<p>Pulls the latest <a class="el" href="classEventNotice.html" title="EventNotice contains the message and notice type.">EventNotice</a> from the parent </p>
 
 <p>Implements <a class="el" href="classEventObserver.html#a75d5314d24bdeb487978d2b596b1397c">EventObserver</a>.</p>
 

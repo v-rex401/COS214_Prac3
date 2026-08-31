@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="A concrete leaf component representing a medical response team." alt="" coords="99,152,195,177"/>
 <area shape="rect" id="Node000002" href="$classEventUnit.html" title="An abstract base class for leaf participants in the Composite pattern." alt="" coords="104,79,191,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,118,150,152,145,152,145,118"/>
-<area shape="rect" id="Node000003" href="$classEventComponent.html" title=" " alt="" coords="5,5,140,31"/>
+<area shape="rect" id="Node000003" href="$classEventComponent.html" title="Component participant in the GoF design pattern Composite." alt="" coords="5,5,140,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,38,137,77,133,80,93,42"/>
 <area shape="rect" id="Node000004" href="$classEventObserver.html" title="Observer participant of the GoF design pattern Observer." alt="" coords="164,5,283,31"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="203,42,162,80,158,76,199,38"/>

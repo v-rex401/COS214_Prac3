@@ -4,15 +4,15 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="332,40,256,81,253,76,329,35"/>
 <area shape="rect" id="Node000006" href="$classEventUnit.html" title="An abstract base class for leaf participants in the Composite pattern." alt="" coords="573,79,659,104"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="419,32,576,76,574,81,417,37"/>
-<area shape="rect" id="Node000003" href="$classGamingZone.html" title=" " alt="" coords="5,152,112,177"/>
+<area shape="rect" id="Node000003" href="$classGamingZone.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="5,152,112,177"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="194,112,88,154,86,149,192,107"/>
-<area shape="rect" id="Node000004" href="$classMainHall.html" title=" " alt="" coords="136,152,216,177"/>
+<area shape="rect" id="Node000004" href="$classMainHall.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="136,152,216,177"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="218,116,187,154,183,150,213,113"/>
-<area shape="rect" id="Node000005" href="$classVendorZone.html" title=" " alt="" coords="241,152,341,177"/>
+<area shape="rect" id="Node000005" href="$classVendorZone.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="241,152,341,177"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="253,113,283,150,279,154,249,116"/>
-<area shape="rect" id="Node000007" href="$classCosplayStage.html" title="A concrete leaf component representing a cosplay stage or competition area." alt="" coords="365,152,475,177"/>
+<area shape="rect" id="Node000007" href="$classCosplayStage.html" title=" " alt="" coords="365,152,475,177"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="573,111,453,154,451,149,571,106"/>
-<area shape="rect" id="Node000008" href="$classDemoStation.html" title="A concrete leaf component representing a gaming or tech demo station." alt="" coords="500,152,607,177"/>
+<area shape="rect" id="Node000008" href="$classDemoStation.html" title=" " alt="" coords="500,152,607,177"/>
 <area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="599,116,565,154,561,150,595,113"/>
 <area shape="rect" id="Node000009" href="$classMedicTeam.html" title="A concrete leaf component representing a medical response team." alt="" coords="631,152,727,177"/>
 <area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="637,113,671,150,667,154,633,116"/>

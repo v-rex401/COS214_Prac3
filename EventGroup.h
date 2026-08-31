@@ -9,6 +9,7 @@
 
 /**
  * @brief Concrete Subject and Concrete Observer Implementation
+ * @file EventGroup.h
  * @class EventGroup
  * @author Vashti
  *

@@ -75,27 +75,32 @@ $(function() {
   <div class="headertitle"><div class="title">EventComponent Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Component participant in the GoF design pattern Composite.  
+ <a href="classEventComponent.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="EventComponent_8h_source.html">EventComponent.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for EventComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="classEventComponent__inherit__graph.png" border="0" usemap="#aEventComponent_inherit__map" alt="Inheritance graph"/></div>
 <map name="aEventComponent_inherit__map" id="aEventComponent_inherit__map">
-<area shape="rect" title=" " alt="" coords="166,5,301,31"/>
+<area shape="rect" title="Component participant in the GoF design pattern Composite." alt="" coords="166,5,301,31"/>
 <area shape="rect" href="classEventControl.html" title="EventControl is one of the concrete subjects." alt="" coords="53,79,160,104"/>
 <area shape="poly" title=" " alt="" coords="202,40,129,81,126,76,200,35"/>
 <area shape="rect" href="classEventGroup.html" title="Concrete Subject and Concrete Observer Implementation." alt="" coords="184,79,283,104"/>
 <area shape="poly" title=" " alt="" coords="236,44,236,79,231,79,231,44"/>
 <area shape="rect" href="classEventUnit.html" title="An abstract base class for leaf participants in the Composite pattern." alt="" coords="573,79,659,104"/>
 <area shape="poly" title=" " alt="" coords="309,31,573,79,572,85,308,36"/>
-<area shape="rect" href="classGamingZone.html" title=" " alt="" coords="5,152,112,177"/>
+<area shape="rect" href="classGamingZone.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="5,152,112,177"/>
 <area shape="poly" title=" " alt="" coords="194,112,88,154,86,149,192,107"/>
-<area shape="rect" href="classMainHall.html" title=" " alt="" coords="136,152,216,177"/>
+<area shape="rect" href="classMainHall.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="136,152,216,177"/>
 <area shape="poly" title=" " alt="" coords="218,116,187,154,183,150,213,113"/>
-<area shape="rect" href="classVendorZone.html" title=" " alt="" coords="241,152,341,177"/>
+<area shape="rect" href="classVendorZone.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="241,152,341,177"/>
 <area shape="poly" title=" " alt="" coords="253,113,283,150,279,154,249,116"/>
-<area shape="rect" href="classCosplayStage.html" title="A concrete leaf component representing a cosplay stage or competition area." alt="" coords="365,152,475,177"/>
+<area shape="rect" href="classCosplayStage.html" title=" " alt="" coords="365,152,475,177"/>
 <area shape="poly" title=" " alt="" coords="573,111,453,154,451,149,571,106"/>
-<area shape="rect" href="classDemoStation.html" title="A concrete leaf component representing a gaming or tech demo station." alt="" coords="500,152,607,177"/>
+<area shape="rect" href="classDemoStation.html" title=" " alt="" coords="500,152,607,177"/>
 <area shape="poly" title=" " alt="" coords="599,116,565,154,561,150,595,113"/>
 <area shape="rect" href="classMedicTeam.html" title="A concrete leaf component representing a medical response team." alt="" coords="631,152,727,177"/>
 <area shape="poly" title=" " alt="" coords="637,113,671,150,667,154,633,116"/>
@@ -108,15 +113,59 @@ Inheritance diagram for EventComponent:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aac68ab2c73ea6c329042b67d07060256" id="r_aac68ab2c73ea6c329042b67d07060256"><td class="memItemLeft" align="right" valign="top"><a id="aac68ab2c73ea6c329042b67d07060256" name="aac68ab2c73ea6c329042b67d07060256"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>EventComponent</b> ()</td></tr>
+<tr class="memdesc:aac68ab2c73ea6c329042b67d07060256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor. <br /></td></tr>
+<tr class="separator:aac68ab2c73ea6c329042b67d07060256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa3078e25a246b5576c96baf5b6cc5e2" id="r_afa3078e25a246b5576c96baf5b6cc5e2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventComponent.html#afa3078e25a246b5576c96baf5b6cc5e2">add</a> (<a class="el" href="classEventComponent.html">EventComponent</a> *cmp)=0</td></tr>
+<tr class="memdesc:afa3078e25a246b5576c96baf5b6cc5e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">add component to the tree hierarchy as a child  <br /></td></tr>
 <tr class="separator:afa3078e25a246b5576c96baf5b6cc5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdf006f6001d43d13a41b2d47583ebe0" id="r_abdf006f6001d43d13a41b2d47583ebe0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventComponent.html#abdf006f6001d43d13a41b2d47583ebe0">remove</a> (<a class="el" href="classEventComponent.html">EventComponent</a> *cmp)=0</td></tr>
+<tr class="memdesc:abdf006f6001d43d13a41b2d47583ebe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove component from the tree hierarchy  <br /></td></tr>
 <tr class="separator:abdf006f6001d43d13a41b2d47583ebe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ad6a49089627f0113027449a47b0e7" id="r_a81ad6a49089627f0113027449a47b0e7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventComponent.html#a81ad6a49089627f0113027449a47b0e7">~EventComponent</a> ()=default</td></tr>
+<tr class="memdesc:a81ad6a49089627f0113027449a47b0e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor is pure virtual hence the default same as the following:  <br /></td></tr>
+<tr class="separator:a81ad6a49089627f0113027449a47b0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5166d3de01b1e8abc3eef9d8de468b10" id="r_a5166d3de01b1e8abc3eef9d8de468b10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventComponent.html#a5166d3de01b1e8abc3eef9d8de468b10">print</a> ()=0</td></tr>
+<tr class="memdesc:a5166d3de01b1e8abc3eef9d8de468b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">print pure virtual function  <br /></td></tr>
 <tr class="separator:a5166d3de01b1e8abc3eef9d8de468b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34ec2477f21d736438e5caac06908f52" id="r_a34ec2477f21d736438e5caac06908f52"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventComponent.html#a34ec2477f21d736438e5caac06908f52">getCapacity</a> ()=0</td></tr>
+<tr class="memdesc:a34ec2477f21d736438e5caac06908f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the capacity of the component (pure virtual)  <br /></td></tr>
 <tr class="separator:a34ec2477f21d736438e5caac06908f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Component participant in the GoF design pattern Composite. </p>
+<dl class="section author"><dt>Author</dt><dd>Jordan </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a81ad6a49089627f0113027449a47b0e7" name="a81ad6a49089627f0113027449a47b0e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81ad6a49089627f0113027449a47b0e7">&#9670;&#160;</a></span>~EventComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual EventComponent::~EventComponent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructor is pure virtual hence the default same as the following: </p>
+<div class="fragment"><div class="line"><span class="keyword">virtual</span> <a class="code hl_function" href="classEventComponent.html#a81ad6a49089627f0113027449a47b0e7">~EventComponent</a>() = 0;</div>
+<div class="ttc" id="aclassEventComponent_html_a81ad6a49089627f0113027449a47b0e7"><div class="ttname"><a href="classEventComponent.html#a81ad6a49089627f0113027449a47b0e7">EventComponent::~EventComponent</a></div><div class="ttdeci">virtual ~EventComponent()=default</div><div class="ttdoc">Destructor is pure virtual hence the default same as the following:</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="afa3078e25a246b5576c96baf5b6cc5e2" name="afa3078e25a246b5576c96baf5b6cc5e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa3078e25a246b5576c96baf5b6cc5e2">&#9670;&#160;</a></span>add()</h2>
@@ -142,7 +191,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classEventControl.html#ac140f8d43e878d0b3a9f3f2b9856824c">EventControl</a>, and <a class="el" href="classEventGroup.html#ab4a0f1e6e451c72f19a8fca207a53cd1">EventGroup</a>.</p>
+<p>add component to the tree hierarchy as a child </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmp</td><td>is the <a class="el" href="classEventComponent.html" title="Component participant in the GoF design pattern Composite.">EventComponent</a> to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classEventControl.html#ac140f8d43e878d0b3a9f3f2b9856824c">EventControl</a>, <a class="el" href="classEventGroup.html#ab4a0f1e6e451c72f19a8fca207a53cd1">EventGroup</a>, and <a class="el" href="classEventUnit.html#aa3df127ea5af52e03a8825635b919fe3">EventUnit</a>.</p>
 
 </div>
 </div>
@@ -168,6 +225,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>get the capacity of the component (pure virtual) </p>
+<dl class="section return"><dt>Returns</dt><dd>capacity </dd></dl>
 
 <p>Implemented in <a class="el" href="classEventGroup.html#a09a32f623f3caf9acc120b5dcea09c5f">EventGroup</a>, <a class="el" href="classEventUnit.html#a322c60fb4d1078fa5870db2fab7aef21">EventUnit</a>, and <a class="el" href="classEventControl.html#afe298276ffb7993079671a58f95b191f">EventControl</a>.</p>
 
@@ -195,6 +255,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>print pure virtual function </p>
 
 <p>Implemented in <a class="el" href="classGamingZone.html#a571862e78a5db14139df8c2e85c1e0f4">GamingZone</a>, <a class="el" href="classMainHall.html#a7aef32bc275fb975fa613652eb82571a">MainHall</a>, <a class="el" href="classVendorZone.html#a33a167b89285f6ba3f8439a9d583b6b5">VendorZone</a>, <a class="el" href="classCosplayStage.html#ad0cb3cb7dd9dd4988965b8f94805aa77">CosplayStage</a>, <a class="el" href="classDemoStation.html#a3fe044f1c3c176724aa274764d4fac3a">DemoStation</a>, <a class="el" href="classEventControl.html#af8bc301edba33d729facdb5e0f6d6d60">EventControl</a>, <a class="el" href="classMedicTeam.html#af768b85bf2899037dc843f92ae0606cf">MedicTeam</a>, <a class="el" href="classSecurityGuard.html#af14ae044776a72c4666d62230a282529">SecurityGuard</a>, and <a class="el" href="classVendor.html#ae6d34cd7e7e0d99a0dbf7d9a93c311f7">Vendor</a>.</p>
 
@@ -224,7 +286,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classEventControl.html#aa812f086961f5cd6f7c9def43ef92a97">EventControl</a>, and <a class="el" href="classEventGroup.html#a0f2302c783dd8ff0fc7e01d611fc840d">EventGroup</a>.</p>
+<p>remove component from the tree hierarchy </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmp</td><td>is the component to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classEventControl.html#aa812f086961f5cd6f7c9def43ef92a97">EventControl</a>, <a class="el" href="classEventGroup.html#a0f2302c783dd8ff0fc7e01d611fc840d">EventGroup</a>, and <a class="el" href="classEventUnit.html#a80dcaeff901a4e586e29d0cb1781305a">EventUnit</a>.</p>
 
 </div>
 </div>

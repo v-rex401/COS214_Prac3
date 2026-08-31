@@ -1,6 +1,6 @@
 <map id="EventGroup" name="EventGroup">
 <area shape="rect" id="Node000001" title="Concrete Subject and Concrete Observer Implementation." alt="" coords="169,79,267,104"/>
-<area shape="rect" id="Node000002" href="$classEventComponent.html" title=" " alt="" coords="5,5,140,31"/>
+<area shape="rect" id="Node000002" href="$classEventComponent.html" title="Component participant in the GoF design pattern Composite." alt="" coords="5,5,140,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,34,195,76,193,81,107,39"/>
 <area shape="rect" id="Node000003" href="$classEventSubject.html" title="The abstract subject participant in the Observer pattern." alt="" coords="165,5,271,31"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,44,221,79,215,79,215,44"/>

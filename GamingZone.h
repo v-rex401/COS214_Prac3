@@ -4,6 +4,7 @@
 #include "EventGroup.h"
 #include <string>
 /**
+ * @file GamingZone.h
  * @brief One of the ConcreteSubjects which is also a ConcreteObserver
  * @author Vashti
  */

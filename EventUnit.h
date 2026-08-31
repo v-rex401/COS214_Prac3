@@ -8,6 +8,7 @@
 #include "EventNotice.h"
 
 /**
+ * @file EventUnit.h
  * @brief An abstract base class for leaf participants in the Composite pattern.
  *
  * This class acts as an observer that executes an update command when it receives

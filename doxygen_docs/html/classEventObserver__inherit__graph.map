@@ -1,6 +1,6 @@
 <map id="EventObserver" name="EventObserver">
 <area shape="rect" id="Node000001" title="Observer participant of the GoF design pattern Observer." alt="" coords="305,5,423,31"/>
-<area shape="rect" id="Node000002" href="$classEventGroup.html" title=" " alt="" coords="184,79,283,104"/>
+<area shape="rect" id="Node000002" href="$classEventGroup.html" title="Concrete Subject and Concrete Observer Implementation." alt="" coords="184,79,283,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="332,40,256,81,253,76,329,35"/>
 <area shape="rect" id="Node000006" href="$classEventUnit.html" title="An abstract base class for leaf participants in the Composite pattern." alt="" coords="573,79,659,104"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="419,32,576,76,574,81,417,37"/>

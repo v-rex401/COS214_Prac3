@@ -8,9 +8,7 @@
 #include "EventSubject.h"
 
 /**
- * @file EventControl.cpp
  * @brief EventControl is one of the concrete subjects
- * @class EventControl
  * @author Vashti
  */
 

@@ -8,7 +8,6 @@
 #include "EventObserver.h"
 
 /**
- * @file EventGroup.cpp
  * @brief Concrete Subject and Concrete Observer Implementation
  * @class EventGroup
  * @author Vashti

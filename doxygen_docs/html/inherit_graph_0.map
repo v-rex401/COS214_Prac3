@@ -1,8 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="Node000000" href="$classEventComponent.html" title=" " alt="" coords="5,104,140,129"/>
-<area shape="rect" id="Node000001" href="$classEventControl.html" title=" " alt="" coords="188,55,295,80"/>
+<area shape="rect" id="Node000001" href="$classEventControl.html" title="EventControl is one of the concrete subjects." alt="" coords="188,55,295,80"/>
 <area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="129,97,196,78,198,83,131,103"/>
-<area shape="rect" id="Node000003" href="$classEventGroup.html" title=" " alt="" coords="192,104,291,129"/>
+<area shape="rect" id="Node000003" href="$classEventGroup.html" title="Concrete Subject and Concrete Observer Implementation." alt="" coords="192,104,291,129"/>
 <area shape="poly" id="edge2_Node000000_Node000003" title=" " alt="" coords="154,114,192,114,192,119,154,119"/>
 <area shape="rect" id="Node000008" href="$classEventUnit.html" title="An abstract base class for leaf participants in the Composite pattern." alt="" coords="198,203,285,228"/>
 <area shape="poly" id="edge6_Node000000_Node000008" title=" " alt="" coords="108,134,220,200,217,205,106,139"/>

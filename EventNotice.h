@@ -3,8 +3,13 @@
 
 #include <string>
 /**
- * @brief enum NoticeType for the different notices
+ * @brief EventNotice contains the message and notice type
+ * @class EventNotice
  * @author Jordan
+ */
+
+/**
+ * @brief enum NoticeType for all the different types of notices
  */
 enum class NoticeType
 {

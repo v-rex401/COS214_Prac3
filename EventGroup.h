@@ -7,7 +7,7 @@
 #include "EventSubject.h"
 #include "EventObserver.h"
 
-class EventGroup : public EventComponent, EventSubject, EventObserver
+class EventGroup : public EventComponent, public EventSubject, public EventObserver
 {
 
 private:

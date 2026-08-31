@@ -113,19 +113,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae7506622df5596f7385e23ca8e640a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor. <br /></td></tr>
 <tr class="separator:ae7506622df5596f7385e23ca8e640a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4311284d079d3d78f2da65590888fe87" id="r_a4311284d079d3d78f2da65590888fe87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventControl.html#a4311284d079d3d78f2da65590888fe87">alert</a> (<a class="el" href="classEventNotice.html">EventNotice</a> noti)</td></tr>
-<tr class="memdesc:a4311284d079d3d78f2da65590888fe87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the alert to observers, since we are using pull method, obersvers must get current state.  <br /></td></tr>
+<tr class="memdesc:a4311284d079d3d78f2da65590888fe87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the alert to observers We are using the Pull Method. The currentNotice will be stored and all concrete observers will have to pull the update from Subject.  <br /></td></tr>
 <tr class="separator:a4311284d079d3d78f2da65590888fe87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac140f8d43e878d0b3a9f3f2b9856824c" id="r_ac140f8d43e878d0b3a9f3f2b9856824c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventControl.html#ac140f8d43e878d0b3a9f3f2b9856824c">add</a> (<a class="el" href="classEventComponent.html">EventComponent</a> *cmp) override</td></tr>
-<tr class="memdesc:ac140f8d43e878d0b3a9f3f2b9856824c"><td class="mdescLeft">&#160;</td><td class="mdescRight">add function to attach components to the componentList  <br /></td></tr>
+<tr class="memdesc:ac140f8d43e878d0b3a9f3f2b9856824c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach components to the componentList.  <br /></td></tr>
 <tr class="separator:ac140f8d43e878d0b3a9f3f2b9856824c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa812f086961f5cd6f7c9def43ef92a97" id="r_aa812f086961f5cd6f7c9def43ef92a97"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventControl.html#aa812f086961f5cd6f7c9def43ef92a97">remove</a> (<a class="el" href="classEventComponent.html">EventComponent</a> *cmp) override</td></tr>
+<tr class="memdesc:aa812f086961f5cd6f7c9def43ef92a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove the component from <a class="el" href="classEventControl.html">EventControl</a> Event Control is a composite participant EventGroups are removed with this function by searching through the list of components associated with <a class="el" href="classEventControl.html">EventControl</a>  <br /></td></tr>
 <tr class="separator:aa812f086961f5cd6f7c9def43ef92a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0123af35e071d2d3174615cd7b72304e" id="r_a0123af35e071d2d3174615cd7b72304e"><td class="memItemLeft" align="right" valign="top"><a id="a0123af35e071d2d3174615cd7b72304e" name="a0123af35e071d2d3174615cd7b72304e"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventControl</b> () override</td></tr>
 <tr class="memdesc:a0123af35e071d2d3174615cd7b72304e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:a0123af35e071d2d3174615cd7b72304e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Vashti </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac42d7d402b1eafbb08472d4fc9b4e200" name="ac42d7d402b1eafbb08472d4fc9b4e200"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac42d7d402b1eafbb08472d4fc9b4e200">&#9670;&#160;</a></span>EventControl()</h2>
 
@@ -145,7 +148,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventControl</b> 
 <p>parameterized Constructor </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">name</td><td>the name of the eventControl centre </td></tr>
+    <tr><td class="paramname">name</td><td>is the eventControl centres title </td></tr>
   </table>
   </dd>
 </dl>
@@ -177,13 +180,14 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventControl</b> 
 </table>
 </div><div class="memdoc">
 
-<p>add function to attach components to the componentList </p>
+<p>Attach components to the componentList. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cmp</td><td>The component to add </td></tr>
+    <tr><td class="paramname">cmp</td><td>the component to add to the list </td></tr>
   </table>
   </dd>
 </dl>
+<p>insert at back of vector</p>
 
 <p>Implements <a class="el" href="classEventComponent.html">EventComponent</a>.</p>
 
@@ -205,7 +209,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventControl</b> 
       </table>
 </div><div class="memdoc">
 
-<p>Send the alert to observers, since we are using pull method, obersvers must get current state. </p>
+<p>Send the alert to observers We are using the Pull Method. The currentNotice will be stored and all concrete observers will have to pull the update from Subject. </p>
+<p>Set the new notice <br  />
+</p>
 <p>Update the observers <br  />
 </p>
 
@@ -264,6 +270,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventControl</b> 
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>remove the component from <a class="el" href="classEventControl.html">EventControl</a> Event Control is a composite participant EventGroups are removed with this function by searching through the list of components associated with <a class="el" href="classEventControl.html">EventControl</a> </p>
+<p>Shift all the elements to fill the gap <br  />
+</p>
 
 <p>Implements <a class="el" href="classEventComponent.html">EventComponent</a>.</p>
 

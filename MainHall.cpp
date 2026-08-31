@@ -59,8 +59,9 @@ void MainHall::print()
      * @brief Call all leaves and/or composites in Main Hall
      */
 
-    for (int i = 0; i < EventGroup::componentList.size(); i++)
+    std::vector<EventComponent *> list = getComponents();
+    for (int i = 0; i < list.size(); i++)
     {
-        EventGroup::componentList[i].print();
+        list[i]->print();
     }
 }

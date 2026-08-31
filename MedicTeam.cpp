@@ -1,7 +1,7 @@
 #include "MedicTeam.h"
 #include <iostream>
 
-MedicTeam::MedicTeam(std::string name) : EventUnit(name) {
+MedicTeam::MedicTeam(std::string name, int capacity) : EventUnit(name,capacity) {
 }
 
 void MedicTeam::print() {

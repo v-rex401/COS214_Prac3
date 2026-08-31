@@ -1,7 +1,7 @@
 #include "SecurityGuard.h"
 #include <iostream>
 
-SecurityGuard::SecurityGuard(std::string name) : EventUnit(name) {
+SecurityGuard::SecurityGuard(std::string name, int capacity) : EventUnit(name,capacity) {
 }
 
 void SecurityGuard::print() {

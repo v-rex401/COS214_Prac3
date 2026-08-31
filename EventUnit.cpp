@@ -1,8 +1,9 @@
 #include "EventUnit.h"
 
-EventUnit::EventUnit(std::string name){
+EventUnit::EventUnit(std::string name, int capacity){
     this->name = name;
     this->parent = nullptr;
+    this->capacity = capacity;
 
 }
 
@@ -40,5 +41,10 @@ EventUnit::~EventUnit() {
     if (this->parent != nullptr) {
         this->parent->detach(this);
     }
+}
+
+int EventUnit::getCapacity()
+{
+    return this->capacity;
 }
 

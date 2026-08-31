@@ -17,8 +17,9 @@ public:
      * @brief Parameterized constructor for MedicTeam.
      * 
      * @param name The string identifier for this specific medical unit.
+     * @param capacity The capacity of this specific unit
      */
-    MedicTeam(std::string name);
+    MedicTeam(std::string name,int capacity);
 
     /**
      * @brief Executes the specific reaction of the medical team to the current notice.

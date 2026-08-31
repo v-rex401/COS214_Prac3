@@ -1,7 +1,7 @@
 #include "CosplayStage.h"
 #include <iostream>
 
-CosplayStage::CosplayStage(std::string name) : EventUnit(name) {
+CosplayStage::CosplayStage(std::string name, int capacity) : EventUnit(name,capacity) {
 }
 
 void CosplayStage::print() {

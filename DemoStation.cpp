@@ -1,7 +1,7 @@
 #include "DemoStation.h"
 #include <iostream>
 
-DemoStation::DemoStation(std::string name) : EventUnit(name) {
+DemoStation::DemoStation(std::string name,int capacity) : EventUnit(name,capacity) {
 }
 
 void DemoStation::print() {

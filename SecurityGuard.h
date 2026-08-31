@@ -17,8 +17,9 @@ public:
      * @brief Parameterized constructor for SecurityGuard.
      * 
      * @param name The string identifier for this specific security unit.
+     * @param capacity The capacity of this specific unit
      */
-    SecurityGuard(std::string name);
+    SecurityGuard(std::string name, int capacity);
 
     /**
      * @brief Executes the specific reaction of the security guard to the current notice.

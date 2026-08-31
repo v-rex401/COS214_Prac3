@@ -13,6 +13,8 @@ public:
 	virtual ~EventComponent() = default;
 
 	virtual void print() = 0;
+
+	virtual int getCapacity() = 0;
 };
 
 #endif

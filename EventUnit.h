@@ -16,6 +16,12 @@
  */
 class EventUnit : public EventComponent, public EventObserver
 {
+protected:
+     /**
+      * @brief Capacity of the individual leaves
+      *
+      */
+     int capacity;
 
 private:
      /**
@@ -38,7 +44,7 @@ public:
       *
       * @param name The string identifier for this specific unit.
       */
-     EventUnit(std::string name);
+     EventUnit(std::string name, int capacity);
 
      /**
       * @brief Responds to a notification from the parent subject.
@@ -63,6 +69,11 @@ public:
       */
 
      void setParent(EventSubject *par);
+
+     /**
+      * @brief returns capacity of leaf
+      */
+     int getCapacity();
 
      /**
       * @brief Default virtual destructor to ensure safe polymorphic cleanup.

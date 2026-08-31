@@ -17,8 +17,9 @@ public:
      * @brief Parameterized constructor for Vendor.
      * 
      * @param name The string identifier for this specific vendor unit.
+     * @param capacity The capacity of this specific unit
      */
-    Vendor(std::string name);
+    Vendor(std::string name, int capacity);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
     /**
      * @brief Executes the specific reaction of the vendor to the current notice.

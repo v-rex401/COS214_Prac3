@@ -17,8 +17,9 @@ public:
      * @brief Parameterized constructor for DemoStation.
      * 
      * @param name The string identifier for this specific demo station unit.
+     * @param capacity The capacity of this specific unit
      */
-    DemoStation(std::string name);
+    DemoStation(std::string name, int capacity);
 
     /**
      * @brief Executes the specific reaction of the demo station to the current notice.

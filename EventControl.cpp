@@ -2,6 +2,10 @@
 #include "EventNotice.h"
 #include "EventSubject.h"
 #include <iostream>
+
+static int capacity = 0;
+static const int max_capacity = 10000;
+
 /**
  * @file EventControl.cpp
  * @brief EventControl is one of the concrete subjects

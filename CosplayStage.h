@@ -17,8 +17,9 @@ public:
      * @brief Parameterized constructor for CosplayStage.
      * 
      * @param name The string identifier for this specific cosplay stage unit.
+     * @param capacity The capacity of this specific unit
      */
-    CosplayStage(std::string name);
+    CosplayStage(std::string name, int capacity);
 
     /**
      * @brief Executes the specific reaction of the cosplay stage to the current notice.

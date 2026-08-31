@@ -1,7 +1,7 @@
 #include "Vendor.h"
 #include <iostream>
 
-Vendor::Vendor(std::string name) : EventUnit(name) {
+Vendor::Vendor(std::string name, int capacity) : EventUnit(name, capacity) {
 }
 
 void Vendor::print() {

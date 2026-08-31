@@ -79,3 +79,13 @@ EventGroup::~EventGroup()
         }
     }
 }
+
+/**
+ * @brief
+ * @return componentList of type std::vector<EventComponent*>
+ */
+
+std::vector<EventComponent *> EventGroup::getComponents()
+{
+    return componentList;
+}

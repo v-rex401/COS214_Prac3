@@ -32,25 +32,25 @@ void MainHall::print()
     std::cout << message << std::endl;
     switch (type)
     {
-    case 0:
+    case NoticeType::BEGIN:
         std::cout << "Main Hall Is open now" << std::endl;
         break;
-    case 1:
+    case NoticeType::END:
         std::cout << "Main Hall is closed now" << std::endl;
         break;
-    case 2:
+    case NoticeType::DELAYED:
         std::cout << "Main Hall opening is delayed, please wait outside" << std::endl;
         break;
-    case 3:
+    case NoticeType::CAPACITY_ALERT:
         std::cout << "Main Hall is too full - proceed to another hall" << std::endl;
         break;
-    case 4:
+    case NoticeType::EVACUATE:
         std::cout << "Please Evacuate Main Hall" << std::endl;
         break;
-    case 5:
+    case NoticeType::FIRE:
         std::cout << "Fire - please move outside" << std::endl;
         break;
-    case 6:
+    case NoticeType::WEATHER_ALERT:
         std::cout << "Please stay inside the Main Hall" << std::endl;
         break;
     }

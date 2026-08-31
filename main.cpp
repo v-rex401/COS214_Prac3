@@ -74,6 +74,7 @@ int main()
     /**ConcreteSubject */
     EventControl *manager = new EventControl("Comic Con", 5000);
     
+    manager->add(mainHall); 
     manager->attach(mainHall);
     mainHall->setParent(manager);
     manager->add(mainHall); 
@@ -84,6 +85,7 @@ int main()
     manager->detach(gameZone);
     manager->remove(gameZone);
     
+    manager->add(vendorArea);
     manager->attach(vendorArea);
     vendorArea->setParent(manager);
     manager->add(vendorArea);
@@ -112,8 +114,10 @@ int main()
 
     // 2. The Dynamic Structural Change (Observer leaving mid-execution)
     std::cout << "\n[EVENT CONTROL] Fire is spreading! Permanently detaching Vendor Zone from the event grid...\n" << std::endl;
+
     manager->detach(vendorArea);
     manager->remove(vendorArea);
+
 
     vendorArea->setParent(nullptr);//forget parent
 

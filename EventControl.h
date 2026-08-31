@@ -7,11 +7,12 @@
 #include "EventComponent.h"
 #include "EventSubject.h"
 
-class EventControl : public EventComponent, EventSubject {
+class EventControl : public EventComponent, EventSubject
+{
 
 private:
 	EventNotice currentNotice;
-	std::vector<EventComponent*> componentList;
+	std::vector<EventComponent *> componentList;
 	std::string name;
 
 public:
@@ -23,12 +24,13 @@ public:
 
 	void alert(EventNotice noti);
 
-	virtual void add(EventComponent* cmp) override;
+	virtual void add(EventComponent *cmp) override;
 
-	virtual void remove(EventComponent* cmp) override;
+	virtual void remove(EventComponent *cmp) override;
 
 	virtual ~EventControl() override;
 
+	void print() override;
 };
 
 #endif

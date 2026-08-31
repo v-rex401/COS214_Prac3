@@ -11,7 +11,7 @@
 int main()
 {
     /** @todo Build and register event */
-    EventControl *manager = new EventControl("Comic Con Manager");
+    EventControl *manager = new EventControl("Comic Con");
 
     /** @todo Cascading event notification */
 

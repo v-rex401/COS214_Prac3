@@ -13,12 +13,16 @@
 class GamingZone : public EventGroup
 {
 public:
+    GamingZone(std::string name);
     void print();
 };
 
 /**
- * @brief  Implementation
+ * @brief  Constructor
  */
+GamingZone::GamingZone(std::string name) : EventGroup(name)
+{
+}
 void GamingZone::print()
 {
     /**

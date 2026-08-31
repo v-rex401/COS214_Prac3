@@ -22,9 +22,14 @@ public:
  */
 void MainHall::print()
 {
+    /**
+     * @brief Implementation of the Composite Print
+     */
     EventNotice noti = EventGroup::getNotice();
     enum NoticeType type = noti.getType(); /** @todo Implement getType in EventNotice Class */
+    std::string message = noti.getMsg();   /** @todo Implement getMsg in EventNotice Class */
 
+    std::cout << message << std::endl;
     switch (type)
     {
     case 0:
@@ -48,5 +53,14 @@ void MainHall::print()
     case 6:
         std::cout << "Please stay inside the Main Hall" << std::endl;
         break;
+    }
+
+    /**
+     * @brief Call all leaves and/or composites in Main Hall
+     */
+
+    for (int i = 0; i < EventGroup::componentList.size(); i++)
+    {
+        EventGroup::componentList[i].print();
     }
 }

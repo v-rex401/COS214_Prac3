@@ -28,3 +28,11 @@ void EventUnit::setParent(EventSubject* par){
     }
 }
 
+std::string EventUnit::getName() {
+    return this->name;
+}
+
+EventNotice EventUnit::getCurrentNotice() {
+    return this->currentNotice;
+}
+

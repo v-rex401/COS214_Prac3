@@ -74,6 +74,12 @@ public:
      * 
      * Forces all concrete leaf subclasses to define their own specific output behavior.
      */
+
+     /** @brief Getter for the unit's name */
+    std::string getName();
+
+    /** @brief Getter for the unit's current notice */
+    EventNotice getCurrentNotice();
 };
 
 #endif

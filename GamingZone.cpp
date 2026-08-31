@@ -29,8 +29,8 @@ void GamingZone::print()
      * @brief Implementation of the Composite Print
      */
     EventNotice noti = EventGroup::getNotice();
-    enum NoticeType type = noti.getType(); /** @todo Implement getType in EventNotice Class */
-    std::string message = noti.getMsg();   /** @todo Implement getMsg in EventNotice Class */
+    enum NoticeType type = noti.getType();
+    std::string message = noti.getMsg();
 
     std::cout << message << std::endl;
     switch (type)

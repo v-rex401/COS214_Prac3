@@ -1,5 +1,5 @@
 <map id="MainHall" name="MainHall">
-<area shape="rect" id="Node000001" title="Forward Declaration." alt="" coords="178,152,258,177"/>
+<area shape="rect" id="Node000001" title="Forward Declaration used instead of header file." alt="" coords="178,152,258,177"/>
 <area shape="rect" id="Node000002" href="$classEventGroup.html" title=" " alt="" coords="169,79,267,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,118,221,152,215,152,215,118"/>
 <area shape="rect" id="Node000003" href="$classEventComponent.html" title=" " alt="" coords="5,5,140,31"/>

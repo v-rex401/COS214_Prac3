@@ -4,18 +4,8 @@
  * @author Vashti
  */
 
-#include "EventGroup.h"
+#include "GamingZone.h"
 #include <iostream>
-
-/**
- * @brief Forward Declaration
- */
-class GamingZone : public EventGroup
-{
-public:
-    GamingZone(std::string name);
-    void print();
-};
 
 /**
  * @brief  Constructor
@@ -58,13 +48,13 @@ void GamingZone::print()
         break;
     }
 
-    /**
-     * @brief Call all leaves and/or composites in Gaming Hall
-     */
+    // /**
+    //  * @brief Call all leaves and/or composites in Gaming Hall
+    //  */
 
-    std::vector<EventComponent *> list = getComponents();
-    for (int i = 0; i < list.size(); i++)
-    {
-        list[i]->print();
-    }
+    // std::vector<EventComponent *> list = getComponents();
+    // for (int i = 0; i < list.size(); i++)
+    // {
+    //     list[i]->print();
+    // }
 }

@@ -2,14 +2,15 @@
 #include "EventControl.h"
 #include "EventNotice.h"
 #include "EventGroup.h"
-#include "MainHall.cpp"
-#include "VendorZone.cpp"
-#include "GamingZone.cpp"
+#include "MainHall.h"
+#include "VendorZone.h"
+#include "GamingZone.h"
 #include "SecurityGuard.h"
 #include "MedicTeam.h"
 #include "CosplayStage.h"
 #include "Vendor.h"
 #include "DemoStation.h"
+#include <iostream>
 
 /**
  * @file main.cpp
@@ -41,8 +42,13 @@ int main()
 
     /**Observer Pattern */
     mainHall->attach(cosplayStage);
+    cosplayStage->setParent(mainHall);
+    
     mainHall->attach(mainMedics);
+    mainMedics->setParent(mainHall);
+    
     mainHall->attach(john);
+    john->setParent(mainHall);
 
     /**Build GamingZone */
     GamingZone *gameZone = new GamingZone("Gamer Den");
@@ -51,6 +57,7 @@ int main()
 
     /**Observer Pattern */
     gameZone->attach(ps4);
+    ps4->setParent(gameZone);
 
     /**Build the Vendor Zone */
 
@@ -59,6 +66,28 @@ int main()
 
     /**ConcreteSubject */
     EventControl *manager = new EventControl("Comic Con");
+    
+    manager->attach(mainHall);
+    mainHall->setParent(manager);
+    
+    manager->attach(gameZone);
+    gameZone->setParent(manager);
+
+    manager->remove(gameZone);
+    manager->detach(gameZone);
+    
+    manager->attach(vendorArea);
+    vendorArea->setParent(manager);
+
+    EventNotice fullNotice(NoticeType::CAPACITY_ALERT, "Comic Con is reaching maximum capacity.");
+    manager->alert(fullNotice);
+
+    std::cout << "=========================\nadding gamezon\n" ;
+    manager->add(gameZone);
+    manager->attach(gameZone);
+
+    EventNotice fullNotice2(NoticeType::WEATHER_ALERT, "Lots of rain.");
+    manager->alert(fullNotice2);
 
     /** @todo Cascading event notification */
 

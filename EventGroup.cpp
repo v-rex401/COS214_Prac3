@@ -1,5 +1,5 @@
 #include "EventGroup.h"
-
+#include "iostream"
 /**
  * @file EventGroup.cpp
  * @brief Concrete Subject and Concrete Observer Implementation
@@ -23,6 +23,8 @@ EventGroup::EventGroup(std::string name)
 void EventGroup::update()
 {
     currentNotice = parent->getNotice();
+    this->print();
+    this->notify();
 }
 
 /**

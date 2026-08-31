@@ -105,8 +105,30 @@ int main()
     /** @todo Conditional event response and Composite behaviour */
 
     /** @todo Signature event scenario */
+    /** @todo Signature event scenario */
+    std::cout << "\n=== [SD4: SIGNATURE EVENT SCENARIO - FIRE EVACUATION] ===\n" << std::endl;
+
+    // 1. The Incident Begins (Cascades to all zones)
+    EventNotice fireNotice(NoticeType::FIRE, "Fire detected at the Burger Stand!");
+    manager->alert(fireNotice);
+
+    // 2. The Dynamic Structural Change (Observer leaving mid-execution)
+    std::cout << "\n[EVENT CONTROL] Fire is spreading! Permanently detaching Vendor Zone from the event grid...\n" << std::endl;
+    manager->remove(vendorArea);
+    manager->detach(vendorArea);
+
+    vendorArea->setParent(nullptr);//forget parent
+
+    // 3. The Escalation (Cascades only to remaining zones)
+    EventNotice evacNotice(NoticeType::EVACUATE, "Vendor Zone compromised! Evacuate remaining zones immediately!");
+    manager->alert(evacNotice);
+
+    // 4. The Shutdown (Final lockdown)
+    EventNotice endNotice(NoticeType::END, "Venue cleared. Initiating final lockdown.");
+    manager->alert(endNotice);
     
     delete manager;
+    delete vendorArea;//cause it was removed for SD4
 
     return 0;
 }

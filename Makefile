@@ -58,3 +58,6 @@ clean:
 
 valgrind: eventflow 
 	valgrind --leak-check=full ./eventflow
+
+run: eventflow 
+	./eventflow 

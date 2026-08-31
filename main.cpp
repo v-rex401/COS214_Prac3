@@ -33,7 +33,8 @@ int main()
     /** Building the Main Hall  */
     MainHall *mainHall = new MainHall("Main Hall");
 
-    /**Composite Pattern  */
+    /**Build Main Hall  */
+    /**Composite Pattern */
     mainHall->add(cosplayStage);
     mainHall->add(mainMedics);
     mainHall->add(john);
@@ -43,8 +44,15 @@ int main()
     mainHall->attach(mainMedics);
     mainHall->attach(john);
 
+    /**Build GamingZone */
     GamingZone *gameZone = new GamingZone("Gamer Den");
     /** Composite Pattern */
+    gameZone->add(ps4);
+
+    /**Observer Pattern */
+    gameZone->attach(ps4);
+
+    /**Build the Vendor Zone */
 
     /**Observer Pattern */
     VendorZone *vendorArea = new VendorZone("Food Area");

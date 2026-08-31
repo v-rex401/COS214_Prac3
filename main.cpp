@@ -2,9 +2,9 @@
 #include "EventControl.h"
 #include "EventNotice.h"
 #include "EventGroup.h"
-#include "MainHall.cpp"
-#include "VendorZone.cpp"
-#include "GamingZone.cpp"
+#include "MainHall.h"
+#include "VendorZone.h"
+#include "GamingZone.h"
 #include "SecurityGuard.h"
 #include "MedicTeam.h"
 #include "CosplayStage.h"
@@ -51,6 +51,8 @@ int main()
 
     /**ConcreteSubject */
     EventControl *manager = new EventControl("Comic Con");
+
+    manager->add(mainHall);
 
     manager->print();
 

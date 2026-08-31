@@ -94,7 +94,7 @@ void EventControl::print()
 
     for (int i = 0; i < componentList.size(); i++)
     {
-        if (componentList[i] == nullptr)
+        if (componentList[i] != nullptr)
         {
             componentList[i]->print();
         }

@@ -4,18 +4,8 @@
  * @author Vashti
  */
 
-#include "EventGroup.h"
+#include "GamingZone.h"
 #include <iostream>
-
-/**
- * @brief Forward Declaration
- */
-class GamingZone : public EventGroup
-{
-public:
-    GamingZone(std::string name);
-    void print();
-};
 
 /**
  * @brief  Constructor

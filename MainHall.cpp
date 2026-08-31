@@ -4,19 +4,9 @@
  * @author Vashti
  */
 
-#include "EventGroup.h"
+#include "MainHall.h"
 #include "EventNotice.h"
 #include <iostream>
-
-/**
- * @brief Forward Declaration used instead of header file
- */
-class MainHall : public EventGroup
-{
-public:
-    MainHall(std::string name);
-    void print();
-};
 
 /**
  * @brief  DefaultConstructor

@@ -4,23 +4,12 @@
  * @author Vashti
  */
 
-#include "EventGroup.h"
+#include "VendorZone.h"
 #include <iostream>
-
-/**
- * @brief Forward Declaration
- */
-class VendorZone : public EventGroup
-{
-public:
-    VendorZone(std::string name);
-    void print();
-};
 
 /**
  * @brief  Constructor
  */
-
 VendorZone::VendorZone(std::string name) : EventGroup(name)
 {
 }

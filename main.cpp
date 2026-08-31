@@ -74,7 +74,6 @@ int main()
     /**ConcreteSubject */
     EventControl *manager = new EventControl("Comic Con", 5000);
 
-    // manager->add(mainHall);
     manager->attach(mainHall);
     mainHall->setParent(manager);
     manager->add(mainHall);
@@ -85,7 +84,6 @@ int main()
     manager->detach(gameZone);
     manager->remove(gameZone);
 
-    // manager->add(vendorArea);
     manager->attach(vendorArea);
     vendorArea->setParent(manager);
     manager->add(vendorArea);

@@ -39,10 +39,10 @@ void MainHall::print()
         std::cout << "Main Hall is closed now" << std::endl;
         break;
     case 2:
-        std::cout << "Main Hall has been delayed" << std::endl;
+        std::cout << "Main Hall opening is delayed, please wait outside" << std::endl;
         break;
     case 3:
-        std::cout << "Main Hall is too full - proceed to Gaming Hall" << std::endl;
+        std::cout << "Main Hall is too full - proceed to another hall" << std::endl;
         break;
     case 4:
         std::cout << "Please Evacuate Main Hall" << std::endl;

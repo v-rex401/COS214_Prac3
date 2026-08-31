@@ -14,12 +14,16 @@
 class MainHall : public EventGroup
 {
 public:
+    MainHall(std::string name);
     void print();
 };
 
 /**
- * @brief  Implementation
+ * @brief  DefaultConstructor
  */
+MainHall::MainHall(std::string name) : EventGroup(name)
+{
+}
 void MainHall::print()
 {
     /**

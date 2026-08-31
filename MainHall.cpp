@@ -49,16 +49,16 @@ void MainHall::print()
         break;
     }
 
-    /**
-     * @brief Call all leaves and/or composites in Main Hall
-     */
+    // /**
+    //  * @brief Call all leaves and/or composites in Main Hall
+    //  */
 
-    std::vector<EventComponent *> list = getComponents();
-    for (int i = 0; i < list.size(); i++)
-    {
-        if (list[i] != nullptr)
-        {
-            list[i]->print();
-        }
-    }
+    // std::vector<EventComponent *> list = getComponents();
+    // for (int i = 0; i < list.size(); i++)
+    // {
+    //     if (list[i] != nullptr)
+    //     {
+    //         list[i]->print();
+    //     }
+    // }
 }

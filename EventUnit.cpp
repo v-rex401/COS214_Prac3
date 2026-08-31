@@ -10,7 +10,7 @@ void EventUnit::update(){
     if(this->parent != nullptr){
         EventNotice newev = this->parent->getNotice();
         this->currentNotice = newev;
-
+        this->print();
     }
 }
 

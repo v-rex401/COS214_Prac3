@@ -40,21 +40,30 @@ int main()
 
     /**Observer Pattern */
     mainHall->attach(cosplayStage);
-    mainHall->attach(mainMedics);
-    mainHall->attach(john);
+    cosplayStage->setParent(mainHall);
 
-    GamingZone *gameZone = new GamingZone("Gamer Den");
+    mainHall->attach(mainMedics);
+    mainMedics->setParent(mainHall);
+
+    mainHall->attach(john);
+    john->setParent(mainHall);
+
+    //GamingZone *gameZone = new GamingZone("Gamer Den");
     /** Composite Pattern */
 
     /**Observer Pattern */
-    VendorZone *vendorArea = new VendorZone("Food Area");
+    // VendorZone *vendorArea = new VendorZone("Food Area");
 
     /**ConcreteSubject */
     EventControl *manager = new EventControl("Comic Con");
-
+    manager->attach(mainHall);
     manager->add(mainHall);
+    mainHall->setParent(manager);
 
-    manager->print();
+
+    EventNotice fullNotice(NoticeType::FIRE, "Comic Con is on fier ");
+    manager->alert(fullNotice);
+
 
     /** @todo Cascading event notification */
 

@@ -23,6 +23,8 @@ EventGroup::EventGroup(std::string name)
 void EventGroup::update()
 {
     currentNotice = parent->getNotice();
+    this->print();
+    this->notify();
 }
 
 /**

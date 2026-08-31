@@ -7,7 +7,7 @@
 #include "EventComponent.h"
 #include "EventSubject.h"
 
-class EventControl : public EventComponent, EventSubject
+class EventControl : public EventComponent, public EventSubject
 {
 
 private:

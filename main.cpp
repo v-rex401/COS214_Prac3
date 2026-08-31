@@ -72,6 +72,9 @@ int main()
     
     manager->attach(gameZone);
     gameZone->setParent(manager);
+
+    manager->remove(gameZone);
+    manager->detach(gameZone);
     
     manager->attach(vendorArea);
     vendorArea->setParent(manager);
@@ -79,7 +82,9 @@ int main()
     EventNotice fullNotice(NoticeType::CAPACITY_ALERT, "Comic Con is reaching maximum capacity.");
     manager->alert(fullNotice);
 
-    std::cout << "=========================\n" ;
+    std::cout << "=========================\nadding gamezon\n" ;
+    manager->add(gameZone);
+    manager->attach(gameZone);
 
     EventNotice fullNotice2(NoticeType::WEATHER_ALERT, "Lots of rain.");
     manager->alert(fullNotice2);

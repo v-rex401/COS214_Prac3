@@ -32,7 +32,7 @@ int main()
     DemoStation *ps4 = new DemoStation("PS4 Consoles", 30);
 
     /** Building the Main Hall  */
-    MainHall *mainHall = new MainHall("Main Hall", 10);
+    MainHall *mainHall = new MainHall("Main Hall", 1000);
 
     /**Build Main Hall  */
     /**Observer Pattern & Composite Pattern */

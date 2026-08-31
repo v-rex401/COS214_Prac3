@@ -1,12 +1,17 @@
+#include "EventComponent.h"
+#include "EventControl.h"
+#include "EventNotice.h"
+#include "EventGroup.h"
 /**
  * @file main.cpp
  * @class main class
- * @brief Program entry point
+ * @brief The Client runs here
  */
 
 int main()
 {
     /** @todo Build and register event */
+    EventControl *manager = new EventControl("Comic Con Manager");
 
     /** @todo Cascading event notification */
 

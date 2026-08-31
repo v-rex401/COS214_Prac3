@@ -24,9 +24,9 @@ void EventUnit::remove(EventComponent* cmp){
 }
 
 void EventUnit::setParent(EventSubject* par){
-    if(par != nullptr){
+    //if(par != nullptr){
         this->parent = par;
-    }
+   // }
 }
 
 std::string EventUnit::getName() {

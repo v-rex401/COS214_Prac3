@@ -53,7 +53,7 @@ void EventGroup::add(EventComponent *cmp)
 {
     if (current_cap + cmp->getCapacity() >= total_cap)
     {
-        std::cout << "Violates capacity check\n";
+        std::cout << this->name + " Violates capacity check\n";
         currentNotice = EventNotice(NoticeType::CAPACITY_ALERT, "Comic Con is reaching maximum capacity.");
         EventObserver* obs = dynamic_cast<EventObserver*>(cmp);
         if (obs != nullptr) {

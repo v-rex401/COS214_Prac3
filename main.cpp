@@ -20,11 +20,9 @@
 
 int main()
 {
-    // =========================================================
-    // SETUP: INITIALIZING EVENT COMPONENTS
-    // =========================================================
-    
-    /** Leaves */
+    /** @todo Build and register event */
+
+    /**Leaves */
     SecurityGuard *john = new SecurityGuard("John Doe", 5);
     MedicTeam *mainMedics = new MedicTeam("Main Hall Medics", 20);
     MedicTeam *vendorMedics = new MedicTeam("Vendor Zone Medics", 20);
@@ -33,98 +31,102 @@ int main()
     Vendor *burgers = new Vendor("Burger Stand", 15);
     DemoStation *ps4 = new DemoStation("PS4 Consoles", 30);
 
-    /** Composites - Capacities adjusted to allow initial setup */
-    MainHall *mainHall = new MainHall("Main Hall", 200); 
-    GamingZone *gameZone = new GamingZone("Gamer Den", 50); 
-    VendorZone *vendorArea = new VendorZone("Food Area", 60); 
-    EventControl *manager = new EventControl("Comic Con", 500); 
+    /** Building the Main Hall  */
+    MainHall *mainHall = new MainHall("Main Hall", 10);
 
-    // =========================================================
-    // SETUP: BUILDING THE COMPOSITE & OBSERVER TREES
-    // =========================================================
+    /**Build Main Hall  */
+    /**Observer Pattern & Composite Pattern */
+    mainHall->attach(cosplayStage);
+    cosplayStage->setParent(mainHall);
+    mainHall->add(cosplayStage);
+    
+    mainHall->attach(mainMedics);
+    mainMedics->setParent(mainHall);
+    mainHall->add(mainMedics);
+    
+    mainHall->attach(john);
+    john->setParent(mainHall);
+    mainHall->add(john);
 
-    /** Build Main Hall */
-    mainHall->add(cosplayStage); mainHall->attach(cosplayStage); cosplayStage->setParent(mainHall);
-    mainHall->add(mainMedics);   mainHall->attach(mainMedics);   mainMedics->setParent(mainHall);
-    mainHall->add(john);         mainHall->attach(john);         john->setParent(mainHall);
+    /**Build GamingZone */
+    GamingZone *gameZone = new GamingZone("Gamer Den", 1000);
+    
+    /**Observer Pattern & Composite Pattern */
+    gameZone->attach(ps4);
+    ps4->setParent(gameZone);
+    gameZone->add(ps4);
 
-    /** Build Gaming Zone */
-    gameZone->add(ps4);          gameZone->attach(ps4);          ps4->setParent(gameZone);
+    /**Build the Vendor Zone */
+    VendorZone *vendorArea = new VendorZone("Food Area", 1000);
+    
+    vendorArea->attach(vendorMedics);
+    vendorMedics->setParent(vendorArea);
+    vendorArea->add(vendorMedics);
 
-    /** Build Vendor Zone */
-    vendorArea->add(tacos);        vendorArea->attach(tacos);        tacos->setParent(vendorArea);
-    vendorArea->add(burgers);      vendorArea->attach(burgers);      burgers->setParent(vendorArea);
-    vendorArea->add(vendorMedics); vendorArea->attach(vendorMedics); vendorMedics->setParent(vendorArea);
+    vendorArea->attach(tacos);
+    tacos->setParent(vendorArea);
+    vendorArea->add(tacos);
 
-    /** Build Event Control (Root) */
-    manager->add(mainHall);   manager->attach(mainHall);   mainHall->setParent(manager);
-    manager->add(gameZone);   manager->attach(gameZone);   gameZone->setParent(manager);
-    manager->add(vendorArea); manager->attach(vendorArea); vendorArea->setParent(manager);
+    vendorArea->attach(burgers);
+    burgers->setParent(vendorArea);
+    vendorArea->add(burgers);
 
-    // =========================================================
-    // PHASE 1: EVENT OPENS
-    // =========================================================
-    std::cout << "\n========== PHASE 1: EVENT OPENS ==========\n";
-    EventNotice openNotice(NoticeType::BEGIN, "Comic Con 2026 is officially open!");
-    manager->alert(openNotice);
+    /**ConcreteSubject */
+    EventControl *manager = new EventControl("Comic Con", 5000);
+    
+    manager->attach(mainHall);
+    mainHall->setParent(manager);
+    manager->add(mainHall); 
+    
+    manager->attach(gameZone);
+    gameZone->setParent(manager);
 
-    // =========================================================
-    // PHASE 2: THE FIRE EMERGENCY
-    // =========================================================
-    std::cout << "\n========== PHASE 2: FIRE EMERGENCY ==========\n";
-    EventNotice fireNotice(NoticeType::FIRE, "EMERGENCY: Fire detected near the Burger Stand!");
+    manager->detach(gameZone);
+    manager->remove(gameZone);
+    
+    manager->attach(vendorArea);
+    vendorArea->setParent(manager);
+    manager->add(vendorArea);
+
+    EventNotice fullNotice(NoticeType::CAPACITY_ALERT, "Comic Con is reaching maximum capacity.");
+    manager->alert(fullNotice);
+
+    std::cout << "=========================\nadding gamezon\n" ;
+    manager->attach(gameZone);
+    manager->add(gameZone);
+
+    EventNotice fullNotice2(NoticeType::WEATHER_ALERT, "Lots of rain.");
+    manager->alert(fullNotice2);
+
+    /** @todo Cascading event notification */
+
+    /** @todo Conditional event response and Composite behaviour */
+
+    /** @todo Signature event scenario */
+    /** @todo Signature event scenario */
+    std::cout << "\n=== [SD4: SIGNATURE EVENT SCENARIO - FIRE EVACUATION] ===\n" << std::endl;
+
+    // 1. The Incident Begins (Cascades to all zones)
+    EventNotice fireNotice(NoticeType::FIRE, "Fire detected at the Burger Stand!");
     manager->alert(fireNotice);
 
-    // =========================================================
-    // PHASE 3: RUNTIME REORGANIZATION (Task 4.2)
-    // =========================================================
-    std::cout << "\n========== PHASE 3: RUNTIME REORGANIZATION ==========\n";
-    std::cout << "--> Transferring John Doe (Security) to Vendor Area to assist with the fire...\n";
-    
-    // Detach and remove from Main Hall
-    mainHall->remove(john);
-    mainHall->detach(john);
-    
-    // Add and attach to Vendor Zone
-    vendorArea->add(john);
-    vendorArea->attach(john);
-    john->setParent(vendorArea);
-    std::cout << "--> Transfer complete.\n";
+    // 2. The Dynamic Structural Change (Observer leaving mid-execution)
+    std::cout << "\n[EVENT CONTROL] Fire is spreading! Permanently detaching Vendor Zone from the event grid...\n" << std::endl;
+    manager->detach(vendorArea);
+    manager->remove(vendorArea);
 
-    // =========================================================
-    // PHASE 4: CAPACITY OVERFLOW (Task 4.3)
-    // =========================================================
-    std::cout << "\n========== PHASE 4: CAPACITY OVERFLOW ==========\n";
-    std::cout << "--> Due to the fire, attendees are fleeing to the Gaming Zone.\n";
-    std::cout << "--> Attempting to relocate the Cosplay Stage (Capacity: 100) to the Gamer Den (Max: 50)...\n";
-    
-    mainHall->remove(cosplayStage);
-    mainHall->detach(cosplayStage);
-    
-    // ADD THIS LINE to prevent the dangling pointer:
-    cosplayStage->setParent(nullptr); 
+    vendorArea->setParent(nullptr);//forget parent
 
-    // This will trigger your "Violates capacity check" output!
-    gameZone->add(cosplayStage);
+    // 3. The Escalation (Cascades only to remaining zones)
+    EventNotice evacNotice(NoticeType::EVACUATE, "Vendor Zone compromised! Evacuate remaining zones immediately!");
+    manager->alert(evacNotice);
+
+    // 4. The Shutdown (Final lockdown)
+    EventNotice endNotice(NoticeType::END, "Venue cleared. Initiating final lockdown.");
+    manager->alert(endNotice);
     
-    
-    mainHall->remove(cosplayStage);
-    mainHall->detach(cosplayStage);
-
-    // This will trigger your "Violates capacity check" output!
-    gameZone->add(cosplayStage); 
-    
-    // Since it failed, we must send out a global capacity alert to control the crowd
-    std::cout << "\n--> Dispatching Event-Wide Capacity Alert...\n";
-    EventNotice capacityNotice(NoticeType::CAPACITY_ALERT, "CRITICAL: Comic Con zones are overflowing!");
-    manager->alert(capacityNotice);
-
-    std::cout << "\n========== END OF SIMULATION ==========\n";
-
-    delete manager; 
-
-    // CLEANUP: Destroy the orphaned Cosplay Stage that couldn't fit in the Gaming Zone
-    delete cosplayStage;
+    delete manager;
+    delete vendorArea;//cause it was removed for SD4
 
     return 0;
 }

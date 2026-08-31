@@ -1,16 +1,6 @@
 #include "EventGroup.h"
 #include "iostream"
-/**
- * @file EventGroup.cpp
- * @brief Concrete Subject and Concrete Observer Implementation
- * @class EventGroup
- * @author Vashti
- *
- */
 
-/**
- * @brief Parameterized Constructor
- */
 EventGroup::EventGroup(std::string name, int total_cap)
 {
     this->name = name;
@@ -18,10 +8,6 @@ EventGroup::EventGroup(std::string name, int total_cap)
     this->current_cap = 0;
 }
 
-/**
- * @brief Pull update from the subject
- * This behaviour applies to ConcreteObserver
- */
 void EventGroup::update()
 {
     currentNotice = parent->getNotice();
@@ -29,35 +15,26 @@ void EventGroup::update()
     this->notify();
 }
 
-/**
- * @brief This behaviour applied to ConcreteSubject
- * @return currentNotice
- */
 EventNotice EventGroup::getNotice()
 {
     return currentNotice;
 }
 
-/**
- * @brief This behaviour applied to ConcreteSubject
- */
 void EventGroup::setParent(EventSubject *par)
 {
     parent = par;
 }
 
-/**
- * @brief This behaviour applied to Composite Design Pattern
- */
 void EventGroup::add(EventComponent *cmp)
 {
     if (current_cap + cmp->getCapacity() >= total_cap)
     {
         std::cout << this->name + " Violates capacity check\n";
         currentNotice = EventNotice(NoticeType::CAPACITY_ALERT, "Comic Con is reaching maximum capacity.");
-        EventObserver* obs = dynamic_cast<EventObserver*>(cmp);
-        if (obs != nullptr) {
-            this->detach(obs); 
+        EventObserver *obs = dynamic_cast<EventObserver *>(cmp);
+        if (obs != nullptr)
+        {
+            this->detach(obs);
         }
     }
     else
@@ -65,13 +42,8 @@ void EventGroup::add(EventComponent *cmp)
         current_cap += cmp->getCapacity();
         componentList.push_back(cmp);
     }
-    
-    
 }
 
-/**
- * @brief This behaviour applied to Composite Design Pattern
- */
 void EventGroup::remove(EventComponent *cmp)
 {
     for (int i = 0; i < componentList.size(); i++)
@@ -83,16 +55,13 @@ void EventGroup::remove(EventComponent *cmp)
     }
 }
 
-/**
- * @brief EventGroup is responsible for its parent pointer
- * and also the componentList it keeps
- */
 EventGroup::~EventGroup()
 {
-    if (parent != nullptr) {
+    if (parent != nullptr)
+    {
         parent->detach(this);
     }
-    
+
     for (int i = 0; i < componentList.size(); i++)
     {
         if (componentList[i] != nullptr)
@@ -101,11 +70,6 @@ EventGroup::~EventGroup()
         }
     }
 }
-
-/**
- * @brief
- * @return componentList of type std::vector<EventComponent*>
- */
 
 std::vector<EventComponent *> EventGroup::getComponents()
 {

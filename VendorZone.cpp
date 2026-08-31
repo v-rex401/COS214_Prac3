@@ -48,13 +48,13 @@ void VendorZone::print()
         break;
     }
 
-    /**
-     * @brief Call all leaves and/or composites in Vendor Zone
-     */
+    // /**
+    //  * @brief Call all leaves and/or composites in Vendor Zone
+    //  */
 
-    std::vector<EventComponent *> list = getComponents();
-    for (int i = 0; i < list.size(); i++)
-    {
-        list[i]->print();
-    }
+    // std::vector<EventComponent *> list = getComponents();
+    // for (int i = 0; i < list.size(); i++)
+    // {
+    //     list[i]->print();
+    // }
 }

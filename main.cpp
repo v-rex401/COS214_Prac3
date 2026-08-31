@@ -10,6 +10,7 @@
 #include "CosplayStage.h"
 #include "Vendor.h"
 #include "DemoStation.h"
+#include <iostream>
 
 /**
  * @file main.cpp
@@ -42,35 +43,46 @@ int main()
     /**Observer Pattern */
     mainHall->attach(cosplayStage);
     cosplayStage->setParent(mainHall);
-
+    
     mainHall->attach(mainMedics);
     mainMedics->setParent(mainHall);
-
+    
     mainHall->attach(john);
     john->setParent(mainHall);
 
+    /**Build GamingZone */
     GamingZone *gameZone = new GamingZone("Gamer Den");
     /** Composite Pattern */
     gameZone->add(ps4);
 
     /**Observer Pattern */
     gameZone->attach(ps4);
+    ps4->setParent(gameZone);
 
     /**Build the Vendor Zone */
 
     /**Observer Pattern */
-    // VendorZone *vendorArea = new VendorZone("Food Area");
+    VendorZone *vendorArea = new VendorZone("Food Area");
 
     /**ConcreteSubject */
     EventControl *manager = new EventControl("Comic Con");
+    
     manager->attach(mainHall);
-    manager->add(mainHall);
     mainHall->setParent(manager);
+    
+    manager->attach(gameZone);
+    gameZone->setParent(manager);
+    
+    manager->attach(vendorArea);
+    vendorArea->setParent(manager);
 
-
-    EventNotice fullNotice(NoticeType::FIRE, "Comic Con is on fier ");
+    EventNotice fullNotice(NoticeType::CAPACITY_ALERT, "Comic Con is reaching maximum capacity.");
     manager->alert(fullNotice);
 
+    std::cout << "=========================\n" ;
+
+    EventNotice fullNotice2(NoticeType::WEATHER_ALERT, "Lots of rain.");
+    manager->alert(fullNotice2);
 
     /** @todo Cascading event notification */
 

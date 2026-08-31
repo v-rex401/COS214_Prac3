@@ -9,7 +9,7 @@
 #include <iostream>
 
 /**
- * @brief Forward Declaration
+ * @brief Forward Declaration used instead of header file
  */
 class MainHall : public EventGroup
 {

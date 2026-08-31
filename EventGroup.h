@@ -31,10 +31,7 @@ public:
 
 	virtual ~EventGroup() override;
 
-	std::vector<EventComponent *> getComponents()
-	{
-		return componentList;
-	}
+	std::vector<EventComponent *> getComponents();
 
 private:
 	EventGroup();

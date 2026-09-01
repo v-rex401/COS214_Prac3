@@ -3,9 +3,12 @@
 
 #include <string>
 /**
- * @brief EventNotice contains the message and notice type
  * @file EventNotice.h
- * @class EventNotice
+ * @brief Declares the EventNotice class and the NoticeType enum used to represent event notifications.
+ */
+
+/**
+ * @brief EventNotice contains the message and notice type
  * @author Jordan
  */
 

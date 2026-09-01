@@ -77,42 +77,44 @@ $(document).ready(function() { init_codefold(0); });
   <div class="headertitle"><div class="title">EventSubject.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef EVENTSUBJECT_H</span></div>
+<a href="EventSubject_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef EVENTSUBJECT_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define EVENTSUBJECT_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;EventObserver.h&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;EventNotice.h&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="EventObserver_8h.html">EventObserver.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="EventNotice_8h.html">EventNotice.h</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classEventSubject.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="classEventSubject.html">EventSubject</a></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    std::vector&lt;EventObserver *&gt; observerList;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classEventSubject.html#a441627084d41ccb7ae09b7315bbeb7cd">   27</a></span>    <a class="code hl_function" href="classEventSubject.html#a441627084d41ccb7ae09b7315bbeb7cd">EventSubject</a>() {}</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classEventSubject.html#add11d4f5c3a20f20e477368c6951dddc">attach</a>(<a class="code hl_class" href="classEventObserver.html">EventObserver</a> *x);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classEventSubject.html#afc671021f73c2036cb62d89b5fe1a325">detach</a>(<a class="code hl_class" href="classEventObserver.html">EventObserver</a> *y);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classEventSubject.html#ad6395942e54e4cdb3dfcd12f7926b485">notify</a>();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classEventSubject.html#ad0871e4d90f39eeb286c35fdba67ea3a">   60</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classEventNotice.html">EventNotice</a> <a class="code hl_function" href="classEventSubject.html#ad0871e4d90f39eeb286c35fdba67ea3a">getNotice</a>() = 0;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classEventSubject.html#aa399024ad6071b4ba631b35b8e77c02a">   65</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classEventSubject.html#aa399024ad6071b4ba631b35b8e77c02a">~EventSubject</a>() {}</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classEventSubject.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="classEventSubject.html">EventSubject</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    std::vector&lt;EventObserver *&gt; observerList;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classEventSubject.html#a441627084d41ccb7ae09b7315bbeb7cd">   28</a></span>    <a class="code hl_function" href="classEventSubject.html#a441627084d41ccb7ae09b7315bbeb7cd">EventSubject</a>() {}</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classEventSubject.html#add11d4f5c3a20f20e477368c6951dddc">attach</a>(<a class="code hl_class" href="classEventObserver.html">EventObserver</a> *x);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classEventSubject.html#afc671021f73c2036cb62d89b5fe1a325">detach</a>(<a class="code hl_class" href="classEventObserver.html">EventObserver</a> *y);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classEventSubject.html#ad6395942e54e4cdb3dfcd12f7926b485">notify</a>();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classEventSubject.html#ad0871e4d90f39eeb286c35fdba67ea3a">   61</a></span>    <span class="keyword">virtual</span> <a class="code hl_class" href="classEventNotice.html">EventNotice</a> <a class="code hl_function" href="classEventSubject.html#ad0871e4d90f39eeb286c35fdba67ea3a">getNotice</a>() = 0;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classEventSubject.html#aa399024ad6071b4ba631b35b8e77c02a">   66</a></span>    <span class="keyword">virtual</span> <a class="code hl_function" href="classEventSubject.html#aa399024ad6071b4ba631b35b8e77c02a">~EventSubject</a>() {}</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
 </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassEventNotice_html"><div class="ttname"><a href="classEventNotice.html">EventNotice</a></div><div class="ttdoc">EventNotice contains the message and notice type.</div><div class="ttdef"><b>Definition</b> EventNotice.h:26</div></div>
-<div class="ttc" id="aclassEventObserver_html"><div class="ttname"><a href="classEventObserver.html">EventObserver</a></div><div class="ttdoc">Observer participant of the GoF design pattern Observer.</div><div class="ttdef"><b>Definition</b> EventObserver.h:9</div></div>
-<div class="ttc" id="aclassEventSubject_html"><div class="ttname"><a href="classEventSubject.html">EventSubject</a></div><div class="ttdoc">The abstract subject participant in the Observer pattern.</div><div class="ttdef"><b>Definition</b> EventSubject.h:18</div></div>
-<div class="ttc" id="aclassEventSubject_html_a441627084d41ccb7ae09b7315bbeb7cd"><div class="ttname"><a href="classEventSubject.html#a441627084d41ccb7ae09b7315bbeb7cd">EventSubject::EventSubject</a></div><div class="ttdeci">EventSubject()</div><div class="ttdoc">default constructor for EventSubject.</div><div class="ttdef"><b>Definition</b> EventSubject.h:27</div></div>
-<div class="ttc" id="aclassEventSubject_html_aa399024ad6071b4ba631b35b8e77c02a"><div class="ttname"><a href="classEventSubject.html#aa399024ad6071b4ba631b35b8e77c02a">EventSubject::~EventSubject</a></div><div class="ttdeci">virtual ~EventSubject()</div><div class="ttdoc">virtual destructor to ensure safe polymorphic cleanup</div><div class="ttdef"><b>Definition</b> EventSubject.h:65</div></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aEventNotice_8h_html"><div class="ttname"><a href="EventNotice_8h.html">EventNotice.h</a></div><div class="ttdoc">EventNotice contains the message and notice type.</div></div>
+<div class="ttc" id="aEventObserver_8h_html"><div class="ttname"><a href="EventObserver_8h.html">EventObserver.h</a></div><div class="ttdoc">Observer participant of the GoF design pattern Observer.</div></div>
+<div class="ttc" id="aclassEventNotice_html"><div class="ttname"><a href="classEventNotice.html">EventNotice</a></div><div class="ttdef"><b>Definition</b> EventNotice.h:27</div></div>
+<div class="ttc" id="aclassEventObserver_html"><div class="ttname"><a href="classEventObserver.html">EventObserver</a></div><div class="ttdef"><b>Definition</b> EventObserver.h:10</div></div>
+<div class="ttc" id="aclassEventSubject_html"><div class="ttname"><a href="classEventSubject.html">EventSubject</a></div><div class="ttdef"><b>Definition</b> EventSubject.h:19</div></div>
+<div class="ttc" id="aclassEventSubject_html_a441627084d41ccb7ae09b7315bbeb7cd"><div class="ttname"><a href="classEventSubject.html#a441627084d41ccb7ae09b7315bbeb7cd">EventSubject::EventSubject</a></div><div class="ttdeci">EventSubject()</div><div class="ttdoc">default constructor for EventSubject.</div><div class="ttdef"><b>Definition</b> EventSubject.h:28</div></div>
+<div class="ttc" id="aclassEventSubject_html_aa399024ad6071b4ba631b35b8e77c02a"><div class="ttname"><a href="classEventSubject.html#aa399024ad6071b4ba631b35b8e77c02a">EventSubject::~EventSubject</a></div><div class="ttdeci">virtual ~EventSubject()</div><div class="ttdoc">virtual destructor to ensure safe polymorphic cleanup</div><div class="ttdef"><b>Definition</b> EventSubject.h:66</div></div>
 <div class="ttc" id="aclassEventSubject_html_ad0871e4d90f39eeb286c35fdba67ea3a"><div class="ttname"><a href="classEventSubject.html#ad0871e4d90f39eeb286c35fdba67ea3a">EventSubject::getNotice</a></div><div class="ttdeci">virtual EventNotice getNotice()=0</div><div class="ttdoc">Retrieves the current active event notice.</div></div>
 <div class="ttc" id="aclassEventSubject_html_ad6395942e54e4cdb3dfcd12f7926b485"><div class="ttname"><a href="classEventSubject.html#ad6395942e54e4cdb3dfcd12f7926b485">EventSubject::notify</a></div><div class="ttdeci">void notify()</div><div class="ttdoc">issues an update to all the registered observers.</div><div class="ttdef"><b>Definition</b> EventSubject.cpp:34</div></div>
 <div class="ttc" id="aclassEventSubject_html_add11d4f5c3a20f20e477368c6951dddc"><div class="ttname"><a href="classEventSubject.html#add11d4f5c3a20f20e477368c6951dddc">EventSubject::attach</a></div><div class="ttdeci">void attach(EventObserver *x)</div><div class="ttdoc">Registers an observer to pass future event notifications to.</div><div class="ttdef"><b>Definition</b> EventSubject.cpp:3</div></div>

@@ -7,12 +7,16 @@
 #include "EventNotice.h"
 
 /**
+ * @file EventSubject.h
+ * @brief Declares the EventSubject abstract base class, the Subject participant of the Observer pattern.
+ */
+
+/**
  * @brief The abstract subject participant in the Observer pattern
  *
  * This class defines the interface for managing event notifications.
  * It keeps a list of the interested observers but it does not strictly
  * own the memory of the observers registered to it.
- * @file EventSubject.h
  */
 
 class EventSubject

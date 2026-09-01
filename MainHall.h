@@ -6,6 +6,10 @@
 
 /**
  * @file MainHall.h
+ * @brief Declares the MainHall class, a concrete EventGroup representing the main hall area of the event.
+ */
+
+/**
  * @brief One of the ConcreteSubjects which is also a ConcreteObserver
  * @author Vashti
  */

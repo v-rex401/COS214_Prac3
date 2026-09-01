@@ -6,6 +6,10 @@
 
 /**
  * @file Vendor.h
+ * @brief Declares the Vendor class, a concrete leaf unit representing a merchandise or food vendor.
+ */
+
+/**
  * @brief A concrete leaf component representing a merchandise or food vendor.
  *
  * This class inherits from EventUnit and implements specific

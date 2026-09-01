@@ -8,9 +8,14 @@
 #include "EventObserver.h"
 
 /**
- * @brief Concrete Subject and Concrete Observer Implementation
  * @file EventGroup.h
- * @class EventGroup
+ * @brief Declares the EventGroup class, a
+ * concrete Subject/Observer representing a
+ * composite grouping of event units.
+ */
+
+/**
+ * @brief Concrete Subject and Concrete Observer Implementation
  * @author Vashti
  *
  */

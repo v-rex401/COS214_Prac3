@@ -1,0 +1,14 @@
+<map id="EventGroup.h" name="EventGroup.h">
+<area shape="rect" id="Node000001" title="Concrete Subject and Concrete Observer Implementation." alt="" coords="148,5,259,31"/>
+<area shape="rect" id="Node000002" href="$GamingZone_8h.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="5,79,124,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,39,89,81,86,76,168,34"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title=" " alt="" coords="162,152,245,177"/>
+<area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="197,44,191,73,190,104,202,151,197,152,185,104,185,72,192,43"/>
+<area shape="rect" id="Node000004" href="$MainHall_8h.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="200,79,292,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="220,41,241,77,237,80,215,44"/>
+<area shape="rect" id="Node000005" href="$VendorZone_8h.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="317,79,429,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="244,34,346,76,344,81,242,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="100,108,182,149,179,154,98,113"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="234,117,213,153,208,151,230,114"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="334,112,232,154,230,149,332,107"/>
+</map>

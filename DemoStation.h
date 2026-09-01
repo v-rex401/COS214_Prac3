@@ -5,12 +5,16 @@
 #include <string>
 
 /**
+ * @brief Declares the DemoStation class, a concrete leaf unit
+ * representing a gaming or tech demo station.
+ * @file DemoStation.h
+ */
+/**
  * @brief A concrete leaf component representing a gaming or tech demo station.
  *
  * This class inherits from EventUnit and implements specific
  * print behaviors for various event notifications, focusing on
  * hardware management, player queues, and booth safety.
- * @file DemoStation.h
  */
 class DemoStation : public EventUnit
 {

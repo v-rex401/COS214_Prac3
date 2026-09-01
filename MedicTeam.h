@@ -5,7 +5,10 @@
 #include <string>
 
 /**
- * @file MedicTeam.h
+ *  @file MedicTeam.h
+ * @brief Declares the MedicTeam class, a concrete leaf unit representing a medical response team.
+ */
+/**
  * @brief A concrete leaf component representing a medical response team.
  *
  * This class inherits from EventUnit and implements specific

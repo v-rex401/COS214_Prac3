@@ -3,8 +3,13 @@
 
 #include "EventGroup.h"
 #include <string>
+
 /**
  * @file VendorZone.h
+ * @brief Declares the VendorZone class, a concrete EventGroup representing the vendor area of the event.
+ */
+
+/**
  * @brief One of the ConcreteSubjects which is also a ConcreteObserver
  * @author Vashti
  */

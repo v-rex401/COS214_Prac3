@@ -5,9 +5,14 @@
 #include <string>
 
 /**
- * @brief A concrete leaf component representing a cosplay stage or competition area.
+ * @brief Declares the CosplayStage class,
+ * a concrete leaf unit representing a cosplay stage or competition area.
  * @file CosplayStage.h
  * @author Robert
+ */
+
+/**
+ * @brief A concrete leaf component representing a cosplay stage or competition area.
  * This class inherits from EventUnit and implements specific
  * print behaviors for various event notifications, focusing on
  * stage management, performers, and audience safety.

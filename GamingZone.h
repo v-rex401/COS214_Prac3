@@ -3,8 +3,12 @@
 
 #include "EventGroup.h"
 #include <string>
+
 /**
  * @file GamingZone.h
+ * @brief Declares the GamingZone class, a concrete EventGroup representing the gaming area of the event.
+ */
+/**
  * @brief One of the ConcreteSubjects which is also a ConcreteObserver
  * @author Vashti
  */

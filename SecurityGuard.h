@@ -6,6 +6,9 @@
 
 /**
  * @file SecurityGuard.h
+ * @brief Declares the SecurityGuard class, a concrete leaf unit representing a security guard.
+ */
+/**
  * @brief A concrete leaf component representing a security guard unit.
  *
  * This class inherits from EventUnit and implements specific

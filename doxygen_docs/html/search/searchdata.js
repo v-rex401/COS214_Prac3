@@ -2,10 +2,11 @@ var indexSectionsWithContent =
 {
   0: "acdegilmnoprstuv~",
   1: "cdegmsv",
-  2: "cdm",
+  2: "cdegmsv",
   3: "acdegmnprsuv~",
   4: "c",
-  5: "clt"
+  5: "n",
+  6: "clt"
 };
 
 var indexSectionNames =
@@ -15,7 +16,8 @@ var indexSectionNames =
   2: "files",
   3: "functions",
   4: "variables",
-  5: "pages"
+  5: "enums",
+  6: "pages"
 };
 
 var indexSectionLabels =
@@ -25,6 +27,7 @@ var indexSectionLabels =
   2: "Files",
   3: "Functions",
   4: "Variables",
-  5: "Pages"
+  5: "Enumerations",
+  6: "Pages"
 };
 

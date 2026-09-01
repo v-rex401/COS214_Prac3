@@ -1,0 +1,36 @@
+<map id="EventSubject.h" name="EventSubject.h">
+<area shape="rect" id="Node000001" title="The abstract subject participant in the Observer pattern." alt="" coords="148,5,267,31"/>
+<area shape="rect" id="Node000002" href="$EventControl_8h.html" title="EventControl is one of the concrete subjects." alt="" coords="5,79,124,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,39,89,81,87,76,171,34"/>
+<area shape="rect" id="Node000004" href="$EventGroup_8h.html" title="Concrete Subject and Concrete Observer Implementation." alt="" coords="152,79,263,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="210,44,210,79,205,79,205,44"/>
+<area shape="rect" id="Node000008" href="$EventUnit_8h.html" title="An abstract base class for leaf participants in the Composite pattern." alt="" coords="705,79,803,104"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="280,26,705,81,704,86,280,31"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title=" " alt="" coords="429,225,511,251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="57,117,52,148,54,163,61,176,86,193,125,207,173,218,227,225,338,233,429,235,429,240,338,238,226,231,172,223,123,212,84,198,57,179,49,164,47,148,52,116"/>
+<area shape="poly" id="edge10_Node000004_Node000003" title=" " alt="" coords="144,110,109,123,81,138,72,147,67,156,67,165,73,176,97,193,134,206,180,217,233,224,340,232,428,234,428,240,340,238,232,230,180,222,133,212,95,197,69,179,62,167,62,155,67,144,78,134,107,118,142,105"/>
+<area shape="rect" id="Node000005" href="$GamingZone_8h.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="84,152,203,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="190,116,156,154,152,150,186,113"/>
+<area shape="rect" id="Node000006" href="$MainHall_8h.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="227,152,319,177"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="229,113,264,150,260,154,225,116"/>
+<area shape="rect" id="Node000007" href="$VendorZone_8h.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="343,152,455,177"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="252,106,369,149,367,154,250,111"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="209,178,429,225,428,230,208,183"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="318,179,439,223,437,228,316,184"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="423,185,460,223,457,227,419,189"/>
+<area shape="rect" id="Node000009" href="$CosplayStage_8h.html" title=" " alt="" coords="479,152,602,177"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="708,111,576,154,574,149,706,106"/>
+<area shape="rect" id="Node000010" href="$DemoStation_8h.html" title="A concrete leaf component representing a gaming or tech demo station." alt="" coords="627,152,745,177"/>
+<area shape="poly" id="edge14_Node000008_Node000010" title=" " alt="" coords="735,116,699,154,695,150,732,112"/>
+<area shape="rect" id="Node000011" href="$MedicTeam_8h.html" title="A concrete leaf component representing a medical response team." alt="" coords="769,152,877,177"/>
+<area shape="poly" id="edge16_Node000008_Node000011" title=" " alt="" coords="777,112,814,150,810,154,773,116"/>
+<area shape="rect" id="Node000012" href="$SecurityGuard_8h.html" title="A concrete leaf component representing a security guard unit." alt="" coords="901,152,1028,177"/>
+<area shape="poly" id="edge18_Node000008_Node000012" title=" " alt="" coords="801,106,931,149,930,154,800,111"/>
+<area shape="rect" id="Node000013" href="$Vendor_8h.html" title="A concrete leaf component representing a merchandise or food vendor." alt="" coords="1052,152,1131,177"/>
+<area shape="poly" id="edge20_Node000008_Node000013" title=" " alt="" coords="818,103,1041,149,1052,152,1051,157,1040,155,817,108"/>
+<area shape="poly" id="edge13_Node000009_Node000003" title=" " alt="" coords="521,189,483,227,480,223,517,185"/>
+<area shape="poly" id="edge15_Node000010_Node000003" title=" " alt="" coords="639,184,506,228,504,223,637,179"/>
+<area shape="poly" id="edge17_Node000011_Node000003" title=" " alt="" coords="756,182,512,231,511,226,755,177"/>
+<area shape="poly" id="edge19_Node000012_Node000003" title=" " alt="" coords="888,180,512,234,511,228,887,175"/>
+<area shape="poly" id="edge21_Node000013_Node000003" title=" " alt="" coords="1039,180,883,202,733,218,512,237,511,231,732,213,882,197,1038,175"/>
+</map>

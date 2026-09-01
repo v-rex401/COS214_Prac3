@@ -8,8 +8,14 @@
 #include "EventSubject.h"
 
 /**
- * @brief EventControl is one of the concrete subjects
+ * @brief Declares the EventControl class, a
+ * concrete component that manages the overall*
+ * event hierarchy and notifications.
  * @file EventControl.h
+ */
+
+/**
+ * @brief EventControl is one of the concrete subjects
  * @author Vashti
  */
 

@@ -1,0 +1,19 @@
+<map id="EventGroup.h" name="EventGroup.h">
+<area shape="rect" id="Node000001" title="Concrete Subject and Concrete Observer Implementation." alt="" coords="79,5,190,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="120,225,179,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,33,72,52,41,80,23,105,11,128,9,151,20,176,37,195,59,210,107,227,105,232,57,215,33,199,15,179,4,151,6,127,18,102,37,77,69,48,104,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="30,152,93,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,33,76,52,62,65,52,80,47,94,47,109,53,138,48,140,41,109,42,93,47,77,58,61,73,48,104,29"/>
+<area shape="rect" id="Node000004" href="$EventComponent_8h.html" title="Component participant in the GoF design pattern Composite." alt="" coords="61,79,208,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,31,137,65,132,65,132,31"/>
+<area shape="rect" id="Node000005" href="$EventSubject_8h.html" title="The abstract subject participant in the Observer pattern." alt="" coords="233,79,351,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="161,28,255,71,253,75,159,33"/>
+<area shape="rect" id="Node000006" href="$EventObserver_8h.html" title="Observer participant of the GoF design pattern Observer." alt="" coords="325,152,454,177"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="190,17,233,21,279,31,325,49,365,77,375,90,383,106,390,138,385,139,378,108,371,93,361,81,322,54,277,36,232,26,190,22"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="253,106,212,125,193,138,177,154,161,182,154,212,149,211,156,180,173,150,190,134,210,120,250,102"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="256,107,107,152,105,147,254,101"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="309,102,364,141,361,146,306,106"/>
+<area shape="rect" id="Node000007" href="$EventNotice_8h.html" title="EventNotice contains the message and notice type." alt="" coords="187,152,301,177"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="286,106,262,142,257,139,282,103"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="230,179,177,219,174,215,227,175"/>
+</map>

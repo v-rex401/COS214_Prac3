@@ -2,8 +2,13 @@
 #define EVENTCOMPONENT_H
 
 /**
- * @brief Component participant in the GoF design pattern Composite
+ * @brief Declares the EventComponent abstract * base class, the Component participant of
+ * the Composite pattern.
  * @file EventComponent.h
+ */
+
+/**
+ * @brief Component participant in the GoF design pattern Composite
  * @author Jordan
  */
 class EventComponent

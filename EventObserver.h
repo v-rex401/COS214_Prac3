@@ -2,8 +2,11 @@
 #define EVENTOBSERVER_H
 
 /**
- * @brief Observer participant of the GoF design pattern Observer
  * @file EventObserver.h
+ * @brief Declares the EventObserver abstract base class, the Observer participant of the Observer pattern.
+ */
+/**
+ * @brief Observer participant of the GoF design pattern Observer
  * @author Jordan
  */
 class EventObserver

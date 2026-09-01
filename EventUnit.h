@@ -9,11 +9,15 @@
 
 /**
  * @file EventUnit.h
+ * @brief Declares the EventUnit abstract base class, the Leaf participant of the Composite pattern
+ */
+/**
  * @brief An abstract base class for leaf participants in the Composite pattern.
  *
  * This class acts as an observer that executes an update command when it receives
  * a notification from the EventSubject it is attached to. Because it contains
  * a pure virtual print method, it cannot be instantiated directly.
+ * @author Robert
  */
 class EventUnit : public EventComponent, public EventObserver
 {

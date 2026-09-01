@@ -45,3 +45,10 @@ Our EventFlow program is built in such a way that it can be applied to any given
   - The reason for this is it needs to act in these two different ways for a particular situation
   - It acts as an Observer to the EventControl class
   - It acts as a Subject to the EventUnit classes
+
+---
+
+## GitHub Workflow
+
+![Branches 1](docs/branches1.png)
+![Branches 2](docs/branches2.png)

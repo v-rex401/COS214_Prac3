@@ -25,7 +25,7 @@ int main()
 {
 
     /**
-     * @brief Leaves */
+     * @brief Build Leaves */
     SecurityGuard *john = new SecurityGuard("John Doe", 5);
     MedicTeam *mainMedics = new MedicTeam("Main Hall Medics", 20);
     MedicTeam *vendorMedics = new MedicTeam("Vendor Zone Medics", 20);

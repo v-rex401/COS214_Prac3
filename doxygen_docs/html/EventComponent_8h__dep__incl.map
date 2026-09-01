@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Declares the EventComponent abstract * base class, the Component participant of the Composite pattern..." alt="" coords="162,5,309,31"/>
 <area shape="rect" id="Node000002" href="$EventControl_8h.html" title="Declares the EventControl class, a concrete component that manages the overall* event hierarchy and n..." alt="" coords="5,79,124,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,38,94,81,92,76,194,33"/>
-<area shape="rect" id="Node000003" href="$main_8cpp.html" title=" " alt="" coords="525,225,607,251"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title="contains main method to run client and demonstration" alt="" coords="525,225,607,251"/>
 <area shape="poly" id="edge22_Node000001_Node000003" title=" " alt="" coords="227,44,218,74,212,109,214,145,220,161,229,176,249,190,279,202,360,220,449,229,525,233,524,238,449,234,359,225,277,207,246,195,225,179,215,163,209,146,207,109,213,73,222,43"/>
 <area shape="rect" id="Node000004" href="$EventGroup_8h.html" title="Declares the EventGroup class, a concrete Subject/Observer representing a composite grouping of event..." alt="" coords="255,79,365,104"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="259,38,300,77,296,80,255,42"/>

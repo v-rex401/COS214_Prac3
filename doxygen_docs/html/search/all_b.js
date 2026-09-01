@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['remove_0',['remove',['../classEventComponent.html#abdf006f6001d43d13a41b2d47583ebe0',1,'EventComponent::remove()'],['../classEventControl.html#aa812f086961f5cd6f7c9def43ef92a97',1,'EventControl::remove()'],['../classEventGroup.html#a0f2302c783dd8ff0fc7e01d611fc840d',1,'EventGroup::remove()'],['../classEventUnit.html#a80dcaeff901a4e586e29d0cb1781305a',1,'EventUnit::remove()']]]
+  ['securityguard_0',['securityguard',['../classSecurityGuard.html',1,'SecurityGuard'],['../classSecurityGuard.html#a88396924f1a960a051937d8b4bba2792',1,'SecurityGuard::SecurityGuard()']]],
+  ['securityguard_2eh_1',['SecurityGuard.h',['../SecurityGuard_8h.html',1,'']]],
+  ['setparent_2',['setparent',['../classEventGroup.html#a80a7aaa5a8582ec5e6d88ca1a6c21d6f',1,'EventGroup::setParent()'],['../classEventUnit.html#a97308ad4f0ed205547d4a84d7ecc8460',1,'EventUnit::setParent()']]]
 ];

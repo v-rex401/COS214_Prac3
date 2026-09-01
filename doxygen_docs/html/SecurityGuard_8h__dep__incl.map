@@ -1,5 +1,5 @@
 <map id="SecurityGuard.h" name="SecurityGuard.h">
 <area shape="rect" id="Node000001" title="Declares the SecurityGuard class, a concrete leaf unit representing a security guard." alt="" coords="5,5,132,31"/>
-<area shape="rect" id="Node000002" href="$main_8cpp.html" title=" " alt="" coords="27,79,110,104"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html" title="contains main method to run client and demonstration" alt="" coords="27,79,110,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,44,71,79,66,79,66,44"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="MainHall.h" name="MainHall.h">
 <area shape="rect" id="Node000001" title="Declares the MainHall class, a concrete EventGroup representing the main hall area of the event." alt="" coords="5,5,97,31"/>
-<area shape="rect" id="Node000002" href="$main_8cpp.html" title=" " alt="" coords="10,79,93,104"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html" title="contains main method to run client and demonstration" alt="" coords="10,79,93,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,44,54,79,49,79,49,44"/>
 </map>

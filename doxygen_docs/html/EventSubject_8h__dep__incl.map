@@ -6,7 +6,7 @@
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="210,44,210,79,205,79,205,44"/>
 <area shape="rect" id="Node000008" href="$EventUnit_8h.html" title="Declares the EventUnit abstract base class, the Leaf participant of the Composite pattern." alt="" coords="705,79,803,104"/>
 <area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="280,26,705,81,704,86,280,31"/>
-<area shape="rect" id="Node000003" href="$main_8cpp.html" title=" " alt="" coords="429,225,511,251"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title="contains main method to run client and demonstration" alt="" coords="429,225,511,251"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="57,117,52,148,54,163,61,176,86,193,125,207,173,218,227,225,338,233,429,235,429,240,338,238,226,231,172,223,123,212,84,198,57,179,49,164,47,148,52,116"/>
 <area shape="poly" id="edge10_Node000004_Node000003" title=" " alt="" coords="144,110,109,123,81,138,72,147,67,156,67,165,73,176,97,193,134,206,180,217,233,224,340,232,428,234,428,240,340,238,232,230,180,222,133,212,95,197,69,179,62,167,62,155,67,144,78,134,107,118,142,105"/>
 <area shape="rect" id="Node000005" href="$GamingZone_8h.html" title="Declares the GamingZone class, a concrete EventGroup representing the gaming area of the event." alt="" coords="84,152,203,177"/>

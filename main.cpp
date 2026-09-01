@@ -14,15 +14,18 @@
 
 /**
  * @file main.cpp
+ * @brief contains main method to run client and demonstration
+ */
+/**
  * @class main class
- * @brief The Client runs here
+ * @brief Program Entry Point
  */
 
 int main()
 {
-    /** @todo Build and register event */
 
-    /**Leaves */
+    /**
+     * @brief Leaves */
     SecurityGuard *john = new SecurityGuard("John Doe", 5);
     MedicTeam *mainMedics = new MedicTeam("Main Hall Medics", 20);
     MedicTeam *vendorMedics = new MedicTeam("Vendor Zone Medics", 20);
@@ -31,10 +34,10 @@ int main()
     Vendor *burgers = new Vendor("Burger Stand", 15);
     DemoStation *ps4 = new DemoStation("PS4 Consoles", 30);
 
-    /** Building the Main Hall  */
+    /** @brief Building the Main Hall  */
     MainHall *mainHall = new MainHall("Main Hall", 1000);
 
-    /**Build Main Hall  */
+    /** @brief Build Main Hall  */
     /**Observer Pattern & Composite Pattern */
     mainHall->attach(cosplayStage);
     cosplayStage->setParent(mainHall);
@@ -48,15 +51,15 @@ int main()
     john->setParent(mainHall);
     mainHall->add(john);
 
-    /**Build GamingZone */
+    /** @brief Build GamingZone */
     GamingZone *gameZone = new GamingZone("Gamer Den", 1000);
 
-    /**Observer Pattern & Composite Pattern */
+    /** @brief Observer Pattern & Composite Pattern */
     gameZone->attach(ps4);
     ps4->setParent(gameZone);
     gameZone->add(ps4);
 
-    /**Build the Vendor Zone */
+    /** @brief Build the Vendor Zone */
     VendorZone *vendorArea = new VendorZone("Food Area", 1000);
 
     vendorArea->attach(vendorMedics);
@@ -71,7 +74,7 @@ int main()
     burgers->setParent(vendorArea);
     vendorArea->add(burgers);
 
-    /**ConcreteSubject */
+    /** @brief ConcreteSubject */
     EventControl *manager = new EventControl("Comic Con", 5000);
 
     manager->attach(mainHall);
@@ -91,19 +94,13 @@ int main()
     EventNotice fullNotice(NoticeType::CAPACITY_ALERT, "Comic Con is reaching maximum capacity.");
     manager->alert(fullNotice);
 
-    std::cout << "=========================\nadding gamezon\n";
+    std::cout << "=========================\nadding gamezone\n";
     manager->attach(gameZone);
     manager->add(gameZone);
 
     EventNotice fullNotice2(NoticeType::WEATHER_ALERT, "Lots of rain.");
     manager->alert(fullNotice2);
 
-    /** @todo Cascading event notification */
-
-    /** @todo Conditional event response and Composite behaviour */
-
-    /** @todo Signature event scenario */
-    /** @todo Signature event scenario */
     std::cout << "\n=== [SD4: SIGNATURE EVENT SCENARIO - FIRE EVACUATION] ===\n"
               << std::endl;
 

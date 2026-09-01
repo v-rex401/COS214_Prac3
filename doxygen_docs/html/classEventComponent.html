@@ -75,33 +75,38 @@ $(function() {
   <div class="headertitle"><div class="title">EventComponent Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Component participant in the GoF design pattern Composite.  
+ <a href="classEventComponent.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="EventComponent_8h_source.html">EventComponent.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for EventComponent:</div>
 <div class="dyncontent">
 <div class="center"><img src="classEventComponent__inherit__graph.png" border="0" usemap="#aEventComponent_inherit__map" alt="Inheritance graph"/></div>
 <map name="aEventComponent_inherit__map" id="aEventComponent_inherit__map">
-<area shape="rect" title=" " alt="" coords="166,5,301,31"/>
-<area shape="rect" href="classEventControl.html" title=" " alt="" coords="53,79,160,104"/>
+<area shape="rect" title="Component participant in the GoF design pattern Composite." alt="" coords="166,5,301,31"/>
+<area shape="rect" href="classEventControl.html" title="EventControl is one of the concrete subjects." alt="" coords="53,79,160,104"/>
 <area shape="poly" title=" " alt="" coords="202,40,129,81,126,76,200,35"/>
-<area shape="rect" href="classEventGroup.html" title=" " alt="" coords="184,79,283,104"/>
+<area shape="rect" href="classEventGroup.html" title="Concrete Subject and Concrete Observer Implementation." alt="" coords="184,79,283,104"/>
 <area shape="poly" title=" " alt="" coords="236,44,236,79,231,79,231,44"/>
-<area shape="rect" href="classEventUnit.html" title=" " alt="" coords="573,79,659,104"/>
+<area shape="rect" href="classEventUnit.html" title="An abstract base class for leaf participants in the Composite pattern." alt="" coords="573,79,659,104"/>
 <area shape="poly" title=" " alt="" coords="309,31,573,79,572,85,308,36"/>
-<area shape="rect" href="classGamingZone.html" title=" " alt="" coords="5,152,112,177"/>
+<area shape="rect" href="classGamingZone.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="5,152,112,177"/>
 <area shape="poly" title=" " alt="" coords="194,112,88,154,86,149,192,107"/>
-<area shape="rect" href="classMainHall.html" title=" " alt="" coords="136,152,216,177"/>
+<area shape="rect" href="classMainHall.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="136,152,216,177"/>
 <area shape="poly" title=" " alt="" coords="218,116,187,154,183,150,213,113"/>
-<area shape="rect" href="classVendorZone.html" title=" " alt="" coords="241,152,341,177"/>
+<area shape="rect" href="classVendorZone.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="241,152,341,177"/>
 <area shape="poly" title=" " alt="" coords="253,113,283,150,279,154,249,116"/>
 <area shape="rect" href="classCosplayStage.html" title="A concrete leaf component representing a cosplay stage or competition area. This class inherits from ..." alt="" coords="365,152,475,177"/>
 <area shape="poly" title=" " alt="" coords="573,111,453,154,451,149,571,106"/>
-<area shape="rect" href="classDemoStation.html" title=" " alt="" coords="500,152,607,177"/>
+<area shape="rect" href="classDemoStation.html" title="A concrete leaf component representing a gaming or tech demo station." alt="" coords="500,152,607,177"/>
 <area shape="poly" title=" " alt="" coords="599,116,565,154,561,150,595,113"/>
-<area shape="rect" href="classMedicTeam.html" title=" " alt="" coords="631,152,727,177"/>
+<area shape="rect" href="classMedicTeam.html" title="A concrete leaf component representing a medical response team." alt="" coords="631,152,727,177"/>
 <area shape="poly" title=" " alt="" coords="637,113,671,150,667,154,633,116"/>
-<area shape="rect" href="classSecurityGuard.html" title=" " alt="" coords="751,152,865,177"/>
+<area shape="rect" href="classSecurityGuard.html" title="A concrete leaf component representing a security guard unit." alt="" coords="751,152,865,177"/>
 <area shape="poly" title=" " alt="" coords="661,106,778,149,776,154,659,111"/>
-<area shape="rect" href="classVendor.html" title=" " alt="" coords="889,152,956,177"/>
+<area shape="rect" href="classVendor.html" title="A concrete leaf component representing a merchandise or food vendor." alt="" coords="889,152,956,177"/>
 <area shape="poly" title=" " alt="" coords="673,103,878,149,890,152,888,157,877,155,672,108"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -128,7 +133,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a34ec2477f21d736438e5caac06908f52"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the capacity of the component (pure virtual)  <br /></td></tr>
 <tr class="separator:a34ec2477f21d736438e5caac06908f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Component participant in the GoF design pattern Composite. </p>
+<dl class="section author"><dt>Author</dt><dd>Jordan </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a81ad6a49089627f0113027449a47b0e7" name="a81ad6a49089627f0113027449a47b0e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81ad6a49089627f0113027449a47b0e7">&#9670;&#160;</a></span>~EventComponent()</h2>
 
@@ -186,7 +194,7 @@ Public Member Functions</h2></td></tr>
 <p>add component to the tree hierarchy as a child </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cmp</td><td>is the <a class="el" href="classEventComponent.html">EventComponent</a> to add </td></tr>
+    <tr><td class="paramname">cmp</td><td>is the <a class="el" href="classEventComponent.html" title="Component participant in the GoF design pattern Composite.">EventComponent</a> to add </td></tr>
   </table>
   </dd>
 </dl>

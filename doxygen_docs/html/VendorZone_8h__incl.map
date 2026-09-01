@@ -1,22 +1,22 @@
 <map id="VendorZone.h" name="VendorZone.h">
-<area shape="rect" id="Node000001" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="230,5,342,31"/>
-<area shape="rect" id="Node000002" href="$EventGroup_8h.html" title="Concrete Subject and Concrete Observer Implementation." alt="" coords="150,79,260,104"/>
+<area shape="rect" id="Node000001" title="Declares the VendorZone class, a concrete EventGroup representing the vendor area of the event." alt="" coords="230,5,342,31"/>
+<area shape="rect" id="Node000002" href="$EventGroup_8h.html" title="Declares the EventGroup class, a concrete Subject/Observer representing a composite grouping of event..." alt="" coords="150,79,260,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,33,230,72,227,68,271,29"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="149,299,208,324"/>
 <area shape="poly" id="edge12_Node000001_Node000003" title=" " alt="" coords="307,29,362,66,394,92,424,122,448,153,463,187,465,220,460,236,450,252,434,265,411,276,351,292,282,303,222,310,221,304,282,298,349,287,409,271,431,261,446,249,455,234,460,219,458,188,443,156,420,125,390,96,359,70,304,33"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="150,100,119,107,87,117,57,133,31,154,19,170,15,186,12,226,9,239,11,249,37,274,69,290,103,300,135,306,135,311,102,306,67,295,33,278,7,252,3,239,6,225,9,185,14,168,27,150,54,128,85,112,118,102,149,95"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="22,225,84,251"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="150,99,121,106,91,116,65,132,43,153,37,167,36,182,44,212,39,213,31,182,32,166,39,151,61,127,89,111,119,101,149,94"/>
-<area shape="rect" id="Node000005" href="$EventComponent_8h.html" title="Component participant in the GoF design pattern Composite." alt="" coords="53,152,200,177"/>
+<area shape="rect" id="Node000005" href="$EventComponent_8h.html" title="Declares the EventComponent abstract * base class, the Component participant of the Composite pattern..." alt="" coords="53,152,200,177"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="194,106,151,145,147,141,191,102"/>
-<area shape="rect" id="Node000006" href="$EventSubject_8h.html" title="The abstract subject participant in the Observer pattern." alt="" coords="224,152,343,177"/>
+<area shape="rect" id="Node000006" href="$EventSubject_8h.html" title="Declares the EventSubject abstract base class, the Subject participant of the Observer pattern." alt="" coords="224,152,343,177"/>
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="219,102,263,141,259,145,216,106"/>
-<area shape="rect" id="Node000007" href="$EventObserver_8h.html" title="Observer participant of the GoF design pattern Observer." alt="" coords="307,225,436,251"/>
+<area shape="rect" id="Node000007" href="$EventObserver_8h.html" title="Declares the EventObserver abstract base class, the Observer participant of the Observer pattern." alt="" coords="307,225,436,251"/>
 <area shape="poly" id="edge11_Node000002_Node000007" title=" " alt="" coords="261,99,312,117,336,131,356,150,371,180,375,211,370,211,366,182,352,154,333,136,310,122,260,104"/>
 <area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="229,180,190,198,173,211,159,227,154,241,155,256,166,286,161,287,149,257,149,240,155,224,169,207,187,193,227,175"/>
 <area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="247,180,98,226,97,220,246,175"/>
 <area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="299,175,348,214,345,219,296,179"/>
-<area shape="rect" id="Node000008" href="$EventNotice_8h.html" title="EventNotice contains the message and notice type." alt="" coords="170,225,283,251"/>
+<area shape="rect" id="Node000008" href="$EventNotice_8h.html" title="Declares the EventNotice class and the NoticeType enum used to represent event notifications." alt="" coords="170,225,283,251"/>
 <area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="276,179,246,216,242,213,272,176"/>
 <area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="221,253,196,289,191,286,216,250"/>
 </map>

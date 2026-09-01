@@ -9,6 +9,7 @@
 
 /**
  * @brief EventNotice contains the message and notice type
+ * @class EventNotice
  * @author Jordan
  */
 

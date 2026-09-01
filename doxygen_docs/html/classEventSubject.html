@@ -75,21 +75,26 @@ $(function() {
   <div class="headertitle"><div class="title">EventSubject Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The abstract subject participant in the Observer pattern.  
+ <a href="classEventSubject.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="EventSubject_8h_source.html">EventSubject.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for EventSubject:</div>
 <div class="dyncontent">
 <div class="center"><img src="classEventSubject__inherit__graph.png" border="0" usemap="#aEventSubject_inherit__map" alt="Inheritance graph"/></div>
 <map name="aEventSubject_inherit__map" id="aEventSubject_inherit__map">
-<area shape="rect" title=" " alt="" coords="68,5,175,31"/>
-<area shape="rect" href="classEventControl.html" title=" " alt="" coords="5,79,112,104"/>
+<area shape="rect" title="The abstract subject participant in the Observer pattern." alt="" coords="68,5,175,31"/>
+<area shape="rect" href="classEventControl.html" title="EventControl is one of the concrete subjects." alt="" coords="5,79,112,104"/>
 <area shape="poly" title=" " alt="" coords="104,43,71,80,67,77,100,39"/>
-<area shape="rect" href="classEventGroup.html" title=" " alt="" coords="136,79,235,104"/>
+<area shape="rect" href="classEventGroup.html" title="Concrete Subject and Concrete Observer Implementation." alt="" coords="136,79,235,104"/>
 <area shape="poly" title=" " alt="" coords="143,39,177,77,173,80,139,43"/>
-<area shape="rect" href="classGamingZone.html" title=" " alt="" coords="15,152,121,177"/>
+<area shape="rect" href="classGamingZone.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="15,152,121,177"/>
 <area shape="poly" title=" " alt="" coords="156,113,89,154,86,149,153,109"/>
-<area shape="rect" href="classMainHall.html" title=" " alt="" coords="145,152,225,177"/>
+<area shape="rect" href="classMainHall.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="145,152,225,177"/>
 <area shape="poly" title=" " alt="" coords="188,118,188,152,183,152,183,118"/>
-<area shape="rect" href="classVendorZone.html" title=" " alt="" coords="250,152,350,177"/>
+<area shape="rect" href="classVendorZone.html" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="250,152,350,177"/>
 <area shape="poly" title=" " alt="" coords="217,109,283,150,280,154,214,113"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -98,7 +103,7 @@ Inheritance diagram for EventSubject:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a441627084d41ccb7ae09b7315bbeb7cd" id="r_a441627084d41ccb7ae09b7315bbeb7cd"><td class="memItemLeft" align="right" valign="top"><a id="a441627084d41ccb7ae09b7315bbeb7cd" name="a441627084d41ccb7ae09b7315bbeb7cd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>EventSubject</b> ()</td></tr>
-<tr class="memdesc:a441627084d41ccb7ae09b7315bbeb7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor for <a class="el" href="classEventSubject.html">EventSubject</a>. <br /></td></tr>
+<tr class="memdesc:a441627084d41ccb7ae09b7315bbeb7cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor for <a class="el" href="classEventSubject.html" title="The abstract subject participant in the Observer pattern.">EventSubject</a>. <br /></td></tr>
 <tr class="separator:a441627084d41ccb7ae09b7315bbeb7cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add11d4f5c3a20f20e477368c6951dddc" id="r_add11d4f5c3a20f20e477368c6951dddc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventSubject.html#add11d4f5c3a20f20e477368c6951dddc">attach</a> (<a class="el" href="classEventObserver.html">EventObserver</a> *x)</td></tr>
 <tr class="memdesc:add11d4f5c3a20f20e477368c6951dddc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an observer to pass future event notifications to.  <br /></td></tr>
@@ -117,7 +122,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventSubject</b> 
 <tr class="memdesc:aa399024ad6071b4ba631b35b8e77c02a"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual destructor to ensure safe polymorphic cleanup <br /></td></tr>
 <tr class="separator:aa399024ad6071b4ba631b35b8e77c02a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The abstract subject participant in the Observer pattern. </p>
+<p>This class defines the interface for managing event notifications. It keeps a list of the interested observers but it does not strictly own the memory of the observers registered to it. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="add11d4f5c3a20f20e477368c6951dddc" name="add11d4f5c3a20f20e477368c6951dddc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add11d4f5c3a20f20e477368c6951dddc">&#9670;&#160;</a></span>attach()</h2>
 
@@ -195,7 +203,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~EventSubject</b> 
 </div><div class="memdoc">
 
 <p>Retrieves the current active event notice. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classEventNotice.html">EventNotice</a> The current state or alert data </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classEventNotice.html" title="EventNotice contains the message and notice type.">EventNotice</a> The current state or alert data </dd></dl>
 
 <p>Implemented in <a class="el" href="classEventControl.html#a334288c61e1052ac0fb34dc528f7b391">EventControl</a>, and <a class="el" href="classEventGroup.html#a5a2855896b86e91d2bee2aa991adb475">EventGroup</a>.</p>
 

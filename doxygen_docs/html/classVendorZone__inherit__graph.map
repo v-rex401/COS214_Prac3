@@ -1,11 +1,11 @@
 <map id="VendorZone" name="VendorZone">
-<area shape="rect" id="Node000001" title=" " alt="" coords="168,152,268,177"/>
-<area shape="rect" id="Node000002" href="$classEventGroup.html" title=" " alt="" coords="169,79,267,104"/>
+<area shape="rect" id="Node000001" title="One of the ConcreteSubjects which is also a ConcreteObserver." alt="" coords="168,152,268,177"/>
+<area shape="rect" id="Node000002" href="$classEventGroup.html" title="Concrete Subject and Concrete Observer Implementation." alt="" coords="169,79,267,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,118,221,152,215,152,215,118"/>
-<area shape="rect" id="Node000003" href="$classEventComponent.html" title=" " alt="" coords="5,5,140,31"/>
+<area shape="rect" id="Node000003" href="$classEventComponent.html" title="Component participant in the GoF design pattern Composite." alt="" coords="5,5,140,31"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="109,34,195,76,193,81,107,39"/>
-<area shape="rect" id="Node000004" href="$classEventSubject.html" title=" " alt="" coords="165,5,271,31"/>
+<area shape="rect" id="Node000004" href="$classEventSubject.html" title="The abstract subject participant in the Observer pattern." alt="" coords="165,5,271,31"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="221,44,221,79,215,79,215,44"/>
-<area shape="rect" id="Node000005" href="$classEventObserver.html" title=" " alt="" coords="296,5,415,31"/>
+<area shape="rect" id="Node000005" href="$classEventObserver.html" title="Observer participant of the GoF design pattern Observer." alt="" coords="296,5,415,31"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="323,39,242,81,239,76,320,34"/>
 </map>

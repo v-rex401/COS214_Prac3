@@ -1,7 +1,7 @@
 <map id="EventControl" name="EventControl">
-<area shape="rect" id="Node000001" title=" " alt="" coords="91,79,198,104"/>
-<area shape="rect" id="Node000002" href="$classEventComponent.html" title=" " alt="" coords="5,5,140,31"/>
+<area shape="rect" id="Node000001" title="EventControl is one of the concrete subjects." alt="" coords="91,79,198,104"/>
+<area shape="rect" id="Node000002" href="$classEventComponent.html" title="Component participant in the GoF design pattern Composite." alt="" coords="5,5,140,31"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,39,135,77,131,80,93,43"/>
-<area shape="rect" id="Node000003" href="$classEventSubject.html" title=" " alt="" coords="165,5,271,31"/>
+<area shape="rect" id="Node000003" href="$classEventSubject.html" title="The abstract subject participant in the Observer pattern." alt="" coords="165,5,271,31"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,42,158,80,155,77,194,38"/>
 </map>

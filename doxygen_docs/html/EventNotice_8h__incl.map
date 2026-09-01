@@ -1,5 +1,5 @@
 <map id="EventNotice.h" name="EventNotice.h">
-<area shape="rect" id="Node000001" title="EventNotice contains the message and notice type." alt="" coords="5,5,119,31"/>
+<area shape="rect" id="Node000001" title="Declares the EventNotice class and the NoticeType enum used to represent event notifications." alt="" coords="5,5,119,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="33,79,91,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,31,65,65,59,65,59,31"/>
 </map>
